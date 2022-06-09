@@ -32,8 +32,8 @@
                     <p class="lead">Volvemos en: {{ days | twoDigits }}:{{ hours | twoDigits }}:{{ minutes | twoDigits }}:{{ seconds | twoDigits }}</p>
                 </div> 
             </div>-->
-            <div class="row" v-if="!bloqued">
-                <div class="col-xs-6" style="margin-left: 25px">
+            <div class="row" v-if="bloqued">
+                <div class="col-6">
                     <div class="field-wrap">
                         <label class="switch2">
                             <input type="checkbox" id="togBtn2" v-model="switch1" @click="toggle()">
@@ -41,7 +41,7 @@
                         </label>
                     </div>
                 </div>
-                    <div class="col-xs-6" style="margin-left: 140px" v-if="ocultar">
+                    <div class="col-6" v-if="ocultar">
                          <div class="field-wrap">
                             <label class="switch">
                                 <input type="checkbox" id="togBtn" v-model="switch2" @click="toggle2()">
@@ -112,7 +112,7 @@ export default {
             deadline: '',
             intervalo: null,
             intervalo: null,
-            bloqued: false,
+            bloqued: true,
             fiat: false,
             virtual: false,
             isLoading: false,
@@ -701,6 +701,11 @@ export default {
 </script>
 
 <style scoped>
+p.lead {
+    font-size: 1.27em;
+    line-height: 1.68;
+    font-family: Poppins,sans-serif;
+}
 /* input {
   border-image-source: linear-gradient(to right, #7a0fff 0%, #46bdf4 100%);
   border-width: 5pt;

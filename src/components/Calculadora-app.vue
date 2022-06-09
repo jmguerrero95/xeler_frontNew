@@ -75,8 +75,9 @@
                 <div class="col-sm-4">
                     <div class="input-field">
                         <label class="input-title">Pesos</label>
-                        <money v-model="pesos" v-bind="money" @keyup.native="updateCrypto"
-                                class="form-control custom-control2" @click.native="es_fiat"></money>
+                        <input name="crypto" type="text" class="form-control custom-control2" v-model="pesos">
+                        <!--<money v-model="pesos" v-bind="money" @keyup.native="updateCrypto"
+                                class="form-control custom-control2" @click.native="es_fiat"></money>-->
                     </div>
                 </div>
                 <p class="nueva" v-if="mostrar">Equivalente a ~ {{ parseInt(cantidad_dolar).toFixed(2) }} USD</p>
@@ -483,6 +484,7 @@ export default {
                 var valor_oficial = this.crypto_oficial / this.trm
                 this.pesos = this.crypto * this.el_valor
                 this.cantidad_dolar = this.crypto * valor_oficial
+                console.log(this.pesos)
         },
 
         usuario_2(){

@@ -50,7 +50,7 @@
                     <div class="container">
                         <div class="banner-content">
                             <div class="row align-items-center mobile-center">
-                                <div class="col-lg-6 col-md-12 order-lg-first">
+                                <div class="col-lg-6 col-md-12 order-lg-first order">
                                     <Calculadora></Calculadora>
                                 </div>
                                 <div class="col-lg-6 col-md-12 order-first">
@@ -740,6 +740,9 @@ z-index: 2;
     height: 88px;
     width: 94px;
     padding: 16px 20px 0;
+}
+.order{
+    z-index: 1111;
 }
 
 

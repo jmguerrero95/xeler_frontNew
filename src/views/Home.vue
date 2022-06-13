@@ -1,9 +1,5 @@
 <template>
-
-
-
-
-
+<div>
   <body class="theme-dark is-smooth-effect" data-spy="scroll" data-target="#mainnav" data-offset="70" >-->
 <div>
     <div id="particles-js" class="particles-container particles-js"></div>
@@ -29,7 +25,7 @@
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
                         <ul class="navbar-nav navbar-btns">
-                                <li class="nav-item"><a class="nav-link btn btn-sm btn-outline menu-link" href="/login">Iniciar Sesión</a></li>
+                                <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link" href="/login">Iniciar Sesión</a></router-link></li>
                                 <li class="nav-item"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></li>
                                 <!--<li class="nav-item">
                                     @if(Auth::user()->role == 3)
@@ -152,8 +148,7 @@
 
 
 
-
-  
+</div>
 </template>
 
 <script>

@@ -15,9 +15,10 @@
                     <!--<input class="form-control input_style" type="text" placeholder="Email">-->
                     <br/>
                     <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
+                    <br/>
                     <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
-                    <a href="#">Olvidaste la contraseña?</a>
-                    <BotonGenerico texto="Ingresar"></BotonGenerico>
+                    <a href="#" class="olvido">Olvidaste la contraseña?</a>
+                    <BotonGenerico texto="Ingresar" class="boton"></BotonGenerico>
                     <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
                     <p class="">No tienes una cuenta? <a href="#">Registrate</a></p>
                 </div>
@@ -53,44 +54,16 @@ export default {
 }
 </script>
 <style scoped>
+    .boton{
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+    .olvido{
+        margin-bottom: 5%;
+    }
     .row{
         width: 100%;
     }
-    .btn:not(:disabled):not(.disabled) {
-        cursor: pointer;
-    }
-    @media (min-width: 480px){
-        .btn {
-            padding: 8px 20px;
-            font-size: 14px;
-        }
-    }
-    .btn-primary {
-        background: #7668fe;
-        border-color: #7668fe;
-    }
-    .btn-block {
-        display: block;
-        width: 100%;
-    }
-    .btn {
-        position: relative;
-        color: #fff;
-        font-weight: 500;
-        padding: 8px 20px;
-        font-size: 13px;
-        line-height: 24px;
-        letter-spacing: 0.01em;
-        border-radius: 4px;
-        min-width: 160px;
-        border: 1px solid;
-        display: inline-block;
-        transition: all .4s ease;
-    }
-
-
-
-
     .input_style{
         border-radius: 23px;
         border: 1px solid #d2dde9;
@@ -102,15 +75,16 @@ export default {
         transition: all .4s;
     }
     .logo{
-        width: 35%;
+        width: 60%;
+        margin-top: 15%;
     }
     .cabecera{
-        padding-bottom: 23px;
         font-size: 2.8em;
         font-weight: 300;
         letter-spacing: -0.025em;
         color: #342d6e;
         line-height: 1.2;
+        margin-top: 43%;
     }
     .parrafo{
         display: block;

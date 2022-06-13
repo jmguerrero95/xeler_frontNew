@@ -17,10 +17,10 @@
                     <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
                     <br/>
                     <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
-                    <a href="#" class="olvido">Olvidaste la contraseña?</a>
+                    <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
                     <BotonGenerico texto="Ingresar" class="boton"></BotonGenerico>
                     <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
-                    <p class="">No tienes una cuenta? <a href="#">Registrate</a></p>
+                    <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
                 </div>
                 <div class="col-3">
                     

@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import Home from "@/views/Home.vue";
+import Login from "@/views/login.vue";
 import cal from "@/components/Calculadora-app.vue";
 import App from './App.vue'
     import { createRouter, createWebHistory } from "vue-router"
@@ -9,8 +10,8 @@ import App from './App.vue'
             component : Home
         },
         {
-            path : "/cal",
-            component : cal
+            path : "/login",
+            component : Login
         }
     ]
     

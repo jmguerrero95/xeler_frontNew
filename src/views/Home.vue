@@ -25,8 +25,8 @@
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
                         <ul class="navbar-nav navbar-btns">
-                                <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link" href="/login">Iniciar Sesión</a></router-link></li>
-                                <li class="nav-item"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></li>
+                                <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</a></router-link></li>
+                                <li class="nav-item"><router-link to="/register"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></router-link></li>
                                 <!--<li class="nav-item">
                                     @if(Auth::user()->role == 3)
                                         <a class="nav-link btn btn-sm btn-outline menu-link" href="/admin/dashboard">Inicio</a>

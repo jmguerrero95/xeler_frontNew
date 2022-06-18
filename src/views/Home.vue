@@ -1,6 +1,6 @@
 <template>
 <div>
-  <body class="theme-dark is-smooth-effect" data-spy="scroll" data-target="#mainnav" data-offset="70" >-->
+  <body class="theme-dark is-smooth-effect" data-spy="scroll" data-target="#mainnav" data-offset="70" >
 <div>
     <div id="particles-js" class="particles-container particles-js"></div>
 <div id="principal">
@@ -51,7 +51,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-12 order-first">
                                     <div class="header-image" >
-                                        <img src="@/assets/header-image-dark.png" alt="header">
+                                        <img src="@/assets/header-image-dark.png" class="img-fluid" alt="header">
                                         <img class="header-image-icon left-icon" src="@/assets/xeler_ico1.svg" alt="header-icon">
                                         <img class="header-image-icon right-icon" src="@/assets/header-icon-b.png" alt="header-icon">
                                     </div>
@@ -172,7 +172,7 @@ export default {
       window.particlesJS("particles-js", {
                 "particles": {
             "number": {
-                "value": 100,
+                "value": 80,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -194,22 +194,22 @@ export default {
                 
             },
             "opacity": {
-                "value": 0.30,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.12,
-                    "sync": false
-                }
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
             },
             "size": {
-                "value": 6,
+                "value": 3,
                 "random": true,
                 "anim": {
                     "enable": false,
                     "speed": 40,
-                    "size_min": 0.08,
+                    "size_min": 0.1,
                     "sync": false
                 }
             },
@@ -217,12 +217,12 @@ export default {
                 "enable": true,
                 "distance": 150,
                 "color": "#2b56f5",
-                "opacity": 0.30,
-                "width": 1.3
+                "opacity": 0.40,
+                "width": 1
             },
             "move": {
                 "enable": true,
-                "speed": 3,
+                "speed": 6,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -274,10 +274,13 @@ export default {
                 }
             }
         },
-            "retina_detect": true
+            "retina_detect": false
             })
     }
-  }
+  },
+    beforeDestroy: function () {
+        this.initParticles.destroypJS()
+    }
   /*mounted() { 
     let script1 = document.createElement('script')
     script1.setAttribute('src', 'src/assets/jquery.js')
@@ -530,7 +533,6 @@ img {
 .header-image {
     position: relative;
     z-index: 3;
-    margin: 0 -150px 0 -30px;
 }
 .site-header .is-transparent+.banner .banner-content {
     padding-top: 50px;

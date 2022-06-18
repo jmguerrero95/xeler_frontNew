@@ -5,19 +5,7 @@
                 <div class="col-md-12 text-center text-lg-left">
 
                     <div class="banner-caption">
-                        <p class="lead">Xeler go es la plataforma más rápida y eficiente para comprar y vender <vue-typer
-  :text='["Bitcoin","Ethereum","BitcoinCash","Litecoin","Dash"]'
-  :repeat='Infinity'
-  :shuffle='false'
-  initial-action='typing'
-  :pre-type-delay='70'
-  :type-delay='70'
-  :pre-erase-delay='2000'
-  :erase-delay='250'
-  erase-style='select-all'
-  :erase-on-complete='false'
-  caret-animation='blink'
-></vue-typer> en Colombia.</p>
+                        <p class="lead">Xeler go es la plataforma más rápida y eficiente para comprar y vender en Colombia.</p>
                     </div>
                 </div>
             </div>

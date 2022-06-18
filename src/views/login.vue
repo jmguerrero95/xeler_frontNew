@@ -18,7 +18,7 @@
                     <br/>
                     <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
                     <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
-                    <BotonGenerico texto="Ingresar" class="boton"></BotonGenerico>
+                    <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
                     <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
                     <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
                 </div>

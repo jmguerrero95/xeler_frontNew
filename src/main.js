@@ -4,19 +4,18 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import axios from 'axios'
 import router from "./router";
+/* import the fontawesome core */
+import { library } from '@fortawesome/fontawesome-svg-core'
 
-createApp(App).use(router).mount('#app')
-// 5. Create and mount the root instance.
-//const app = createApp(App)
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
-//app.use(router)
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-//app.mount('#app')
+/* import specific icons */
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 
-/*createApp(App).mount('#app')
-
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount("#app");*/
+library.add(faFacebookF, faInstagram, faTwitter, faTelegramPlane)
+createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

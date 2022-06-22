@@ -21,6 +21,10 @@
                     <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
                     <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
                     <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
+                    <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                    <font-awesome-icon icon="fa-brands fa-instagram" />
+                    <font-awesome-icon icon="fa-brands fa-twitter" />
+                    <font-awesome-icon icon="fa-brands fa-telegram-plane" />
                 </div>
                 <div class="col-3">
                     

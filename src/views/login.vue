@@ -6,25 +6,29 @@
                 <div class=col-3>
                     
                 </div>
-                <div class="col-6">
-                    <img src="@/assets/xeler_go.svg" class="img-fluid logo">
-                    <h2 class="cabecera">Iniciar Sesión
-                    </h2>
-                    <p class="parrafo">con tu cuenta XelerGo!</p>
-                    <InputGenerico type="text" placeholder="Email"></InputGenerico>
-                    <!--<input class="form-control input_style" type="text" placeholder="Email">-->
-                    <br/>
-                    <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
-                    <br/>
-                    <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
-                    <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
-                    <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
-                    <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
-                    <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
-                    <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                    <font-awesome-icon icon="fa-brands fa-instagram" />
-                    <font-awesome-icon icon="fa-brands fa-twitter" />
-                    <font-awesome-icon icon="fa-brands fa-telegram-plane" />
+                <div class="col-6 contenido">
+                    <div>
+                        <img src="@/assets/xeler_go.svg" class="img-fluid logo">
+                    </div>
+                    <div>
+                        <h2 class="cabecera">Iniciar Sesión
+                        </h2>
+                        <p class="parrafo">con tu cuenta XelerGo!</p>
+                        <InputGenerico type="text" placeholder="Email"></InputGenerico>
+                        <!--<input class="form-control input_style" type="text" placeholder="Email">-->
+                        <br/>
+                        <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
+                        <br/>
+                        <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
+                        <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
+                        <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
+                        <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
+                        <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
+                    </div>
+                    <div>
+                        <RedesSociales></RedesSociales>
+                    </div>
+                    
                 </div>
                 <div class="col-3">
                     
@@ -39,6 +43,7 @@
     import ImgLogin from "@/components/Img-login.vue";
     import InputGenerico from "@/components/Input-generico.vue";
     import BotonGenerico from "@/components/Boton-generico";
+    import RedesSociales from "@/components/RedesSociales";
   /* eslint-disable */
 export default {
     name: 'Login',
@@ -46,6 +51,7 @@ export default {
         ImgLogin,
         InputGenerico,
         BotonGenerico,
+        RedesSociales
         //VueTyper,
         //Money,
         //Loading
@@ -58,6 +64,12 @@ export default {
 }
 </script>
 <style scoped>
+    .contenido{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .boton{
         margin-top: 8%;
         margin-bottom: 8%;
@@ -88,7 +100,7 @@ export default {
         letter-spacing: -0.025em;
         color: #342d6e;
         line-height: 1.2;
-        margin-top: 43%;
+        /*margin-top: 43%;*/
     }
     .parrafo{
         display: block;
@@ -96,7 +108,7 @@ export default {
         font-size: 130%;
         color: #495463;
         letter-spacing: normal;
-        margin-top: 10px;
+        /*margin-top: 10px;*/
 
     }
 </style>

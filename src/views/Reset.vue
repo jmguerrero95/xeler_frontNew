@@ -6,18 +6,25 @@
                 <div class=col-3>
                     
                 </div>
-                <div class="col-6">
-                    <img src="@/assets/xeler_go.svg" class="img-fluid logo">
-                    <h2 class="cabecera">Recupera la contraseña</h2>
-                    <p class="parrafo">de tu cuenta XelerGo!</p>
-                    <InputGenerico type="text" placeholder="Email"></InputGenerico>
-                    <!--<input class="form-control input_style" type="text" placeholder="Email">-->
-                    <br/>
-                    <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
-                    <router-link to="/login"><a href="#">Volver al login</a></router-link>
-                    <BotonGenerico texto="Ingresar" class="boton"></BotonGenerico>
-                    <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
-                    <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
+                <div class="col-6 contenido">
+                    <div>
+                        <img src="@/assets/xeler_go.svg" class="img-fluid logo">
+                    </div>
+                    <div>
+                        <h2 class="cabecera">Recupera la contraseña</h2>
+                        <p class="parrafo">de tu cuenta XelerGo!</p>
+                        <InputGenerico type="text" placeholder="Email"></InputGenerico>
+                        <!--<input class="form-control input_style" type="text" placeholder="Email">-->
+                        <br/>
+                        <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
+                        <router-link to="/login"><a href="#">Volver al login</a></router-link>
+                        <BotonGenerico texto="Ingresar" class="boton"></BotonGenerico>
+                        <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
+                        <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
+                    </div>
+                    <div>
+                        <RedesSociales></RedesSociales>
+                    </div>
                 </div>
                 <div class="col-3">
                     
@@ -32,6 +39,7 @@
     import ImgLogin from "@/components/Img-login.vue";
     import InputGenerico from "@/components/Input-generico.vue";
     import BotonGenerico from "@/components/Boton-generico";
+    import RedesSociales from "@/components/RedesSociales";
   /* eslint-disable */
 export default {
     name: 'Reset',
@@ -39,6 +47,7 @@ export default {
         ImgLogin,
         InputGenerico,
         BotonGenerico,
+        RedesSociales
         //VueTyper,
         //Money,
         //Loading
@@ -51,6 +60,12 @@ export default {
 }
 </script>
 <style scoped>
+    .contenido{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .boton{
         margin-top: 8%;
         margin-bottom: 8%;
@@ -81,7 +96,7 @@ export default {
         letter-spacing: -0.025em;
         color: #342d6e;
         line-height: 1.2;
-        margin-top: 43%;
+        /*margin-top: 43%;*/
     }
     .parrafo{
         display: block;

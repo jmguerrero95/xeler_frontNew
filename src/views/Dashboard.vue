@@ -29,53 +29,114 @@
                       </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-6">
+                                    <br/>
+                                    <label class="form-label">Primer Nombre</label>
+                                    <InputGenerico value="Vivian" placeholder="Ingrese su primer nombre"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Primer Apellido</label>
+                                    <InputGenerico value="" placeholder="Ingrese su primer apellido"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Email</label>
+                                    <InputGenerico placeholder="Ingrese email"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Fecha de nacimiento</label>
+                                    <InputGenerico placeholder="Ingrese fecha de nacimiento"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Departamento de residencia</label>
+                                    <InputGenerico placeholder="Ingrese departamento de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Tipo de documento</label>
+                                    <InputGenerico placeholder="Ingrese tipo de documento"></InputGenerico>
+                                    <br/>
+                                </div>
+                                <div class="col-6">
+                                    <br/>
+                                    <label class="form-label">Segundo Nombre</label>
+                                    <InputGenerico placeholder="Ingrese su segundo nombre"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Segundo Apellido</label>
+                                    <InputGenerico placeholder="Ingrese su segundo apellido"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Nùmero Celular</label>
+                                    <InputGenerico placeholder="Ingrese numero celular"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">País de residencia</label>
+                                    <InputGenerico placeholder="Ingrese país de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Ciudad de residencia</label>
+                                    <InputGenerico placeholder="Ingrese su ciudad de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Número documento</label>
+                                    <InputGenerico placeholder="Ingrese su numero de documento"></InputGenerico>
+                                    <br/>
+                                </div>
+                            </div> 
+                        </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-1"></div>
+                            <div class="col-10">
                                 <br/>
-                                <label class="form-label">Primer Nombre</label>
-                                <InputGenerico value="Vivian" placeholder="Ingrese su primer nombre"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Primer Apellido</label>
-                                <InputGenerico value="" placeholder="Ingrese su primer apellido"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Email</label>
-                                <InputGenerico placeholder="Ingrese email"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Fecha de nacimiento</label>
-                                <InputGenerico placeholder="Ingrese fecha de nacimiento"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Departamento de residencia</label>
-                                <InputGenerico placeholder="Ingrese departamento de residencia"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Tipo de documento</label>
-                                <InputGenerico placeholder="Ingrese tipo de documento"></InputGenerico>
-                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Su Lista de Cuentas Bancarias</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                    <div class="col-12 fondo_col">
+                                        <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
+                                        Si deseas enviarnos dinero mediante aplicación o Sucursal virtual unicamente recibiremos pagos de la cuenta que coincida con tu nombre y KYC</p>
+                                    </div>
+
+
+
+
+
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NOMBRE TITULAR</th>
+                                                <th scope="col">NOMBRE BANCO</th>
+                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Viviana</td>
+                                                <td>BANCOLOMBIA</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ana marines</td>
+                                                <td>BANCOLOMBIA</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Viviana ruiz</td>
+                                                <td>BANCO CAJA SOCIAL</td>
+                                                <td>2121212121</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+
+
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <br/>
-                                <label class="form-label">Segundo Nombre</label>
-                                <InputGenerico placeholder="Ingrese su segundo nombre"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Segundo Apellido</label>
-                                <InputGenerico placeholder="Ingrese su segundo apellido"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Nùmero Celular</label>
-                                <InputGenerico placeholder="Ingrese numero celular"></InputGenerico>
-                                <br/>
-                                <label class="form-label">País de residencia</label>
-                                <InputGenerico placeholder="Ingrese país de residencia"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Ciudad de residencia</label>
-                                <InputGenerico placeholder="Ingrese su ciudad de residencia"></InputGenerico>
-                                <br/>
-                                <label class="form-label">Número documento</label>
-                                <InputGenerico placeholder="Ingrese su numero de documento"></InputGenerico>
-                                <br/>
-                            </div>
-                        </div> 
-                      </div>
-                      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">b</div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
                       <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">c</div>
                       <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">d</div>
                     </div>
@@ -105,7 +166,72 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <label class="form-label">Nombre Titular</label>
+                        <InputGenerico placeholder="Nombre Titular de la cuenta"></InputGenerico>
+                        <p>Ingresa el nombre del titular de la cuenta</p>
+                        <br/>
+                        <label class="form-label">Número Cuenta o Producto</label>
+                        <InputGenerico placeholder="Número de cuenta"></InputGenerico>
+                        <br/>
+                        <label class="form-label">Número Documento Titular</label>
+                        <InputGenerico placeholder="Número documento titular"></InputGenerico>
+                        
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label">Nombre Banco</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Selecciona un banco</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <br/>
+                        <label class="form-label">Tipo Documento</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Selecciona tipo</option>
+                          <option value="1">Cédula de ciudadanía</option>
+                          <option value="2">Cédula de extranjería</option>
+                          <option value="3">Pasaporte</option>
+                        </select>
+                        <br/>
+                        <label class="form-label">Tipo de Cuenta o Producto</label>
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Selecciona Tipo</option>
+                          <option value="1">Ahorros</option>
+                          <option value="2">Corriente</option>
+                          <option value="3">Recaudo</option>
+                          <option value="3">Credito</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <BotonGenerico class="factores" texto="Guardar Cuenta"></BotonGenerico>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
     </div>
+    </div>
+
+
+
+    </div>
+
+
+
 </template>
 <script>
     import TopBar from "@/components/Topbar.vue";
@@ -132,6 +258,25 @@ export default {
 }
 </script>
 <style scoped>
+    .bot_opcion{
+        background: #e6effb;
+        border: 0;
+        border-radius: 4px;
+    }
+    .fondo_col{
+        color: #ff6868;
+        background: #ffeded;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        margin-top: 2%;
+    }
+    .parr_centrado{
+        text-align: center;
+    }
+    .titulo{
+        color: #342d6e;
+    }
     .factores{
         width: 10%;
     }

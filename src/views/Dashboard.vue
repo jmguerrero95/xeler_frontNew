@@ -19,13 +19,13 @@
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">OTROS</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONFIGURACION</button>
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#config-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONFIGURACION</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONTRASEÑA</button>
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contra-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONTRASEÑA</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">WALLETS</button>
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#wallet-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">WALLETS</button>
                       </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -137,12 +137,151 @@
                             <div class="col-1"></div>
                         </div>
                     </div>
-                      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">c</div>
-                      <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">d</div>
+                      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                          
+
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Su Lista de Cuentas otros</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                    <!--<div class="col-12 fondo_col">
+                                        <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
+                                        Si deseas enviarnos dinero mediante aplicación o Sucursal virtual unicamente recibiremos pagos de la cuenta que coincida con tu nombre y KYC</p>
+                                    </div>-->
+
+
+
+
+
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NOMBRE TITULAR</th>
+                                                <th scope="col">NOMBRE BANCO</th>
+                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Vian</td>
+                                                <td>NEQUI</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Otra cuenta</td>
+                                                <td>MOVII</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+
+
+                      </div>
+                      <div class="tab-pane fade" id="config-tab-pane" role="tabpanel" aria-labelledby="config-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Configuración de Seguridad</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Guardar mi actividad</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="contra-tab-pane" role="tabpanel" aria-labelledby="contra-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <br/>
+                                        <label class="form-label">Contraseña actual</label>
+                                        <InputGenerico value="" placeholder="Ingrese contraseña actual"></InputGenerico>
+                                        <br/>
+                                        <label class="form-label">Nueva contraseña</label>
+                                        <InputGenerico value="" placeholder="Ingrese nueva contraseña"></InputGenerico>
+                                    </div>
+                                    <div class="col-6">
+                                        <br/>
+                                        <label class="form-label">Confirme nueva contraseña</label>
+                                        <InputGenerico value="" placeholder="Confirme nueva contraseña"></InputGenerico>
+                                    </div>
+                                    <div class="col-3">
+                                        <br/>
+                                        <BotonGenerico class="factores" texto="Actualizar perfil" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="wallet-tab-pane" role="tabpanel" aria-labelledby="wallet-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Su lista de wallets</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        <BotonGenerico class="factores" texto="Agregar wallet" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NOMBRE</th>
+                                                <th scope="col">WALLET</th>
+                                                <th scope="col">TIPO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bitpay</td>
+                                                <td>bc1qnv8wdf8g8uzs90eqtd482qe2ewxtez07w83r3mpy5pt73qycshws8w0ygw</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                      </div>
                     </div>
-
-
-                     
                 </div>
                 <div class="col-4">
                     <div class="caja-b">

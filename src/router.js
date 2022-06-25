@@ -5,6 +5,7 @@ import Register from "@/views/Register.vue";
 import Reset from "@/views/Reset.vue";
 import Test from "@/components/Topbar.vue";
 import Dashboard from "@/views/Dashboard.vue";
+import DashboardAdmin from "@/views/DashboardAdmin.vue"
 import App from './App.vue'
     import { createRouter, createWebHistory } from "vue-router"
     const routeInfos = [
@@ -31,6 +32,10 @@ import App from './App.vue'
         {
             path: "/dashboard",
             component : Dashboard
+        },
+        {
+            path: "/admin/dashboard",
+            component : DashboardAdmin
         }
 
     ]

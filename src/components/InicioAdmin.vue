@@ -57,28 +57,105 @@
 
                 <div class="col-7 car_parte2 parte2_right">
                     <h4 class="tit_card">Gráfico Ventas</h4>
+                    <Bar
+                    :chart-options="chartOptions"
+                    :chart-data="chartData"
+                    :chart-id="chartId"
+                    :dataset-id-key="datasetIdKey"
+                    :plugins="plugins"
+                    :css-classes="cssClasses"
+                    :styles="styles"
+                    :width="width"
+                    :height="height"
+                    />
+
+
+
+
+                </div>
+                <div class="col-12 car_parte2 final">
+                    <h4 class="tit_card">Gráfico Ventas</h4>
+                    <Bar
+                    :chart-options="chartOptions"
+                    :chart-data="chartData"
+                    :chart-id="chartId"
+                    :dataset-id-key="datasetIdKey"
+                    :plugins="plugins"
+                    :css-classes="cssClasses"
+                    :styles="styles"
+                    :width="width"
+                    :height="height"
+                    />
+
+
+
+
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+    import { Bar } from 'vue-chartjs'
+    import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
+    ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
   /* eslint-disable */
 export default {
     name: 'IncioAdmin',
     components:{
+        Bar
         //VueTyper,
         //Money,
         //Loading
     },
+    props: {
+        chartId: {
+          type: String,
+          default: 'bar-chart'
+        },
+        datasetIdKey: {
+          type: String,
+          default: 'label'
+        },
+        width: {
+          type: Number,
+          default: 575
+        },
+        height: {
+          type: Number,
+          default: 230
+        },
+        cssClasses: {
+          default: '',
+          type: String
+        },
+        styles: {
+          type: Object,
+          default: () => {}
+        },
+        plugins: {
+          type: Object,
+          default: () => {}
+        }
+    },
     data () {
         return {
+            chartData: {
+                labels: [ 'January', 'February', 'March' ],
+                datasets: [ { data: [] } ]
+            },
+            chartOptions: {
+                responsive: true
+            }
           
         }
     },
 }
 </script>
 <style scoped>
+    .final{
+        margin-top: 3%;
+    }
     .espacio{
         padding-top: 3%;
         padding-bottom: 2%;

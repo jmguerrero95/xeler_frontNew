@@ -1,9 +1,9 @@
 <template>
     <div class="row">
-        <ImgLogin></ImgLogin>
-        <div class="col-5">
+        <ImgLogin class="d-none d-md-block"></ImgLogin>
+        <div class="col-12 col-md-5">
             <div class="row">
-                <div class=col-3>
+                <div class="col-3">
                     
                 </div>
                 <div class="col-6 contenido">
@@ -22,6 +22,7 @@
                         <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
                         <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
                         <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
+                        <router-link to="/admin/dashboard"><BotonGenerico texto="Ingresar Admin" class="boton"></BotonGenerico></router-link>
                         <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
                         <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
                     </div>

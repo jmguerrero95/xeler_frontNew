@@ -5,7 +5,7 @@
     <div class="dashboard container-fluid">
         <div class="container">
             <div class="row contenedor">
-                <div class="col-8 caja">
+                <div class="col-12 col-md-8 caja">
 
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -31,7 +31,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <br/>
                                     <label class="form-label">Primer Nombre</label>
                                     <InputGenerico value="Vivian" placeholder="Ingrese su primer nombre"></InputGenerico>
@@ -52,7 +52,7 @@
                                     <InputGenerico placeholder="Ingrese tipo de documento"></InputGenerico>
                                     <br/>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <br/>
                                     <label class="form-label">Segundo Nombre</label>
                                     <InputGenerico placeholder="Ingrese su segundo nombre"></InputGenerico>
@@ -283,7 +283,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="caja-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
                         <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
@@ -297,7 +297,7 @@
                         <p>Link de referido</p>
                     </div>
                 </div>
-                <div class="col-8 caja espacio">
+                <div class="col-12 col-md-8 caja espacio">
                     <h3>Verificacion de dos factores</h3>
                     <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
                     <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>

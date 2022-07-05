@@ -1,9 +1,9 @@
 <template>
     <div class="row">
-        <ImgLogin></ImgLogin>
-        <div class="col-5">
+        <ImgLogin class="d-none d-md-block"></ImgLogin>
+        <div class="col-12 col-md-5">
             <div class="row">
-                <div class=col-3>
+                <div class="col-3">
                     
                 </div>
                 <div class="col-6 contenido">

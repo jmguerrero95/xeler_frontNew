@@ -9,9 +9,6 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="#" v-on:click="$emit('submit-form', 'A')" aria-current="page">Dashboard</a>
                 </li>
-
-
-
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Transacciones
@@ -22,22 +19,28 @@
                     <li><a class="dropdown-item" href="#">Todas las Transacciones</a></li>
                   </ul>
                 </li>
-
-
-
-
-
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Transacciones</a>
+                  <a class="nav-link" href="#" v-on:click="$emit('submit-form', 'D')">KYC</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">KYC</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contabilidad
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'E')">Manejo de Cuentas</a></li>
+                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'F')">Manejo Otros</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contabilidad</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Usuarios</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuarios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'G')">Usuarios</a></li>
+                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'H')">Usuarios Referidos</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Tienda</a>

@@ -1,51 +1,53 @@
 <template>
-    <div class="row">
-        <ImgLogin class="d-none d-md-block"></ImgLogin>
-        <div class="col-12 col-md-5">
-            <div class="row">
-                <div class="col-3">
-                    
-                </div>
-                <div class="col-6">
-                    <img src="@/assets/xeler_go.svg" class="img-fluid logo">
-                    <h2 class="cabecera">Registrate
-                    </h2>
-                    <p class="parrafo">Crea una nueva cuenta en XelerGo!</p>
-                    <InputGenerico type="text" placeholder="Usuario"></InputGenerico>
-                    <!--<input class="form-control input_style" type="text" placeholder="Email">-->
-                    <br/>
-                    <InputGenerico type="text" placeholder="Primer Nombre"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="text" placeholder="Segundo Nombre"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="text" placeholder="Primer Apellido"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="text" placeholder="Segundo Apellido"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="text" placeholder="Celular"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="text" placeholder="Email"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
-                    <br/>
-                    <InputGenerico type="password" placeholder="Repite la contraseña"></InputGenerico>
-                    <br/>
-
-                    <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
-                    <BotonGenerico texto="Crear cuenta" class="boton"></BotonGenerico>
-                    <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
-                    <p class="">Ya tienes cuenta?<router-link to="/login"><a href="#"> Inicia sesión</a></router-link></p>
-                    <br/>
-                    <div>
-                        <RedesSociales></RedesSociales>
+    <div class="container-fluid">
+        <div class="row">
+            <ImgLogin class="d-none d-md-block"></ImgLogin>
+            <div class="col-12 col-md-5">
+                <div class="row">
+                    <div class="col-1 col-md-3 d-none d-md-block">
+                        
                     </div>
-                </div>
-                <div class="col-3">
+                    <div class="col-12 col-md-6">
+                        <img src="@/assets/xeler_go.svg" class="img-fluid logo">
+                        <h2 class="cabecera">Registrate
+                        </h2>
+                        <p class="parrafo">Crea una nueva cuenta en XelerGo!</p>
+                        <InputGenerico type="text" placeholder="Usuario"></InputGenerico>
+                        <!--<input class="form-control input_style" type="text" placeholder="Email">-->
+                        <br/>
+                        <InputGenerico type="text" placeholder="Primer Nombre"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="text" placeholder="Segundo Nombre"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="text" placeholder="Primer Apellido"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="text" placeholder="Segundo Apellido"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="text" placeholder="Celular"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="text" placeholder="Email"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
+                        <br/>
+                        <InputGenerico type="password" placeholder="Repite la contraseña"></InputGenerico>
+                        <br/>
+
+                        <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
+                        <BotonGenerico texto="Crear cuenta" class="boton"></BotonGenerico>
+                        <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
+                        <p class="">Ya tienes cuenta?<router-link to="/login"><a href="#"> Inicia sesión</a></router-link></p>
+                        <br/>
+                        <div>
+                            <RedesSociales></RedesSociales>
+                        </div>
+                    </div>
+                    <div class="col-1 col-md-3 d-none d-md-block">
+                        
+                    </div>
                     
                 </div>
                 
             </div>
-            
         </div>
     </div>
 </template>
@@ -80,9 +82,6 @@ export default {
     }
     .olvido{
         margin-bottom: 5%;
-    }
-    .row{
-        width: 100%;
     }
     .logo{
         width: 60%;

@@ -19,12 +19,15 @@
                   <router-link to="/dashboard/referidos"><a class="nav-link" href="#">Referidos</a></router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Perfil</a>
+                  <router-link to="/dashboard"><a class="nav-link" href="#">Perfil</a></router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link to="/login"><a class="nav-link" href="#">Cerrar sesion</a></router-link>
                 </li>
             </ul>
-        </div>
-        <div class="verificacion">
-            <a class="nav-link" href="#">Completa tu verificación</a>
+            <div class="verificacion">
+                <a class="nav-link" href="#">Completa tu verificación</a>
+            </div>
         </div>
       </div>
     </nav>
@@ -49,9 +52,6 @@ export default {
         padding: 12px 0;
         position: relative;
         color: #7668fe;
-    }
-    .verificacion{
-        justify-content: end;
     }
    
 </style>

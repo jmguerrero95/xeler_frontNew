@@ -1,42 +1,44 @@
 <template>
-    <div class="row">
-        <ImgLogin class="d-none d-md-block"></ImgLogin>
-        <div class="col-12 col-md-5">
-            <div class="row">
-                <div class="col-3">
-                    
-                </div>
-                <div class="col-6 contenido">
-                    <div>
-                        <img src="@/assets/xeler_go.svg" class="img-fluid logo">
+    <div class="container-fluid">
+        <div class="row">
+            <ImgLogin class="d-none d-md-block"></ImgLogin>
+            <div class="col-12 col-md-5">
+                <div class="row">
+                    <div class="col-1 col-md-3 d-none d-md-block">
+                        
                     </div>
-                    <div>
-                        <h2 class="cabecera">Iniciar Sesión
-                        </h2>
-                        <p class="parrafo">con tu cuenta XelerGo!</p>
-                        <InputGenerico type="text" placeholder="Email"></InputGenerico>
-                        <!--<input class="form-control input_style" type="text" placeholder="Email">-->
-                        <br/>
-                        <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
-                        <br/>
-                        <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
-                        <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
-                        <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
-                        <router-link to="/admin/dashboard"><BotonGenerico texto="Ingresar Admin" class="boton"></BotonGenerico></router-link>
-                        <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
-                        <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
+                    <div class="col-12 col-md-6 contenido">
+                        <div>
+                            <img src="@/assets/xeler_go.svg" class="img-fluid logo">
+                        </div>
+                        <div>
+                            <h2 class="cabecera">Iniciar Sesión
+                            </h2>
+                            <p class="parrafo">con tu cuenta XelerGo!</p>
+                            <InputGenerico type="text" placeholder="Email"></InputGenerico>
+                            <!--<input class="form-control input_style" type="text" placeholder="Email">-->
+                            <br/>
+                            <InputGenerico type="password" placeholder="Constraseña"></InputGenerico>
+                            <br/>
+                            <!--<input class="form-control input_style" type="text" placeholder="Constraseña">-->
+                            <router-link to="/reset"><a href="#" class="olvido">Olvidaste la contraseña?</a></router-link>
+                            <router-link to="/dashboard"><BotonGenerico texto="Ingresar" class="boton"></BotonGenerico></router-link>
+                            <router-link to="/admin/dashboard"><BotonGenerico texto="Ingresar Admin" class="boton"></BotonGenerico></router-link>
+                            <!--<button type="submit" class="btn btn-primary btn-block">Ingresar</button>-->
+                            <p class="">No tienes una cuenta? <router-link to="/register"><a href="#">Registrate</a></router-link></p>
+                        </div>
+                        <div>
+                            <RedesSociales></RedesSociales>
+                        </div>
+                        
                     </div>
-                    <div>
-                        <RedesSociales></RedesSociales>
+                    <div class="col-1 col-md-3 d-none d-md-block">
+                        
                     </div>
-                    
-                </div>
-                <div class="col-3">
                     
                 </div>
                 
             </div>
-            
         </div>
     </div>
 </template>
@@ -78,9 +80,7 @@ export default {
     .olvido{
         margin-bottom: 5%;
     }
-    .row{
-        width: 100%;
-    }
+    
     .input_style{
         border-radius: 23px;
         border: 1px solid #d2dde9;

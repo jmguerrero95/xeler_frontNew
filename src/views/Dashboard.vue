@@ -3,7 +3,7 @@
     <TopBar></TopBar>
     <MenuDashboard></MenuDashboard>
     <div class="dashboard container-fluid">
-        <div class="container">
+        <div class="container d-none d-md-block">
             <div class="row contenedor">
                 <div class="col-12 col-md-8 caja">
 
@@ -283,7 +283,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 d-none d-md-block">
                     <div class="caja-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
                         <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
@@ -297,6 +297,22 @@
                         <p>Link de referido</p>
                     </div>
                 </div>
+                <div class="col-12 col-md-4 d-block d-md-none movil">
+                    <div class="caja-b">
+                        <p class="tit_kyc">Verificación de Identidad - KYC</p>
+                        <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                        <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                        <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
+                    </div>
+                </div>
+                <br/>
+                <div class="col-12 col-md-4 d-block d-md-none movil">
+                    <div class="caja-b">
+                        <p class="tit_kyc">Gane con sus referidos</p>
+                        <p>Invita tus amigos & familia.</p>
+                        <p>Link de referido</p>
+                    </div>
+                </div>
                 <div class="col-12 col-md-8 caja espacio">
                     <h3>Verificacion de dos factores</h3>
                     <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
@@ -304,6 +320,329 @@
                 </div>
             </div>
         </div>
+
+        <div class="row contenedor d-md-none">
+                <div class="col-12 col-md-8 caja">
+
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home2-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">DATOS PERSONALES</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile2-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">CUENTA BANCARIA</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact2-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">OTROS</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#config2-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONFIGURACION</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contra2-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONTRASEÑA</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#wallet2-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">WALLETS</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home2-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <br/>
+                                    <label class="form-label">Primer Nombre</label>
+                                    <InputGenerico value="Vivian" placeholder="Ingrese su primer nombre"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Primer Apellido</label>
+                                    <InputGenerico value="" placeholder="Ingrese su primer apellido"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Email</label>
+                                    <InputGenerico placeholder="Ingrese email"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Fecha de nacimiento</label>
+                                    <InputGenerico placeholder="Ingrese fecha de nacimiento"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Departamento de residencia</label>
+                                    <InputGenerico placeholder="Ingrese departamento de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Tipo de documento</label>
+                                    <InputGenerico placeholder="Ingrese tipo de documento"></InputGenerico>
+                                    <br/>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <br/>
+                                    <label class="form-label">Segundo Nombre</label>
+                                    <InputGenerico placeholder="Ingrese su segundo nombre"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Segundo Apellido</label>
+                                    <InputGenerico placeholder="Ingrese su segundo apellido"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Nùmero Celular</label>
+                                    <InputGenerico placeholder="Ingrese numero celular"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">País de residencia</label>
+                                    <InputGenerico placeholder="Ingrese país de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Ciudad de residencia</label>
+                                    <InputGenerico placeholder="Ingrese su ciudad de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Número documento</label>
+                                    <InputGenerico placeholder="Ingrese su numero de documento"></InputGenerico>
+                                    <br/>
+                                </div>
+                            </div> 
+                        </div>
+                    <div class="tab-pane fade" id="profile2-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Su Lista de Cuentas Bancarias</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                    <div class="col-12 fondo_col">
+                                        <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
+                                        Si deseas enviarnos dinero mediante aplicación o Sucursal virtual unicamente recibiremos pagos de la cuenta que coincida con tu nombre y KYC</p>
+                                    </div>
+
+
+
+
+
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NOMBRE TITULAR</th>
+                                                <th scope="col">NOMBRE BANCO</th>
+                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Viviana</td>
+                                                <td>BANCOLOMBIA</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ana marines</td>
+                                                <td>BANCOLOMBIA</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Viviana ruiz</td>
+                                                <td>BANCO CAJA SOCIAL</td>
+                                                <td>2121212121</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                      <div class="tab-pane fade" id="contact2-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                          
+
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Su Lista de Cuentas otros</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                    <!--<div class="col-12 fondo_col">
+                                        <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
+                                        Si deseas enviarnos dinero mediante aplicación o Sucursal virtual unicamente recibiremos pagos de la cuenta que coincida con tu nombre y KYC</p>
+                                    </div>-->
+
+
+
+
+
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NOMBRE TITULAR</th>
+                                                <th scope="col">NOMBRE BANCO</th>
+                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Vian</td>
+                                                <td>NEQUI</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Otra cuenta</td>
+                                                <td>MOVII</td>
+                                                <td>1234567890</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+
+
+                      </div>
+                      <div class="tab-pane fade" id="config2-tab-pane" role="tabpanel" aria-labelledby="config-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Configuración de Seguridad</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Guardar mi actividad</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="contra2-tab-pane" role="tabpanel" aria-labelledby="contra-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <br/>
+                                        <label class="form-label">Contraseña actual</label>
+                                        <InputGenerico value="" placeholder="Ingrese contraseña actual"></InputGenerico>
+                                        <br/>
+                                        <label class="form-label">Nueva contraseña</label>
+                                        <InputGenerico value="" placeholder="Ingrese nueva contraseña"></InputGenerico>
+                                    </div>
+                                    <div class="col-6">
+                                        <br/>
+                                        <label class="form-label">Confirme nueva contraseña</label>
+                                        <InputGenerico value="" placeholder="Confirme nueva contraseña"></InputGenerico>
+                                    </div>
+                                    <div class="col-3">
+                                        <br/>
+                                        <BotonGenerico class="factores" texto="Actualizar perfil" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="wallet2-tab-pane" role="tabpanel" aria-labelledby="wallet-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <br/>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <h4 class="titulo">Su lista de wallets</h4>  
+                                    </div>
+                                    <div class="col-3">
+                                        <BotonGenerico class="factores" texto="Agregar wallet" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                    </div>
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">NOMBRE</th>
+                                                <th scope="col">WALLET</th>
+                                                <th scope="col">TIPO</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Bitpay</td>
+                                                <td>bc1qnv8wdf8g8uzs90eqtd482qe2ewxtez07w83r3mpy5pt73qycshws8w0ygw</td>
+                                                <td><button class="bot_opcion">...</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-block">
+                    <div class="caja-b">
+                        <p class="tit_kyc">Verificación de Identidad - KYC</p>
+                        <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                        <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                        <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
+                    </div>
+                    <br/>
+                    <div class="caja-b">
+                        <p class="tit_kyc">Gane con sus referidos</p>
+                        <p>Invita tus amigos & familia.</p>
+                        <p>Link de referido</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 d-block d-md-none movil">
+                    <div class="caja-b">
+                        <p class="tit_kyc">Verificación de Identidad - KYC</p>
+                        <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                        <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                        <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
+                    </div>
+                </div>
+                <br/>
+                <div class="col-12 col-md-4 d-block d-md-none movil">
+                    <div class="caja-b">
+                        <p class="tit_kyc">Gane con sus referidos</p>
+                        <p>Invita tus amigos & familia.</p>
+                        <p>Link de referido</p>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-8 caja espacio">
+                    <h3>Verificacion de dos factores</h3>
+                    <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
+                    <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>
+                </div>
+            </div>
+
+
+
+
     </div>
 
     <!-- Modal -->
@@ -397,6 +736,15 @@ export default {
 }
 </script>
 <style scoped>
+    @media only screen and (max-width: 768px) {
+        .contenedor{
+            padding: 2%;
+        }
+        .movil{
+            background-color: white;
+            margin-top: 4%;
+        }
+    }
     .bot_opcion{
         background: #e6effb;
         border: 0;

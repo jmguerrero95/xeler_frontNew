@@ -12,7 +12,38 @@
 
             <!-- Navbar -->
             <div class="navbar navbar-expand-lg is-transparent fixed-top" id="mainnav">
-                <nav class="container header-menu">
+
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <div class="container">
+                    <a class="navbar-brand" href="#"> <img src="@/assets/xelergo.png"> </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+
+                    <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                      <ul class="navbar-nav">
+                        <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</a></router-link></li>
+                                <li class="nav-item"><router-link to="/register"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></router-link></li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+
+
+
+
+
+
+
+
+                <!--<nav class="container header-menu">
                     <a class="navbar-brand" href="./">
                         <img class="logo logo-dark" alt="logo" src="@/assets/xelergo.png">
                     </a>
@@ -27,7 +58,7 @@
                         <ul class="navbar-nav navbar-btns">
                                 <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</a></router-link></li>
                                 <li class="nav-item"><router-link to="/register"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></router-link></li>
-                                <!--<li class="nav-item">
+                                --><!--<li class="nav-item">
                                     @if(Auth::user()->role == 3)
                                         <a class="nav-link btn btn-sm btn-outline menu-link" href="/admin/dashboard">Inicio</a>
                                     @elseif(Auth::user()->role == 2)
@@ -36,9 +67,9 @@
                                         <a class="nav-link btn btn-sm btn-outline menu-link" href="/home">Inicio</a>
                                     @endif
                                 </li>-->
-                        </ul>
+                        <!--</ul>
                     </div>
-                </nav>
+                </nav>-->
             </div>
 
 
@@ -428,6 +459,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .navbar {
+        width: 100%;
+    }
     .particles-container {
     position: absolute;
     top: 0;

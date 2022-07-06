@@ -16,7 +16,7 @@
                   <a class="nav-link" href="#">Transacciones</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Referidos</a>
+                  <router-link to="/dashboard/referidos"><a class="nav-link" href="#">Referidos</a></router-link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Perfil</a>

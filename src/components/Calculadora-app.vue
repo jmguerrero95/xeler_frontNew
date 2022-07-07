@@ -5,7 +5,7 @@
                 <div class="col-md-12 text-center text-lg-left">
 
                     <div class="banner-caption">
-                        <p class="lead">Xeler go es la plataforma más rápida y eficiente para comprar y vender en Colombia.</p>
+                        <p class="lead">Xeler go es la plataforma más rápida y eficiente para comprar y vender <VueWriter :array="arr" :eraseSpeed="50" :typeSpeed="100" /> en Colombia.</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,8 @@
 //import 'es6-promise/auto'
 //import { VueTyper } from 'vue-typer'
 import swal from 'sweetalert';
-import axios from 'axios'
+import axios from 'axios';
+import VueWriter from 'vue-writer'
 //import { parse } from 'path';
 //import {Money} from 'v-money'
 import Loading from 'vue-loading-overlay';
@@ -89,7 +90,8 @@ export default {
     components:{
         //VueTyper,
         //Money,
-        Loading
+        Loading,
+        VueWriter
     },
     data() {
         return {
@@ -148,7 +150,8 @@ export default {
                 suffix: '',
                 precision: 0,
                 masked: false
-            }
+            },
+            arr: ["Bitcoin", "Ethereum", "BitcoinCash", "Litecoin", "Dash"]
         }
     },
     filters:{
@@ -691,6 +694,9 @@ export default {
 </script>
 
 <style scoped>
+    .is-typed{
+        display: inline;
+    }
 p.lead {
     font-size: 1.27em;
     line-height: 1.68;

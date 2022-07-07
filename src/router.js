@@ -1,46 +1,40 @@
-import { createApp } from 'vue'
-import Home from "@/views/Home.vue";
-import Login from "@/views/login.vue";
-import Register from "@/views/Register.vue";
-import Reset from "@/views/Reset.vue";
-import Test from "@/components/Topbar.vue";
-import Dashboard from "@/views/Dashboard.vue";
-import Referidos from "@/views/Referidos.vue";
-import DashboardAdmin from "@/views/DashboardAdmin.vue"
 import App from './App.vue'
+function lazyLoad(view){
+  return() => import(`@/views/${view}.vue`)
+}
     import { createRouter, createWebHistory } from "vue-router"
     const routeInfos = [
         {
             path : "/",
-            component : Home
+            component: lazyLoad('Home')
         },
         {
             path : "/login",
-            component : Login
+            component: lazyLoad('login')
         },
         {
             path : "/register",
-            component : Register
+            component: lazyLoad('Register')
         },
         {
             path : "/reset",
-            component : Reset
+            component: lazyLoad('Reset')
         },
         {
             path: "/test",
-            component : Test
+            component: lazyLoad('Test')
         },
         {
             path: "/dashboard",
-            component : Dashboard
+            component: lazyLoad('Dashboard')
         },
         {
             path: "/dashboard/referidos",
-            component : Referidos
+            component: lazyLoad('Referidos')
         },
         {
             path: "/admin/dashboard",
-            component : DashboardAdmin
+            component: lazyLoad('DashboardAdmin')
         }
 
     ]

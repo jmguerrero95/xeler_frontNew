@@ -2,10 +2,29 @@
 <div>
   <body class="theme-dark is-smooth-effect" data-spy="scroll" data-target="#mainnav" data-offset="70" >
 <div>
+
     <div id="particles-js" class="particles-container particles-js"></div>
 <div id="principal">
 
-        <header class="site-header is-sticky" id="header">
+
+        
+
+
+
+        <header class="main-header d-block d-md-none">
+          <nav id="nav" class="main-nav">
+            <div class="nav-links">
+              <router-link class="link-item" to="/login"><a class="link-item" href="#">Iniciar Sesión</a></router-link>
+              <router-link class="link-item" to="/login"><a class="link-item" href="#">Registro</a></router-link>
+            </div>
+          </nav>
+          <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+        <header class="site-header is-sticky d-none d-md-block" id="header">
 
             <!-- Place Particle Js -->
 
@@ -30,7 +49,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                       <ul class="navbar-nav">
                         <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</a></router-link></li>
-                                <li class="nav-item"><router-link to="/register"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></router-link></li>
+                        <li class="nav-item"><router-link to="/register"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></router-link></li>
                       </ul>
                     </div>
                   </div>
@@ -73,14 +92,16 @@
             </div>
 
 
-                <div class="banner banner-curb banner-particle d-flex align-items-center">
+                
+        </header>
+        <div class="banner banner-curb banner-particle d-flex align-items-center">
                     <div class="container">
                         <div class="banner-content">
                             <div class="row align-items-center mobile-center">
-                                <div class="col-lg-6 col-md-12 order-lg-first order">
+                                <div class="col-md-6 col-12 order-lg-first order">
                                     <Calculadora></Calculadora>
                                 </div>
-                                <div class="col-lg-6 col-md-12 order-first">
+                                <div class="col-md-6 col-12 order-first">
                                     <div class="header-image" >
                                         <img src="@/assets/header-image-dark.png" class="img-fluid" alt="header">
                                         <img class="header-image-icon left-icon" src="@/assets/xeler_ico1.svg" alt="header-icon">
@@ -98,7 +119,6 @@
                         </ul>
                     </div>
                 </div>
-        </header>
         <section class="section over-up">
             <!--{{-- <div id="particles-js2" class="particles-container particles-js"></div> --}}-->
             <div class="container">
@@ -192,6 +212,33 @@ export default {
     },
     mounted() {
         this.initParticles()
+
+        const toggleButton = document.getElementById("button-menu");
+        const navWrapper = document.getElementById("nav");
+
+        /* 
+          cada ves que se haga click en el botón 
+          agrega y quita las clases necesarias 
+          para que el menú se muestre.
+        */
+        toggleButton.addEventListener("click", () => {
+          toggleButton.classList.toggle("close");
+          navWrapper.classList.toggle("show");
+        });
+
+        /* 
+          Cuándo se haga click fuera del contenedor de enlaces 
+          el menú debe esconderse.
+        */
+
+        navWrapper.addEventListener("click", e => {
+          if (e.target.id === "nav") {
+            navWrapper.classList.remove("show");
+            toggleButton.classList.remove("close");
+          }
+        });
+
+
     },
   data () {
     return {
@@ -447,6 +494,11 @@ export default {
         }
 
       );*/
+
+      //  seleccionamos los dos elementos que serán clickables
+
+    
+
 </script>
 
 
@@ -459,6 +511,156 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    /*MENU MOVIL*/
+
+    /** {
+        margin: 0;
+        padding: 0;
+    }*/
+
+    .main-header {
+        position: relative;
+        z-index: 99;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 0 0.4rem;
+        background-color: #10122d;
+    }
+
+    .main-logo {
+        color: black;
+        font-size: 32px;
+        text-decoration: none;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 100;
+    }
+
+    .main-nav.show {
+        margin-left: 0;
+    }
+
+    .nav-links {
+        background-color: rgb(250, 250, 250);
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .link-item {
+        margin-top: 2rem;
+        color: #444444;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .link-item::after {
+        position: absolute;
+        content: "";
+        background-color: black;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        transition: 0.3s ease all;
+    }
+
+    .link-item:hover::after {
+        width: 100%;
+    }
+
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: fixed;
+        margin-top: 1%;
+    }
+
+    .button-menu span {
+        width: 37px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        background: white;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: black;
+    }
+
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        .button-menu {
+            display: none;
+        }
+
+        .main-logo {
+            flex-basis: 30%;
+        }
+
+        .main-nav {
+            position: static;
+            margin-left: 0;
+            flex-basis: 70%;
+            height: 100%;
+        }
+
+        .nav-links {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end;
+            background: white;
+        }
+
+        .link-item {
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 2rem;
+        }
+    }
+
+
+
+
+    /*FIN MENU MOVIL*/
     .navbar {
         width: 100%;
     }
@@ -773,7 +975,7 @@ z-index: 2;
     padding: 16px 20px 0;
 }
 .order{
-    z-index: 1111;
+    z-index: 90;
 }
 
 

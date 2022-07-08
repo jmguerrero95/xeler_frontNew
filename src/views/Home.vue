@@ -1,6 +1,6 @@
 <template>
-<div>
-  <body class="theme-dark is-smooth-effect" data-spy="scroll" data-target="#mainnav" data-offset="70" >
+<div class="fixed">
+<div class="tema">
 <div>
 
     <div id="particles-js" class="particles-container particles-js"></div>
@@ -11,7 +11,7 @@
 
 
 
-        <header class="main-header d-block d-md-none">
+        <!--<header class="main-header d-block d-md-none">
           <nav id="nav" class="main-nav">
             <div class="nav-links">
               <router-link class="link-item" to="/login"><a class="link-item" href="#">Iniciar Sesión</a></router-link>
@@ -23,8 +23,8 @@
             <span></span>
             <span></span>
           </button>
-        </header>
-        <header class="site-header is-sticky d-none d-md-block" id="header">
+        </header>-->
+        <header class="site-header is-sticky" id="header">
 
             <!-- Place Particle Js -->
 
@@ -33,7 +33,7 @@
             <div class="navbar navbar-expand-lg is-transparent fixed-top" id="mainnav">
 
 
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                   <div class="container">
                     <a class="navbar-brand" href="#"> <img src="@/assets/xelergo.png"> </a>
 
@@ -47,9 +47,9 @@
                       <span class="navbar-toggler-icon"></span>
                     </button>-->
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item"><router-link to="/login"><a class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</a></router-link></li>
-                        <li class="nav-item"><router-link to="/register"><a class="nav-link btn btn-sm btn-outline menu-link" href="/register">Registro</a></router-link></li>
+                      <ul class="">
+                        <li class="nav-item"><router-link to="/login" class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</router-link></li>
+                        <li class="nav-item"><router-link to="/register" class="nav-link btn btn-sm btn-outline menu-link">Registro</router-link></li>
                       </ul>
                     </div>
                   </div>
@@ -194,11 +194,11 @@
       Instalar en la pantalla de inicio
     </button>
   </div>
-</body>
 
 
 
 
+</div>
 </div>
 </template>
 
@@ -213,30 +213,30 @@ export default {
     mounted() {
         this.initParticles()
 
-        const toggleButton = document.getElementById("button-menu");
-        const navWrapper = document.getElementById("nav");
+        /*const toggleButton = document.getElementById("button-menu");
+        const navWrapper = document.getElementById("nav");*/
 
         /* 
           cada ves que se haga click en el botón 
           agrega y quita las clases necesarias 
           para que el menú se muestre.
         */
-        toggleButton.addEventListener("click", () => {
+        /*toggleButton.addEventListener("click", () => {
           toggleButton.classList.toggle("close");
           navWrapper.classList.toggle("show");
-        });
+        });*/
 
         /* 
           Cuándo se haga click fuera del contenedor de enlaces 
           el menú debe esconderse.
         */
 
-        navWrapper.addEventListener("click", e => {
+        /*navWrapper.addEventListener("click", e => {
           if (e.target.id === "nav") {
             navWrapper.classList.remove("show");
             toggleButton.classList.remove("close");
           }
-        });
+        });*/
 
 
     },
@@ -511,6 +511,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .nav-link:hover {
+        background-image: linear-gradient(to right,#46bdf4 0,#2b56f5 100%) !important;
+    }
+    @media only screen and (max-width: 768px) {
+       .nav-item{
+            width: 44% !important;
+            /*margin-left: 2.5% !important;*/
+            margin-top: 5%;
+        }
+        .navbar-dark{
+            background-image: linear-gradient(to bottom,#0b0c22 0,#1b1e4b 100%);
+        }
+        .navbar{
+            padding-top: 0 !important;
+        }
+    }
     /*MENU MOVIL*/
 
     /** {
@@ -684,23 +700,13 @@ export default {
     z-index: -1;
     opacity: 1;
     background: #020207;
-    transition: all .5s ease;
+    transition: all 1s ease;
 }
-.btn:before {
-    position: absolute;
-    -ms-border-radius: 23px;
-    border-radius: 23px;
-    left: 0;
-    top: 0;
-    content: "";
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    opacity: 0;
-    transition: all .5s ease;
-    background-image: -webkit-linear-gradient(left,#46bdf4 0,#2b56f5 100%);
-    background-image: linear-gradient(to right,#46bdf4 0,#2b56f5 100%);
+.btn.btn-outline:hover:after {
+    background-image: -webkit-linear-gradient(left,#2b56f5 0,#46bdf4 100%);
+
 }
+
   .btn {
     font-family: Poppins,sans-serif;
     font-size: 12px;
@@ -818,7 +824,7 @@ img {
 
 
 
-  body {
+  .tema {
     color: #fff;
     background: #10122d;
 
@@ -829,6 +835,9 @@ img {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
+}
+.fixed{
+    background: #10122d !important;
 }
 h1, h2 {
   font-weight: normal;

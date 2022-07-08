@@ -7,22 +7,22 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Comprar</a>
+                  <a class="nav-link active" aria-current="page" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Vender</a>
+                  <a class="nav-link" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Transacciones</a>
+                  <a class="nav-link" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
                 </li>
                 <li class="nav-item">
-                  <router-link to="/dashboard/referidos"><a class="nav-link" href="#">Referidos</a></router-link>
+                  <router-link to="/dashboard/referidos" class="nav-link"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Referidos</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link to="/dashboard"><a class="nav-link" href="#">Perfil</a></router-link>
+                  <router-link to="/dashboard" class="nav-link"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link to="/login"><a class="nav-link" href="#">Cerrar sesion</a></router-link>
+                  <router-link to="/login" class="nav-link">Cerrar sesion</router-link>
                 </li>
             </ul>
             <div class="verificacion">
@@ -52,6 +52,9 @@ export default {
         padding: 12px 0;
         position: relative;
         color: #7668fe;
+    }
+    .nav-link{
+        color: #7668fe !important;
     }
    
 </style>

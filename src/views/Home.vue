@@ -48,8 +48,8 @@
                     </button>-->
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                       <ul class="">
-                        <li class="nav-item"><router-link to="/login" class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</router-link></li>
-                        <li class="nav-item"><router-link to="/register" class="nav-link btn btn-sm btn-outline menu-link">Registro</router-link></li>
+                        <li class="nav-item nav-itemLeft"><router-link to="/login" class="nav-link btn btn-sm btn-outline menu-link">Iniciar Sesión</router-link></li>
+                        <li class="nav-item nav-itemRight"><router-link to="/register" class="nav-link btn btn-sm btn-outline menu-link">Registro</router-link></li>
                       </ul>
                     </div>
                   </div>
@@ -511,12 +511,32 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .menu-link{
+        line-height: 38px !important;
+        min-width: auto !important;
+        padding: 0 23px !important;
+    }
     .nav-link:hover {
         background-image: linear-gradient(to right,#46bdf4 0,#2b56f5 100%) !important;
     }
+    @media (min-width: 769px){
+        .navbar-expand-lg .navbar-collapse {
+            display: flex!important;
+            flex-basis: auto !important;
+        }
+        .navbar-dark .navbar-toggler {
+            display:  none !important;
+        }
+    }
     @media only screen and (max-width: 768px) {
+        .nav-itemLeft{
+            margin-right: 10%;
+        }
+        .nav-itemRight{
+            margin-left: 10%;
+        }
        .nav-item{
-            width: 44% !important;
+            width: 37% !important;
             /*margin-left: 2.5% !important;*/
             margin-top: 5%;
         }
@@ -841,6 +861,9 @@ img {
 }
 h1, h2 {
   font-weight: normal;
+}
+h2{
+    font-size: 2.3em;
 }
 ul {
   list-style-type: none;

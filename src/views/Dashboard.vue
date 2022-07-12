@@ -5,7 +5,7 @@
     <div class="dashboard container-fluid">
         <div class="container d-none d-md-block">
             <div class="row contenedor">
-                <div class="col-12 col-md-8 caja">
+                <div class="col-12 col-md-8 caja ">
 
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -120,7 +120,7 @@
                                             </tr>
                                             <tr>
                                                 <td>Viviana ruiz</td>
-                                                <td>BANCO CAJA SOCIAL</td>
+                                                <td>BANCO CAJA sup SOCIAL</td>
                                                 <td>2121212121</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
@@ -284,21 +284,21 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-none d-md-block">
-                    <div class="caja-b">
+                    <div class="caja sup-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
                         <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
                         <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
                         <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
                     </div>
                     <br/>
-                    <div class="caja-b">
+                    <div class="caja sup-b">
                         <p class="tit_kyc">Gane con sus referidos</p>
                         <p>Invita tus amigos & familia.</p>
                         <p>Link de referido</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-block d-md-none movil">
-                    <div class="caja-b">
+                    <div class="caja sup-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
                         <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
                         <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
@@ -307,13 +307,13 @@
                 </div>
                 <br/>
                 <div class="col-12 col-md-4 d-block d-md-none movil">
-                    <div class="caja-b">
+                    <div class="caja sup-b">
                         <p class="tit_kyc">Gane con sus referidos</p>
                         <p>Invita tus amigos & familia.</p>
                         <p>Link de referido</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 caja espacio">
+                <div class="col-12 col-md-8 caja sup espacio">
                     <h3>Verificacion de dos factores</h3>
                     <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
                     <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>
@@ -321,7 +321,7 @@
             </div>
         </div>
 
-        <div class="row contenedor d-md-none">
+        <div class="row contenedor d-md-none sup">
                 <div class="col-12 col-md-8 caja">
 
 
@@ -788,6 +788,9 @@ export default {
     .dashboard{
         background: #eef2f8;
         padding-top: 2%;
+    }
+    .sup{
+        margin-top: 10%;
     }
     .caja{
         background: white;

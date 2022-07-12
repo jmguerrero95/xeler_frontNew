@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-none d-md-block">
       <div class="container">
         <a class="navbar-brand" href="#"> <img src="@/assets/xelergo.png"> </a>
 

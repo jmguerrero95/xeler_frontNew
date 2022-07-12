@@ -26,4 +26,13 @@ export default {
     opacity: 0;
     transform: translateX(-30%);
   }
+
+  @font-face {
+    font-family: "Poppins";
+    src: local("Poppins"),
+     url(../fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+  }
+  body{
+    font-family: "Poppins" !important;
+  }
 </style>

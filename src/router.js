@@ -35,6 +35,10 @@ function lazyLoad(view){
         {
             path: "/admin/dashboard",
             component: lazyLoad('DashboardAdmin')
+        },
+        {
+            path: "/agente/dashboard",
+            component: lazyLoad('DashboardAgent')
         }
 
     ]

@@ -48,6 +48,7 @@
                     <span></span>
                     <span></span>
                     <span></span>
+                    <span></span>
                 </button>
             </div>
             <div class="col-4">
@@ -129,7 +130,7 @@ export default {
         align-items: center;
         background-color: white;
         padding: 0 0.4rem;
-        background-color: #10122d;
+        background-color: #242650;
     }
 
     .main-logo {
@@ -163,6 +164,9 @@ export default {
         justify-content: flex-start;
         margin-top: 15%;
     }
+    .nav-links > a{
+      color: #7668fe !important;
+    }
 
     .link-item {
         margin-top: 2rem;
@@ -175,7 +179,7 @@ export default {
     .link-item::after {
         position: absolute;
         content: "";
-        background-color: black;
+        background-color: #7668fe;
         bottom: -5px;
         left: 0;
         width: 0%;
@@ -203,8 +207,8 @@ export default {
     }
 
     .button-menu span {
-        width: 37px;
-        height: 3px;
+        width: 30px;
+        height: 1px;
         margin-bottom: 5px;
         position: relative;
         background: white;
@@ -224,6 +228,10 @@ export default {
     }
 
     .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+
+    .button-menu.close span:nth-child(4) {
         display: none;
     }
     .img-menu{

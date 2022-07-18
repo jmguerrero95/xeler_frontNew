@@ -228,7 +228,7 @@ export default {
         margin-top: 3%;
     }
     .espacio{
-        padding-top: 3%;
+        padding-top: 70px;
         padding-bottom: 2%;
     }
     

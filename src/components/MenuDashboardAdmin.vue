@@ -59,31 +59,31 @@
           <nav id="nav" class="main-nav">
             <div class="nav-links">
               <a class="link-item" href="#" v-on:click="$emit('submit-form', 'A')" aria-current="page">Dashboard</a>
-              <a class="link-item sub1" href="#" aria-current="page">Transacciones</a>
-              <div class="submenu_movil">
-                <div>
+              <a class="link-item sub1" v-on:click="cambio('.submenu_movil')" href="#" aria-current="page">Transacciones</a>
+              <div class="submenu_movil todo">
+                <div class="espa_submenu">
                   <a class="link-item" href="#" v-on:click="$emit('submit-form', 'B')">Transacciones Pendientes</a>
                 </div>
-                <div>
+                <div class="espa_submenu">
                   <a class="link-item" href="#" v-on:click="$emit('submit-form', 'C')">Transacciones Aprobadas</a>
                 </div>
               </div>
               <a class="link-item" href="#" v-on:click="$emit('submit-form', 'D')">KYC</a>
-              <a class="link-item sub2" href="#">Contabilidad</a>
-              <div class="submenu_movil2">
-                <div>
+              <a class="link-item sub2" v-on:click="cambio('.submenu_movil2')" href="#">Contabilidad</a>
+              <div class="submenu_movil2 todo">
+                <div class="espa_submenu">
                   <a class="link-item" href="#" v-on:click="$emit('submit-form', 'E')">Manejo de Cuentas</a>
                 </div>
-                <div>
+                <div class="espa_submenu">
                   <a class="link-item" href="#" v-on:click="$emit('submit-form', 'F')">Manejo Otros</a>
                 </div>
               </div>
-              <a class="link-item sub3" href="#">Usuarios</a>
-              <div class="submenu_movil3">
-                <div>
+              <a class="link-item sub3" v-on:click="cambio('.submenu_movil3')" href="#">Usuarios</a>
+              <div class="submenu_movil3 todo">
+                <div class="espa_submenu">
                   <a class="link-item" href="#" v-on:click="$emit('submit-form', 'G')">Usuarios</a>
                 </div>
-                <div>
+                <div class="espa_submenu">
                   <a class="link-item" href="#" v-on:click="$emit('submit-form', 'H')">Usuarios Referidos</a>
                 </div> 
               </div>
@@ -95,6 +95,7 @@
           <div class="row">
             <div class="col-4">
                 <button id="button-menu" class="button-menu">
+                    <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -121,7 +122,30 @@ export default {
         //Money,
         //Loading
     },
+    methods: {
+      cambio: function (divOCult){
+        
+        const submenu_movil = document.querySelector(".submenu_movil")
+        const submenu_movil2 = document.querySelector(".submenu_movil2")
+        const submenu_movil3 = document.querySelector(".submenu_movil3")
+        /*const todo = document.querySelector(".todo")
+        todo.style.display = "none"*/
+        submenu_movil.style.display = "none"
+        submenu_movil2.style.display = "none"
+        submenu_movil3.style.display = "none"
+        const divOCult2 = document.querySelector(divOCult)
+        console.log(divOCult2)
+        divOCult2.style.display = "block"
+      }
+
+    },
     mounted() {
+        /*function cambio(boton, divOCult){
+          const boton2 = document.querySelector(boton)
+          const divOCult2 = document.querySelector(divOCult)
+          divOCult2.style.display = "block"
+
+        }*/
 
         const toggleButton = document.getElementById("button-menu");
         const navWrapper = document.getElementById("nav");
@@ -151,13 +175,20 @@ export default {
 }
 </script>
 <style scoped>
-    .sub1:hover + .submenu_movil{
+    .nav-link{
+      color: #7668fe !important;
+    }
+    .espa_submenu{
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+    }
+    /*.sub1:visited + .submenu_movil{
+      display: block;
+    }*/
+    .sub2:visited + .submenu_movil2{
       display: block;
     }
-    .sub2:hover + .submenu_movil2{
-      display: block;
-    }
-    .sub3:hover + .submenu_movil3{
+    .sub3:visited + .submenu_movil3{
       display: block;
     }
     .submenu_movil{
@@ -165,15 +196,15 @@ export default {
       display: none;
 
     }
-    .submenu_movil:hover{
+    /*.submenu_movil:visited{
       display: block;
-    }
+    }*/
     .submenu_movil2{
       padding-left: 5%;
       display: none;
 
     }
-    .submenu_movil2:hover{
+    .submenu_movil2:visited{
       display: block;
     }
     .submenu_movil3{
@@ -181,7 +212,7 @@ export default {
       display: none;
 
     }
-    .submenu_movil3:hover{
+    .submenu_movil3:visited{
       display: block;
     }
 
@@ -212,7 +243,7 @@ export default {
         align-items: center;
         background-color: white;
         padding: 0 0.4rem;
-        background-color: #10122d;
+        background-color: #242650;
     }
 
     .main-logo {
@@ -240,16 +271,19 @@ export default {
         background-color: rgb(250, 250, 250);
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: 80%;
         height: 100%;
         padding-left: 5%;
         justify-content: flex-start;
-        margin-top: 15%;
+        margin-top: 50px;
+    }
+    .nav-links > a{
+      color: #7668fe !important;
     }
 
     .link-item {
         margin-top: 2rem;
-        color: #444444;
+        color: #7668fe !important;
         text-decoration: none;
         font-weight: bold;
         position: relative;
@@ -258,7 +292,7 @@ export default {
     .link-item::after {
         position: absolute;
         content: "";
-        background-color: black;
+        background-color: #7668fe;
         bottom: -5px;
         left: 0;
         width: 0%;
@@ -286,8 +320,8 @@ export default {
     }
 
     .button-menu span {
-        width: 37px;
-        height: 3px;
+        width: 30px;
+        height: 1px;
         margin-bottom: 5px;
         position: relative;
         background: white;
@@ -307,6 +341,9 @@ export default {
     }
 
     .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+    .button-menu.close span:nth-child(4) {
         display: none;
     }
     .img-menu{

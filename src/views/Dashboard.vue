@@ -5,7 +5,7 @@
     <div class="dashboard container-fluid">
         <div class="container d-none d-md-block">
             <div class="row contenedor">
-                <div class="col-12 col-md-8 caja ">
+                <div class="col-12 col-md-8 caja">
 
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -99,27 +99,27 @@
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col">NOMBRE TITULAR</th>
-                                                <th scope="col">NOMBRE BANCO</th>
-                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col" class="tit_table">NOMBRE TITULAR</th>
+                                                <th scope="col" class="tit_table">NOMBRE BANCO</th>
+                                                <th scope="col" class="tit_table">NÚMERO CUENTA</th>
                                                 <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Viviana</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Viviana</td>
                                                 <td>BANCOLOMBIA</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Ana marines</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Ana marines</td>
                                                 <td>BANCOLOMBIA</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Viviana ruiz</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Viviana ruiz</td>
                                                 <td>BANCO CAJA sup SOCIAL</td>
                                                 <td>2121212121</td>
                                                 <td><button class="bot_opcion">...</button></td>
@@ -163,21 +163,21 @@
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col">NOMBRE TITULAR</th>
-                                                <th scope="col">NOMBRE BANCO</th>
-                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col" class="tit_table">NOMBRE TITULAR</th>
+                                                <th scope="col" class="tit_table">NOMBRE BANCO</th>
+                                                <th scope="col" class="tit_table">NÚMERO CUENTA</th>
                                                 <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Vian</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Vian</td>
                                                 <td>NEQUI</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Otra cuenta</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Otra cuenta</td>
                                                 <td>MOVII</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
@@ -263,9 +263,9 @@
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col">NOMBRE</th>
-                                                <th scope="col">WALLET</th>
-                                                <th scope="col">TIPO</th>
+                                                <th scope="col" class="tit_table">NOMBRE</th>
+                                                <th scope="col" class="tit_table">WALLET</th>
+                                                <th scope="col" class="tit_table">TIPO</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -314,7 +314,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8 caja sup espacio">
-                    <h3>Verificacion de dos factores</h3>
+                    <h3 class="tit_veri">Verificacion de dos factores</h3>
                     <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
                     <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>
                 </div>
@@ -322,7 +322,7 @@
         </div>
 
         <div class="row contenedor d-md-none sup">
-                <div class="col-12 col-md-8 caja">
+                <div class="col-12 col-md-8 caja primero">
 
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -424,25 +424,26 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Viviana</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Viviana</td>
                                                 <td>BANCOLOMBIA</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Ana marines</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Ana marines</td>
                                                 <td>BANCOLOMBIA</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Viviana ruiz</td>
-                                                <td>BANCO CAJA SOCIAL</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Viviana ruiz</td>
+                                                <td>BANCO CAJA sup SOCIAL</td>
                                                 <td>2121212121</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    
 
 
 
@@ -488,13 +489,13 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Vian</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Vian</td>
                                                 <td>NEQUI</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td>Otra cuenta</td>
+                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Otra cuenta</td>
                                                 <td>MOVII</td>
                                                 <td>1234567890</td>
                                                 <td><button class="bot_opcion">...</button></td>
@@ -736,6 +737,9 @@ export default {
 }
 </script>
 <style scoped>
+    .primero{
+        margin-top: 70px !important;
+    }
     @media only screen and (max-width: 768px) {
         .contenedor{
             padding: 2%;
@@ -763,6 +767,8 @@ export default {
     }
     .titulo{
         color: #342d6e;
+        font-size: 1.4em;
+        font-weight: 600;
     }
     .factores{
         width: 10%;
@@ -779,7 +785,7 @@ export default {
     }
     .tit_kyc{
         color: #342d6e;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
     }
     html{
@@ -788,10 +794,11 @@ export default {
     .dashboard{
         background: #eef2f8;
         padding-top: 2%;
+        font-family: "Roboto",sans-serif !important;
     }
-    .sup{
+    /*.sup{
         margin-top: 10%;
-    }
+    }*/
     .caja{
         background: white;
         border-radius: 5px;
@@ -802,5 +809,46 @@ export default {
         background: white;
         border-radius: 5px;
         padding: 10%;
+    }
+    .sup-b{
+        padding: 9%;
+    }
+    .nav-link{
+        font-weight: 600;
+        font-size: 14px;
+        color: #758698;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #7668fe;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            border-color: #fff #fff #7668fe;
+    }
+    .form-label{
+        font-size: 14px;
+        font-weight: 500;
+        color: #495463;
+        line-height: 1.1;
+        margin-bottom: 12px;
+        display: inline-block;
+    }
+    .tit_veri{
+        color: #342d6e;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+    .positivo{
+        color: #00d285;
+    }
+    .negativo{
+        color:  #ff6868;
+    }
+    .tit_table{
+        text-transform: uppercase;
+        border: none;
+        white-space: nowrap;
+        font-size: 12px;
+        font-weight: 700;
+        color: #7668fe;
     }
 </style>

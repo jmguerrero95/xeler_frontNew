@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faCoins } from '@fortawesome/free-solid-svg-icons'
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faChartLine } from '@fortawesome/free-solid-svg-icons'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { faRightLeft } from '@fortawesome/free-solid-svg-icons'
@@ -24,5 +25,5 @@ import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons'
 
 
-library.add(faFacebookF, faInstagram, faTwitter, faTelegramPlane, faCoins, faRightLeft, faCircleUser, faChartLine, faCircleCheck, faCircleXmark)
+library.add(faFacebookF, faInstagram, faTwitter, faTelegramPlane, faCoins, faRightLeft, faCircleUser, faChartLine, faCircleCheck, faCircleXmark, faPlus)
 createApp(App).use(router).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

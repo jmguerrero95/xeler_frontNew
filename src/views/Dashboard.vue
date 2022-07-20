@@ -402,7 +402,8 @@
                                         <h4 class="titulo">Su Lista de Cuentas Bancarias</h4>  
                                     </div>
                                     <div class="col-3">
-                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                        <button type="submit" class="btn_edit btn-primary2 btn-block2" data-bs-toggle="modal" data-bs-target="#exampleModal"><font-awesome-icon icon="fa-solid fa-plus" /></button>
+                                    
                                     </div>
                                     <div class="col-12 fondo_col">
                                         <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
@@ -416,29 +417,25 @@
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col">NOMBRE TITULAR</th>
-                                                <th scope="col">NOMBRE BANCO</th>
-                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col" class="tit_table">NOMBRE TITULAR</th>
+                                                <th scope="col" class="tit_table">NOMBRE BANCO</th>
                                                 <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Viviana</td>
-                                                <td>BANCOLOMBIA</td>
-                                                <td>1234567890</td>
+                                                <td class="let_movil"><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Viviana</td>
+                                                <td class="let_movil">BANCOLOMBIA</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Ana marines</td>
-                                                <td>BANCOLOMBIA</td>
-                                                <td>1234567890</td>
+                                                <td class="let_movil"><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Ana marines</td>
+                                                <td class="let_movil">BANCOLOMBIA</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Viviana ruiz</td>
-                                                <td>BANCO CAJA sup SOCIAL</td>
-                                                <td>2121212121</td>
+                                                <td class="let_movil"><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Viviana ruiz</td>
+                                                <td class="let_movil">BANCO CAJA SOCIAL</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                         </tbody>
@@ -467,7 +464,7 @@
                                         <h4 class="titulo">Su Lista de Cuentas otros</h4>  
                                     </div>
                                     <div class="col-3">
-                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                        <button type="submit" class="btn_edit btn-primary2 btn-block2" data-bs-toggle="modal" data-bs-target="#exampleModal"><font-awesome-icon icon="fa-solid fa-plus" /></button>
                                     </div>
                                     <!--<div class="col-12 fondo_col">
                                         <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
@@ -481,23 +478,20 @@
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col">NOMBRE TITULAR</th>
-                                                <th scope="col">NOMBRE BANCO</th>
-                                                <th scope="col">NÚMERO CUENTA</th>
+                                                <th scope="col" class="tit_table">NOMBRE TITULAR</th>
+                                                <th scope="col" class="tit_table">NOMBRE BANCO</th>
                                                 <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Vian</td>
-                                                <td>NEQUI</td>
-                                                <td>1234567890</td>
+                                                <td class="let_movil"><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/> Vian</td>
+                                                <td class="let_movil">NEQUI</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                             <tr>
-                                                <td><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Otra cuenta</td>
-                                                <td>MOVII</td>
-                                                <td>1234567890</td>
+                                                <td class="let_movil"><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/> Otra cuenta</td>
+                                                <td class="let_movil">MOVII</td>
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                         </tbody>
@@ -532,6 +526,8 @@
                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                                             <label class="form-check-label" for="flexSwitchCheckDefault">Guardar mi actividad</label>
                                         </div>
+                                        <br/>
+                                        <BotonGenerico class="boton" texto="Guardar Perfil"></BotonGenerico>
                                     </div>
                                 </div>
                             </div>
@@ -540,11 +536,10 @@
                       </div>
                       <div class="tab-pane fade" id="contra2-tab-pane" role="tabpanel" aria-labelledby="contra-tab" tabindex="0">
                           <div class="row">
-                            <div class="col-1"></div>
-                            <div class="col-10">
+                            <div class="col-12">
                                 <br/>
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <br/>
                                         <label class="form-label">Contraseña actual</label>
                                         <InputGenerico value="" placeholder="Ingrese contraseña actual"></InputGenerico>
@@ -552,7 +547,7 @@
                                         <label class="form-label">Nueva contraseña</label>
                                         <InputGenerico value="" placeholder="Ingrese nueva contraseña"></InputGenerico>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <br/>
                                         <label class="form-label">Confirme nueva contraseña</label>
                                         <InputGenerico value="" placeholder="Confirme nueva contraseña"></InputGenerico>
@@ -563,7 +558,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-1"></div>
                         </div>
                       </div>
                       <div class="tab-pane fade" id="wallet2-tab-pane" role="tabpanel" aria-labelledby="wallet-tab" tabindex="0">
@@ -576,20 +570,20 @@
                                         <h4 class="titulo">Su lista de wallets</h4>  
                                     </div>
                                     <div class="col-3">
-                                        <BotonGenerico class="factores" texto="Agregar wallet" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                        <button type="submit" class="btn_edit btn-primary2 btn-block2" data-bs-toggle="modal" data-bs-target="#exampleModal"><font-awesome-icon icon="fa-solid fa-plus" /></button>
                                     </div>
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <th scope="col">NOMBRE</th>
-                                                <th scope="col">WALLET</th>
-                                                <th scope="col">TIPO</th>
+                                                <th scope="col" class="tit_table">NOMBRE</th>
+                                                <!--<th scope="col">WALLET</th>-->
+                                                <th scope="col" class="tit_table">TIPO</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Bitpay</td>
-                                                <td>bc1qnv8wdf8g8uzs90eqtd482qe2ewxtez07w83r3mpy5pt73qycshws8w0ygw</td>
+                                                <td class="let_movil">Bitpay</td>
+                                                <!--<td>bc1qnv8wdf8g8uzs90eqtd482qe2ewxtez07w83r3mpy5pt73qycshws8w0ygw</td>-->
                                                 <td><button class="bot_opcion">...</button></td>
                                             </tr>
                                         </tbody>
@@ -635,7 +629,7 @@
 
 
                 <div class="col-12 col-md-8 caja espacio">
-                    <h3>Verificacion de dos factores</h3>
+                    <h3 class="tit_veri">Verificacion de dos factores</h3>
                     <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
                     <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>
                 </div>
@@ -850,5 +844,80 @@ export default {
         font-size: 12px;
         font-weight: 700;
         color: #7668fe;
+    }
+    @media only screen and (max-width: 768px) {
+        .tit_veri{
+            color: #342d6e;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .caja-b{
+            padding: 3%;
+        }
+        .caja{
+            padding: 5%;
+        }
+        .espacio {
+            margin-top: 4%;
+        }
+        .movil{
+            border-radius: 5px;
+        }
+        .nav-link{
+            font-size: 12px;
+        }
+        .titulo[data-v-22ba47ca] {
+            font-size: 18px;
+        }
+        .parr_centrado {
+            font-size: 14px;
+        }
+        .let_movil{
+            font-size: 14px;
+            font-weight: 600;
+            color: #495463;
+            letter-spacing: 0.01em;
+            line-height: 1;
+            margin-top: 0;
+            margin-right: 4px;
+        }
+        .form-label{
+            font-size: 14px;
+            font-weight: 500;
+            color: #495463;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+    }
+    .btn_edit:not(:disabled):not(.disabled) {
+        cursor: pointer;
+    }
+    @media (min-width: 480px){
+        .btn_edit {
+            padding: 8px 20px;
+            font-size: 14px;
+        }
+    }
+    .btn-primary2 {
+        background: #7668fe;
+        border-color: #7668fe;
+    }
+    .btn-block2 {
+        display: block;
+        width: 100%;
+    }
+    .btn_edit {
+        position: relative;
+        color: #fff;
+        font-weight: 500;
+        padding: 8px 20px;
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        border-radius: 4px;
+        border: 1px solid;
+        display: inline-block;
+        transition: all .4s ease;
     }
 </style>

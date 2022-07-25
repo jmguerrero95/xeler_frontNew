@@ -4,10 +4,10 @@
             <ImgLogin class="d-none d-md-block"></ImgLogin>
             <div class="col-12 col-md-5">
                 <div class="row">
-                    <div class="col-1 col-md-3 d-none d-md-block">
+                    <div class="col-1 col-md-1 col-xl-3 d-none d-md-block">
                         
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-10 col-xl-6">
                         <img src="@/assets/xeler_go.svg" class="img-fluid logo">
                         <h2 class="cabecera">Registrate
                         </h2>
@@ -41,7 +41,7 @@
                             <RedesSociales></RedesSociales>
                         </div>
                     </div>
-                    <div class="col-1 col-md-3 d-none d-md-block">
+                    <div class="col-1 col-md-1 col-xl-3 d-none d-md-block">
                         
                     </div>
                     

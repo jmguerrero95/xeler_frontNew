@@ -1,6 +1,8 @@
 <template>
     <div class="col-7 fondo">
-        <img src="@/assets/xeler_login.png" class="img_login">
+        <div class="centrado">
+            <img src="@/assets/xeler_login.png" class="img_login">
+        </div>
     </div>
 </template>
 
@@ -17,8 +19,6 @@ export default {
 <style scoped>
     .img_login{
         width: 70%;
-        margin: 0 auto;
-        margin-top: 17%;
         display: block;
     }
     .fondo{
@@ -26,5 +26,11 @@ export default {
         background-size: cover;
         background-position: 50% 50%;
         min-height: 100vh
+    }
+    .centrado{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 </style>

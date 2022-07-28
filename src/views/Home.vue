@@ -98,14 +98,14 @@
                     <div class="container">
                         <div class="banner-content">
                             <div class="row align-items-center mobile-center">
-                                <div class="col-md-6 col-12 order-lg-first order">
+                                <div class="col-lg-6 col-12 order-lg-first order">
                                     <Calculadora></Calculadora>
                                 </div>
-                                <div class="col-md-6 col-12 order-first">
+                                <div class="col-lg-6 col-12 order-first">
                                     <div class="header-image" >
                                         <img src="@/assets/header-image-dark.png" class="img-fluid" alt="header">
-                                        <img class="header-image-icon left-icon" src="@/assets/xeler_ico1.svg" alt="header-icon">
-                                        <img class="header-image-icon right-icon" src="@/assets/header-icon-b.png" alt="header-icon">
+                                        <img class="header-image-icon left-icon img-fluid" src="@/assets/xeler_ico1.svg" alt="header-icon">
+                                        <img class="header-image-icon right-icon img-fluid" src="@/assets/header-icon-b.png" alt="header-icon">
                                     </div>
                                 </div>
                             </div>
@@ -155,6 +155,19 @@
                     <img src="@/assets/reloj_xeler.png" height="88px" width="94px" alt="reloj" data-animate="fadeInUp" data-delay="1.3">
                 </div>
             </div>
+            <div class="text-center wide-auto-sm paddingTop">
+                <h3 class="title animated fadeInUp" data-animate="fadeInUp" data-delay=".1">¿Preguntas? | Contacto</h3>
+                <p class="animated fadeInUp" data-animate="fadeInUp" data-delay=".2" >Visita nuestro → <a href="https://help.xeler.io/" class="frecuente">centro de respuestas a preguntas frecuentes.</a></p>
+            </div>
+            <div class="text-center wide-auto-sm paddingTop">
+                <div id="copyright" class="copyright2"><p>Copyright © 2022, XelerGo!.</p></div>
+                <div class="iconos">
+                    <a href="#" class="icono"><font-awesome-icon icon="fa-brands fa-facebook-f"/></a>
+                    <a href="#" class="margen icono"><font-awesome-icon icon="fa-brands fa-instagram"/></a>
+                    <a href="#" class="margen icono"><font-awesome-icon icon="fa-brands fa-twitter"/></a>
+                    <a href="#" class="margen icono"><font-awesome-icon icon="fa-brands fa-telegram-plane"/></a>
+                </div>
+            </div>
         </div>
         </section>
         <!--<section class="section over-up">
@@ -169,25 +182,6 @@
 
                 --></div><!-- End container -->
         <!--</section>-->
-
-
-        <div class="section footer-scetion no-pt section-pad-sm section-bg">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <span class="copyright-text animated" data-animate="fadeInUp" data-delay=".3">
-                            Copyright , XelerGo!.
-                        </span>
-                        <ul class="social">
-                            <li><a href="https://m.facebook.com/Xelerex" target="_blank"><em class="fab fa-facebook-f"></em></a></li>
-                            <li><a href="https://www.instagram.com/bitcoincolombia/" target="_blank"><em class="fab fa-instagram"></em></a></li>
-                            <li><a href="https://twitter.com/Xeler_ex" target="_blank"><em class="fab fa-twitter"></em></a></li>
-                            <li><a href="https://t.me/coin2cop" target="_blank"><em class="fab fa-telegram-plane"></em></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
 </div>
 <div id="installContainer" class="oculto">
     <button id="butInstall" type="button">
@@ -205,10 +199,12 @@
 <script>
   /* eslint-disable */
 import Calculadora from "@/components/Calculadora-app.vue";
+import RedesSociales from "@/components/RedesSociales";
 import 'particles.js'
 export default {
     components: {
-        Calculadora
+        Calculadora,
+        RedesSociales
     },
     mounted() {
         this.initParticles()
@@ -790,7 +786,7 @@ img {
 .header-image-icon {
     position: absolute;
     top: 32%;
-    width: 30px;
+    width: 25px;
 }
 .header-image {
     position: relative;
@@ -830,7 +826,7 @@ img {
 .header-image-icon {
     position: absolute;
     top: 32%;
-    width: 30px;
+    width: 25px;
 }
 img {
     outline: 0;
@@ -1009,8 +1005,53 @@ z-index: 2;
 .order{
     z-index: 90;
 }
-
-
+@keyframes jumping{0%{transform:translateY(5px)}100%{transform:translateY(-25px)}}
+@media only screen and (max-width: 767px){
+    .header-image-icon {
+        top: 30%;
+        width: 20px;
+    }
+}
+.frecuente{
+    text-decoration: none;
+    color: #46bdf4;
+}
+.frecuente:active, .frecuente:focus, .frecuente:hover {
+    color: #8255fd;
+}
+.paddingTop{
+    padding-top: 100px;
+}
+.icono{
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    width: 32px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #758698;
+    border: 1px solid #d2dde9;
+    float: left;
+    background: white;
+}
+.iconos{
+    display: flex;
+    justify-content: center;
+}
+.margen{
+    margin-left: 1%;
+}
+#copyright{
+    font-size: 13px;
+    color: #758698;
+    margin-top: 7%;
+    color: white;
+}
+.icono:hover{
+    background: #7a0fff;
+    color: white;
+    border: 1px solid #7a0fff;
+}
 
 
 

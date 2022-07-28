@@ -7,10 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</a>
+                  <router-link to="/dashboard/comprar" class="nav-link"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</router-link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</a>
+                  <router-link to="/dashboard/vender" class="nav-link"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</router-link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
@@ -31,35 +31,38 @@
         </div>
       </div>
     </nav>
-    <header class="main-header d-block d-md-none">
-          <nav id="nav" class="main-nav">
-            <div class="nav-links">
-              <a class="link-item" aria-current="page" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</a>
-              <a class="link-item" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</a>
-              <a class="link-item" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
-              <router-link to="/dashboard/referidos" class="link-item"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Referidos</router-link>
-              <router-link to="/dashboard" class="link-item"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</router-link>
-              <router-link to="/login" class="link-item">Cerrar sesion</router-link>
+    <div class="container-fluid">
+        <div class="row">
+                <div class="col-12 main-header d-block d-md-none">
+                    <nav id="nav" class="main-nav">
+                        <div class="nav-links">
+                            <a class="link-item" aria-current="page" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</a>
+                            <a class="link-item" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</a>
+                            <a class="link-item" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
+                            <router-link to="/dashboard/referidos" class="link-item"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Referidos</router-link>
+                            <router-link to="/dashboard" class="link-item"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</router-link>
+                            <router-link to="/login" class="link-item">Cerrar sesion</router-link>
+                        </div>
+                    </nav>
+                    <div class="row">
+                        <div class="col-4">
+                            <button id="button-menu" class="button-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid img-menu" src="@/assets/xelergo.png">
+                        </div>
+                        <div class="col-4">
+
+                        </div>
+                    </div>
             </div>
-          </nav>
-          <div class="row">
-            <div class="col-4">
-                <button id="button-menu" class="button-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <div class="col-4">
-                <a class="navbar-brand" href="#"> <img class="img-fluid img-menu" src="@/assets/xelergo.png"> </a>
-            </div>
-            <div class="col-4">
-                
-            </div>
-              
-          </div>
-        </header>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -162,7 +165,7 @@ export default {
         height: 100%;
         padding-left: 5%;
         justify-content: flex-start;
-        margin-top: 15%;
+        margin-top: 50px;
     }
     .nav-links > a{
       color: #7668fe !important;
@@ -235,8 +238,10 @@ export default {
         display: none;
     }
     .img-menu{
-        width: 80%;
-        margin-top: 5%;
+        /*width: 80%;*/
+        height: 40px;
+        width: auto;
+        margin-top: 5px;
     }
 
     @media screen and (min-width: 768px) {

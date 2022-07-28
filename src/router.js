@@ -33,6 +33,14 @@ function lazyLoad(view){
             component: lazyLoad('Referidos')
         },
         {
+            path: "/dashboard/vender",
+            component: lazyLoad('Vender')
+        },
+        {
+            path: "/dashboard/comprar",
+            component: lazyLoad('Comprar')
+        },
+        {
             path: "/admin/dashboard",
             component: lazyLoad('DashboardAdmin')
         },

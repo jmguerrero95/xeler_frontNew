@@ -85,7 +85,7 @@
                                         <h4 class="titulo">Su Lista de Cuentas Bancarias</h4>  
                                     </div>
                                     <div class="col-3">
-                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                        <button type="submit" class="btn_edit btn-primary2 btn-block2" data-bs-toggle="modal" data-bs-target="#exampleModal"><font-awesome-icon icon="fa-solid fa-plus" /></button>
                                     </div>
                                     <div class="col-12 fondo_col">
                                         <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
@@ -149,7 +149,7 @@
                                         <h4 class="titulo">Su Lista de Cuentas otros</h4>  
                                     </div>
                                     <div class="col-3">
-                                        <BotonGenerico class="factores" texto="Agregar Cuenta" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                        <button type="submit" class="btn_edit btn-primary2 btn-block2" data-bs-toggle="modal" data-bs-target="#exampleModal"><font-awesome-icon icon="fa-solid fa-plus" /></button>
                                     </div>
                                     <!--<div class="col-12 fondo_col">
                                         <p class="parr_centrado">🚫 En las cuentas registradas en esta sección puedes recibir pagos.<br/>
@@ -258,7 +258,7 @@
                                         <h4 class="titulo">Su lista de wallets</h4>  
                                     </div>
                                     <div class="col-3">
-                                        <BotonGenerico class="factores" texto="Agregar wallet" data-bs-toggle="modal" data-bs-target="#exampleModal"></BotonGenerico>
+                                        <button type="submit" class="btn_edit btn-primary2 btn-block2" data-bs-toggle="modal" data-bs-target="#exampleModal"><font-awesome-icon icon="fa-solid fa-plus" /></button>
                                     </div>
                                     <table class="table table-borderless">
                                         <thead>

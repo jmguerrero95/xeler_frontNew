@@ -21,44 +21,23 @@
                 </div> 
             </div>-->
             <div class="row" v-if="bloqued">
-                <div class="col-6">
-                    <div class="row">
-                        <div class="col-3">
-                            
-                        </div>
-                        <div class="col-6">
-                            <div class="field-wrap">
-                                <label class="switch2">
-                                    <input type="checkbox" id="togBtn2" v-model="switch1" @click="toggle()">
-                                    <div class="slider2 round2"></div>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            
-                        </div>
+                <div class="col-4">
+                    <div class="field-wrap">
+                        <label class="switch2">
+                            <input type="checkbox" id="togBtn2" v-model="switch1" @click="toggle()">
+                            <div class="slider2 round2"></div>
+                        </label>
                     </div>
-                    
+                </div> 
+                <div class="col-4" v-if="ocultar">
+                    <div class="field-wrap">
+                        <label class="switch">
+                            <input type="checkbox" id="togBtn" v-model="switch2" @click="toggle2()">
+                            <div class="slider round"></div>
+                        </label>
+                     </div>
                 </div>
-                    <div class="col-6" v-if="ocultar">
-                        <div class="row">
-                            <div class="col-3">
-                                
-                            </div>
-                            <div class="col-6">
-                                <div class="field-wrap">
-                                    <label class="switch">
-                                        <input type="checkbox" id="togBtn" v-model="switch2" @click="toggle2()">
-                                        <div class="slider round"></div>
-                                    </label>
-                                 </div>
-                            </div>
-                            <div class="col-3">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
         
             <div class="row">
                 <div class="col-4">
@@ -715,6 +694,9 @@ export default {
 </script>
 
 <style scoped>
+    .input-field{
+        text-align: center;
+    }
     .is-typed{
         display: inline;
     }

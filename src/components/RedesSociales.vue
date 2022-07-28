@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <div>
+    <div class="caja_sociales">
+        <div class="iconos">
             <a href="#"><font-awesome-icon icon="fa-brands fa-facebook-f"/></a>
             <a href="#" class="margen"><font-awesome-icon icon="fa-brands fa-instagram"/></a>
             <a href="#" class="margen"><font-awesome-icon icon="fa-brands fa-twitter"/></a>
             <a href="#" class="margen"><font-awesome-icon icon="fa-brands fa-telegram-plane"/></a>
         </div>
         <br/>
-        <div id="copyright"><p>© 2022 XelerGo!. All Right Reserved.</p></div>
+        <div id="copyright" class="copyright2"><p>© 2022 XelerGo!. All Right Reserved.</p></div>
     </div>
 </template>
 

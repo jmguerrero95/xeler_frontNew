@@ -74,6 +74,9 @@ export default {
         -webkit-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.32);
         -moz-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.32);
         box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.32);
+        margin-top: 8%;
+        padding-top: 0;
+        background: #f7fafd !important;
         
     }
 	.bg-dark{

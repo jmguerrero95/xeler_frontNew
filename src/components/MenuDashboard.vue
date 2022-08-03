@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-light d-none d-md-block">
+    <nav class="navbar navbar-expand-lg bg-light d-none d-lg-block">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,11 +33,11 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-                <div class="col-12 main-header d-block d-md-none">
+                <div class="col-12 main-header d-block d-lg-none">
                     <nav id="nav" class="main-nav">
                         <div class="nav-links">
-                            <a class="link-item" aria-current="page" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</a>
-                            <a class="link-item" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</a>
+                            <router-link to="/dashboard/comprar" class="link-item"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Comprar</router-link>
+                            <router-link to="/dashboard/vender" class="link-item"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Vender</router-link>
                             <a class="link-item" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
                             <router-link to="/dashboard/referidos" class="link-item"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Referidos</router-link>
                             <router-link to="/dashboard" class="link-item"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</router-link>
@@ -77,6 +77,9 @@ export default {
 
         const toggleButton = document.getElementById("button-menu");
         const navWrapper = document.getElementById("nav");
+
+        navWrapper.classList.remove("show");
+        toggleButton.classList.remove("close");
 
         /* 
           cada ves que se haga click en el botón 
@@ -244,7 +247,7 @@ export default {
         margin-top: 5px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 991px) {
         .button-menu {
             display: none;
         }

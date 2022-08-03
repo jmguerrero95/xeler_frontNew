@@ -207,7 +207,9 @@ export default {
         RedesSociales
     },
     mounted() {
-        this.initParticles()
+       this.initParticles()
+       
+        
 
         /*const toggleButton = document.getElementById("button-menu");
         const navWrapper = document.getElementById("nav");*/
@@ -353,7 +355,7 @@ export default {
     }
   },
     beforeDestroy: function () {
-        this.initParticles.destroypJS()
+        
     }
   /*mounted() { 
     let script1 = document.createElement('script')

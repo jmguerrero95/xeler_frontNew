@@ -3,7 +3,7 @@
     <TopBar></TopBar>
     <MenuDashboard></MenuDashboard>
     <div class="dashboard container-fluid">
-        <div class="container d-none d-md-block">
+        <div class="container d-none d-lg-block">
             <div class="row contenedor">
                 <div class="col-12 col-md-8 caja">
 
@@ -286,8 +286,8 @@
                 <div class="col-12 col-md-4 d-none d-md-block">
                     <div class="caja sup-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
-                        <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
-                        <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                        <p class="parra">Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                        <p class="parra">No ha enviado sus documentos para verificar su identidad. (KYC).</p>
                         <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
                     </div>
                     <br/>
@@ -300,8 +300,8 @@
                 <div class="col-12 col-md-4 d-block d-md-none movil">
                     <div class="caja sup-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
-                        <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
-                        <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                        <p class="parra">Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                        <p class="parra">No ha enviado sus documentos para verificar su identidad. (KYC).</p>
                         <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
                     </div>
                 </div>
@@ -309,20 +309,20 @@
                 <div class="col-12 col-md-4 d-block d-md-none movil">
                     <div class="caja sup-b">
                         <p class="tit_kyc">Gane con sus referidos</p>
-                        <p>Invita tus amigos & familia.</p>
-                        <p>Link de referido</p>
+                        <p class="parra">Invita tus amigos & familia.</p>
+                        <p class="parra">Link de referido</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-8 caja sup espacio">
                     <h3 class="tit_veri">Verificacion de dos factores</h3>
-                    <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
+                    <p class="parra">La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
                     <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>
                 </div>
             </div>
         </div>
 
-        <div class="row contenedor d-md-none sup">
-                <div class="col-12 col-md-8 caja primero">
+        <div class="row contenedor d-lg-none sup">
+                <div class="col-12 col-lg-8 caja primero">
 
 
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -595,7 +595,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 d-none d-md-block">
+                <div class="col-12 col-lg-4 d-none d-lg-block">
                     <div class="caja-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
                         <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
@@ -610,7 +610,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 d-block d-md-none movil">
+                <div class="col-12 col-lg-4 d-block d-lg-none movil">
                     <div class="caja-b">
                         <p class="tit_kyc">Verificación de Identidad - KYC</p>
                         <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
@@ -619,7 +619,7 @@
                     </div>
                 </div>
                 <br/>
-                <div class="col-12 col-md-4 d-block d-md-none movil">
+                <div class="col-12 col-lg-4 d-block d-lg-none movil">
                     <div class="caja-b">
                         <p class="tit_kyc">Gane con sus referidos</p>
                         <p>Invita tus amigos & familia.</p>
@@ -628,15 +628,17 @@
                 </div>
 
 
-                <div class="col-12 col-md-8 caja espacio">
+                <div class="col-12 col-lg-8 caja espacio">
                     <h3 class="tit_veri">Verificacion de dos factores</h3>
                     <p>La autenticación de dos factores es un método para proteger tu cuenta. Cuando se activa, debes ingresar no solo tu contraseña, sino también un código especial. Puedes recibir este código en la aplicación móvil. Incluso si un tercero obtiene acceso a tu contraseña, aún no podrá acceder a su cuenta sin el código 2FA.</p>
                     <BotonGenerico class="factores" texto="Habilitar 2FA"></BotonGenerico>
                 </div>
             </div>
-
-
-
+            <div class="container">
+                <div class="row">
+                    <FooterDashboard></FooterDashboard>
+                </div>
+            </div>
 
     </div>
 
@@ -711,6 +713,7 @@
     import MenuDashboard from "@/components/MenuDashboard.vue";
     import InputGenerico from "@/components/Input-generico.vue";
     import BotonGenerico from "@/components/Boton-generico";
+    import FooterDashboard from "@/components/FooterDashboard";
   /* eslint-disable */
 export default {
     name: 'Dashboard',
@@ -718,7 +721,8 @@ export default {
         TopBar,
         MenuDashboard,
         InputGenerico,
-        BotonGenerico
+        BotonGenerico,
+        FooterDashboard
         //VueTyper,
         //Money,
         //Loading
@@ -731,10 +735,11 @@ export default {
 }
 </script>
 <style scoped>
+   
     .primero{
         margin-top: 70px !important;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 991px) {
         .contenedor{
             padding: 2%;
         }
@@ -755,6 +760,7 @@ export default {
         padding-right: 5%;
         padding-top: 2%;
         margin-top: 2%;
+        font-weight: 400;
     }
     .parr_centrado{
         text-align: center;
@@ -762,7 +768,7 @@ export default {
     .titulo{
         color: #342d6e;
         font-size: 1.4em;
-        font-weight: 600;
+        font-weight: 500;
     }
     .factores{
         width: 10%;
@@ -779,7 +785,7 @@ export default {
     }
     .tit_kyc{
         color: #342d6e;
-        font-weight: 600;
+        font-weight: 500;
         margin: 0;
     }
     html{
@@ -789,6 +795,7 @@ export default {
         background: #eef2f8;
         padding-top: 2%;
         font-family: "Roboto",sans-serif !important;
+        font-weight: 500;
     }
     /*.sup{
         margin-top: 10%;
@@ -808,7 +815,7 @@ export default {
         padding: 9%;
     }
     .nav-link{
-        font-weight: 600;
+        font-weight: 500;
         font-size: 14px;
         color: #758698;
     }
@@ -829,7 +836,7 @@ export default {
     .tit_veri{
         color: #342d6e;
         font-size: 1.4em;
-        font-weight: 600;
+        font-weight: 500;
     }
     .positivo{
         color: #00d285;
@@ -845,11 +852,17 @@ export default {
         font-weight: 700;
         color: #7668fe;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 991px) {
         .tit_veri{
             color: #342d6e;
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        .tit_kyc[data-v-22ba47ca] {
+            color: #342d6e;
+            font-weight: 500;
+            margin: 0;
+            font-size: 1.4rem;
         }
         .caja-b{
             padding: 3%;
@@ -866,9 +879,7 @@ export default {
         .nav-link{
             font-size: 12px;
         }
-        .titulo[data-v-22ba47ca] {
-            font-size: 18px;
-        }
+        
         .parr_centrado {
             font-size: 14px;
         }
@@ -919,5 +930,17 @@ export default {
         border: 1px solid;
         display: inline-block;
         transition: all .4s ease;
+    }
+    .parra{
+        font-family: "Roboto",sans-serif !important;
+        font-weight: 400;
+        font-size: 15px
+
+    }
+    p{
+        font-family: "Roboto",sans-serif !important;
+        font-weight: 400;
+        font-size: 15px
+
     }
 </style>

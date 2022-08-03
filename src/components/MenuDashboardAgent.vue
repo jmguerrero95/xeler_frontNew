@@ -129,6 +129,8 @@ export default {
 
         const toggleButton = document.getElementById("button-menu");
         const navWrapper = document.getElementById("nav");
+        navWrapper.classList.remove("show");
+        toggleButton.classList.remove("close");
 
         /* 
           cada ves que se haga click en el botón 

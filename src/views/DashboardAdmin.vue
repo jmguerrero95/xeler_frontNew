@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="todo">
         <TopBar></TopBar>
         <MenuDashboardAdmin v-on:submit-form="changeFormState"></MenuDashboardAdmin>
         <InicioAdmin v-if="type === 'A'"></InicioAdmin>
@@ -9,6 +9,11 @@
         <ManejoCuentas v-if="type === 'E'"></ManejoCuentas>
         <ManejoOtros v-if="type === 'F'"></ManejoOtros>
         <TodosUsuarios v-if="type === 'G'"></TodosUsuarios>
+        <div class="container">
+            <div class="row">
+                <FooterDashboard></FooterDashboard>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -21,6 +26,7 @@
     import ManejoCuentas from "@/components/ManejoCuentas.vue";
     import ManejoOtros from "@/components/ManejoOtros.vue";
     import TodosUsuarios from "@/components/TodosUsuarios.vue";
+    import FooterDashboard from "@/components/FooterDashboard";
   /* eslint-disable */
 export default {
     name: 'DashboardAdmin',
@@ -33,7 +39,8 @@ export default {
         Kyc,
         ManejoCuentas,
         ManejoOtros,
-        TodosUsuarios
+        TodosUsuarios,
+        FooterDashboard
         //VueTyper,
         //Money,
         //Loading
@@ -52,5 +59,11 @@ export default {
 }
 </script>
 <style scoped>
+    .container{
+        background: #eef2f8;
+    }
+    .todo{
+        background: #eef2f8;
+    }
 
 </style>

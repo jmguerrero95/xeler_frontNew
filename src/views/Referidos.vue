@@ -5,7 +5,7 @@
         <div class="dashboard container-fluid">
             <div class="container">
                 <div class="row contenedor">
-                    <div class="col-12 col-md-8 caja primero">
+                    <div class="col-12 col-lg-8 caja primero">
                         <div class="pasos">
                             <h2 class="card-title card-title-lg">Sistema de Referidos</h2>
                             <div class="row">
@@ -55,7 +55,9 @@
                             
                         </div>
                     </div>
+                    <FooterDashboard></FooterDashboard>
                 </div>
+
             </div>
         </div>
     </div>
@@ -65,6 +67,7 @@
     import MenuDashboard from "@/components/MenuDashboard.vue";
     import InputGenerico from "@/components/Input-generico.vue";
     import BotonGenerico from "@/components/Boton-generico";
+    import FooterDashboard from "@/components/FooterDashboard";
   /* eslint-disable */
 export default {
     name: 'Dashboard',
@@ -73,6 +76,7 @@ export default {
         MenuDashboard,
         InputGenerico,
         BotonGenerico,
+        FooterDashboard
         //VueTyper,
         //Money,
         //Loading
@@ -85,6 +89,11 @@ export default {
 }
 </script>
 <style scoped>
+    @media only screen and (max-width: 991px) {
+        .primero {
+            margin-top: 70px !important;
+        }
+    }
     @media only screen and (max-width: 768px) {
         .contenedor{
             padding: 2%;
@@ -169,7 +178,7 @@ export default {
     .card-title2 {
         color: #342d6e;
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 400;
         margin: 0;
     }
     .sap {

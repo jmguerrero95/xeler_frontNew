@@ -5,7 +5,7 @@
                 <div class="col-md-12 text-center text-lg-left">
 
                     <div class="banner-caption">
-                        <p class="lead">Xeler go es la plataforma más rápida y eficiente para comprar y vender <VueWriter :array="arr" :eraseSpeed="50" :typeSpeed="100" /> en Colombia.</p>
+                        <p class="lead">Xeler go es la plataforma más rápida y eficiente para comprar y vender <VueWriter :array="arr" :caret="cursor" :eraseSpeed="50" :typeSpeed="100" /> en Colombia.</p>
                     </div>
                 </div>
             </div>

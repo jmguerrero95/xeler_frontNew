@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import axios from 'axios'
 import router from "./router";
+import gsap from 'gsap'
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 

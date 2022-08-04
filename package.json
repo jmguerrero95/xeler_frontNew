@@ -19,6 +19,7 @@
     "bootstrap-vue": "^2.22.0",
     "chart.js": "^3.8.0",
     "core-js": "^3.8.3",
+    "gsap": "^3.10.4",
     "particles.js": "^2.0.0",
     "path-browserify": "^1.0.1",
     "sweetalert": "^2.1.2",

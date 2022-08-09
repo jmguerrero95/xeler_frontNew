@@ -21,13 +21,7 @@
                 <li class="nav-item">
                   <router-link to="/dashboard" class="nav-link"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</router-link>
                 </li>
-                <li class="nav-item">
-                  <router-link to="/login" class="nav-link">Cerrar sesion</router-link>
-                </li>
             </ul>
-            <div class="verificacion">
-                <a class="nav-link" href="#">Completa tu verificación</a>
-            </div>
         </div>
       </div>
     </nav>

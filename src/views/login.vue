@@ -68,6 +68,9 @@ export default {
 }
 </script>
 <style scoped>
+    .row{
+        background: white;
+    }
     .contenido{
         min-height: 100vh;
         display: flex;

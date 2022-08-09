@@ -20,16 +20,13 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Contabilidad</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'E')">Manejo de Cuentas</a></li>
-                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'F')">Manejo Otros</a></li>
+                    <li><a class="dropdown-item" href="#">Manejo de Cuentas</a></li>
+                    <li><a class="dropdown-item" href="#">Manejo Otros</a></li>
                   </ul>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="#" v-on:click="$emit('submit-form', 'G')"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</a>
-                </li>
-                <li class="nav-item">
-                  <router-link to="/login"><a class="nav-link" href="#">Cerrar sesion</a></router-link>
                 </li>
             </ul>
         </div>

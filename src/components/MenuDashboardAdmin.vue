@@ -44,9 +44,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Configuración</a>
                 </li>
-                <li class="nav-item">
-                  <router-link to="/login"><a class="nav-link" href="#">Cerrar sesion</a></router-link>
-                </li>
             </ul>
         </div>
       </div>

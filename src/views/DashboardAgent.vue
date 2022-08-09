@@ -1,11 +1,16 @@
 <template>
-    <div>
+    <div class="todo">
         <TopBar></TopBar>
         <MenuDashboardAgent v-on:submit-form="changeFormState"></MenuDashboardAgent>
         <InicioAgent v-if="type === 'A'"></InicioAgent>
         <TransaccionesPendientesAgent v-if="type === 'B'"></TransaccionesPendientesAgent>
         <TransaccionesAprobadasAgent v-if="type === 'C'"></TransaccionesAprobadasAgent>
         <PerfilAgent v-if="type === 'G'"></PerfilAgent>
+        <div class="container">
+            <div class="row">
+                <FooterDashboard></FooterDashboard>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -15,6 +20,7 @@
     import TransaccionesPendientesAgent from "@/components/TransaccionesPendientesAgent.vue";
     import TransaccionesAprobadasAgent from "@/components/TransaccionesAprobadasAgent.vue";
     import PerfilAgent from "@/components/PerfilAgent.vue";
+    import FooterDashboard from "@/components/FooterDashboard";
   /* eslint-disable */
 export default {
     name: 'DashboardAgent',
@@ -24,7 +30,8 @@ export default {
         InicioAgent,
         TransaccionesPendientesAgent,
         TransaccionesAprobadasAgent,
-        PerfilAgent
+        PerfilAgent,
+        FooterDashboard
         //VueTyper,
         //Money,
         //Loading
@@ -42,5 +49,11 @@ export default {
 }
 </script>
 <style scoped>
+    .container{
+        background: #eef2f8;
+    }
+    .todo{
+        background: #eef2f8;
+    }
 
 </style>

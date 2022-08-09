@@ -26,7 +26,8 @@
                     <li class="listadoA"><a href="#">11 pts</a></li>
                     <li class="listadoA"><a href="#">Mi Perfil</a></li>
                     <li class="listadoA"><a href="#">Mi Actividad</a></li>
-                    <li class="listadoB"><a href="#">Cerrar Sesión</a></li>
+                    <li class="listadoA"><a href="#">Completa tu verificación</a></li>
+                    <li class="listadoB"><router-link to="/login">Cerrar Sesión</router-link></li>
               </ul>
             </li>
           </ul>

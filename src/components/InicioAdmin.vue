@@ -4,12 +4,12 @@
             <div class="row espacio">
                 <div class="col-md-4 col-12 car">
                     <h4 class="tit_card">Total Vendido</h4>
-                    <p class="precio">4.161.382.199</p>
+                    <p class="precio">4.161.382.199</p><span class="tile-data-status tile-data-active">COP</span>
                     <span class="cripto">53.21681 <small>BTC</small> 100.00734 <small>ETH</small> 0.08319 <small>BCH</small> 179.28601 <small>LTC</small> 12.00281 <small>DASH</small></span>
                 </div>
                 <div class="col-md-4 col-12 card_center">
                     <h4 class="tit_card">Total Comprado</h4>
-                    <p class="precio">2.225.373.021</p>
+                    <p class="precio">2.225.373.021</p><span class="tile-data-status tile-data-active">COP</span>
                     <span class="cripto">53.21681 <small>BTC</small> 100.00734 <small>ETH</small> 0.08319 <small>BCH</small> 179.28601 <small>LTC</small> 12.00281 <small>DASH</small></span>
                 </div>
                 <div class="col-md-4 col-12 card_right">
@@ -23,29 +23,34 @@
                             <table class="table table-borderless">
                                 <tbody>
                                     <tr>
-                                        <td scope="col">TNX005094<br/>22 May, 2022 10:04 AM</td>
-                                        <td scope="col">0.00312 BTC<br/>93.39 USD</td>
-                                        <td scope="col"><span class="badge bg-primary">Venta</span></td>
+                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
+                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">TNX005094<br/>22 May, 2022 10:04 AM</td>
-                                        <td scope="col">0.00312 BTC<br/>93.39 USD</td>
-                                        <td scope="col"><span class="badge bg-primary">Venta</span></td>success
+                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
+                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">TNX005094<br/>22 May, 2022 10:04 AM</td>
-                                        <td scope="col">0.00312 BTC<br/>93.39 USD</td>
-                                        <td scope="col"><span class="badge bg-success">Venta</span></td>
+                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
+                                        <td scope="col"><span class="badge bg-success d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">TNX005094<br/>22 May, 2022 10:04 AM</td>
-                                        <td scope="col">0.00312 BTC<br/>93.39 USD</td>
-                                        <td scope="col"><span class="badge bg-primary">Venta</span></td>
+                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
+                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">TNX005094<br/>22 May, 2022 10:04 AM</td>
-                                        <td scope="col">0.00312 BTC<br/>93.39 USD</td>
-                                        <td scope="col"><span class="badge bg-primary">Venta</span></td>
+                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
+                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -153,6 +158,37 @@ export default {
 }
 </script>
 <style scoped>
+    .precio2{
+        font-size: 12px !important;
+        font-weight: 400 !important;
+    }
+    .text{
+        font-family: "Roboto",sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #495463;
+        letter-spacing: 0.01em;
+        line-height: 1;
+        margin-top: 0;
+        margin-right: 4px;
+    }
+    .tit{
+        outline: 0;
+        transition: all 0.5s;
+        color: #5e55b8;
+    }
+    .icono{
+        font-size: 13px;
+        display: block;
+        text-align: center;
+        width: 32px;
+        line-height: 30px;
+        border-radius: 50%;
+        border: 1px solid #d2dde9;
+        float: right;
+        color: #00d285;
+        border-color: #00d285;
+    }
     @media only screen and (max-width: 768px) {
         .car{
             background: white;
@@ -170,12 +206,13 @@ export default {
             background: white;
             border: 0;
             padding: 2%;
+            margin-top: 3%;
         }
         .card_right{
             background: white;
             border: 0;
             padding: 2%;
-
+            margin-top: 3%;
         }
         .parte2_right{
             margin-top: 3%;
@@ -236,20 +273,28 @@ export default {
     .tit_card{
         color: #342d6e;
         font-size: 1.15em;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
+        padding-top: 2px;
+        font-family: "Roboto",sans-serif;
+        margin-bottom: 4%;
     }
     .precio{
-        font-size: 24px;
+        font-size: 32px;
         line-height: 1;
         color: #495463;
         font-weight: 500;
+        display: inline;
     }
     .cripto{
         font-size: 19px;
         display: inline-block;
         margin-right: 3px;
         font-weight: 700;
+        color: #6e81a9;
+        line-height: 1;
+        padding-right: 50px;
+        margin-top: 1rem;
     }
     small{
         font-size: 80%;
@@ -258,6 +303,31 @@ export default {
     .fondo{
         background: #eef2f8;
     }
-    
+    .tile-data-status {
+        font-size: 14px;
+        line-height: 20px;
+        border-radius: 15px;
+        font-weight: 400;
+        margin: 0 12px;
+        position: relative;
+    }
+    .tile-data-active {
+        padding: 5px 14px;
+        color: #1babfe;
+        background: rgba(27,171,254,0.15);
+    }
+    @media only screen and (max-width: 575px) {
+        .row{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .precio {
+            font-size: 24px;
+        }
+        .tit_card {
+            font-size: 1em;
+        }
+    }
+        
 
 </style>

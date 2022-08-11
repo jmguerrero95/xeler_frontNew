@@ -28,6 +28,9 @@ export default {
 </script>
 
 <style scoped>
+  div{
+    min-height: 100vh;
+  }
   .slide-enter-active,
   .slide-leave-active{
     transition: opacity 1s, transform 1s;

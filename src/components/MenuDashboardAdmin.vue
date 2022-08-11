@@ -30,7 +30,7 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> 
                     Usuarios
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,33 +51,33 @@
     <header class="main-header d-block d-md-none">
           <nav id="nav" class="main-nav">
             <div class="nav-links">
-              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'A')" aria-current="page">Dashboard</a>
-              <a class="link-item sub1" v-on:click="cambio('.submenu_movil')" href="#" aria-current="page">Transacciones</a>
+              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'A'); cerrar()" aria-current="page"><font-awesome-icon class="iconos" icon="fa-solid fa-chart-line"/> Dashboard</a>
+              <a class="link-item sub1" v-on:click="cambio('.submenu_movil')" href="#" aria-current="page"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
               <div class="submenu_movil todo">
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'B')">Transacciones Pendientes</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'B'); cerrar()">Transacciones Pendientes</a>
                 </div>
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'C')">Transacciones Aprobadas</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'C'); cerrar()">Transacciones Aprobadas</a>
                 </div>
               </div>
-              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'D')">KYC</a>
-              <a class="link-item sub2" v-on:click="cambio('.submenu_movil2')" href="#">Contabilidad</a>
+              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'D'); cerrar()">KYC</a>
+              <a class="link-item sub2" v-on:click="cambio('.submenu_movil2')" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Contabilidad</a>
               <div class="submenu_movil2 todo">
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'E')">Manejo de Cuentas</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'E'); cerrar()">Manejo de Cuentas</a>
                 </div>
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'F')">Manejo Otros</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'F'); cerrar()">Manejo Otros</a>
                 </div>
               </div>
-              <a class="link-item sub3" v-on:click="cambio('.submenu_movil3')" href="#">Usuarios</a>
+              <a class="link-item sub3" v-on:click="cambio('.submenu_movil3')" href="#"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Usuarios</a>
               <div class="submenu_movil3 todo">
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'G')">Usuarios</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'G'); cerrar()">Usuarios</a>
                 </div>
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'H')">Usuarios Referidos</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'H'); cerrar()">Usuarios Referidos</a>
                 </div> 
               </div>
               <a class="link-item" href="#">Tienda</a>
@@ -117,7 +117,6 @@ export default {
     },
     methods: {
       cambio: function (divOCult){
-        
         const submenu_movil = document.querySelector(".submenu_movil")
         const submenu_movil2 = document.querySelector(".submenu_movil2")
         const submenu_movil3 = document.querySelector(".submenu_movil3")
@@ -129,6 +128,12 @@ export default {
         const divOCult2 = document.querySelector(divOCult)
         console.log(divOCult2)
         divOCult2.style.display = "block"
+      },
+      cerrar: function (divOCult){
+        const toggleButton = document.getElementById("button-menu");
+        const navWrapper = document.getElementById("nav");
+        navWrapper.classList.remove("show");
+        toggleButton.classList.remove("close");
       }
 
     },
@@ -345,6 +350,24 @@ export default {
     .img-menu{
         width: 80%;
         margin-top: 5%;
+    }
+    @media only screen and (max-width: 767px) {
+      .img-menu{
+        width: 60%;
+        margin-top: 5%;
+      }
+    }
+    @media only screen and (max-width: 520px) {
+      .img-menu{
+        width: 80%;
+        margin-top: 5%;
+      }
+    }
+    @media only screen and (max-width: 380px) {
+      .img-menu{
+        width: 100%;
+        margin-top: 5%;
+      }
     }
    
 </style>

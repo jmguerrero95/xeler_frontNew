@@ -38,29 +38,29 @@
     <header class="main-header d-block d-md-none">
           <nav id="nav" class="main-nav">
             <div class="nav-links">
-              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'A')" aria-current="page">Dashboard</a>
-              <a class="link-item sub1" v-on:click="cambio('.submenu_movil')" href="#" aria-current="page">Transacciones</a>
+              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'A'); cerrar()" aria-current="page"><font-awesome-icon class="iconos" icon="fa-solid fa-chart-line"/> Dashboard</a>
+              <a class="link-item sub1" v-on:click="cambio('.submenu_movil')" href="#" aria-current="page"><font-awesome-icon class="iconos" icon="fa-solid fa-right-left"/> Transacciones</a>
               <div class="submenu_movil todo">
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'B')">Transacciones Pendientes</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'B'); cerrar()">Transacciones Pendientes</a>
                 </div>
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'C')">Transacciones Aprobadas</a>
+                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'C'); cerrar()">Transacciones Aprobadas</a>
                 </div>
                 <div class="espa_submenu">
                   <a class="link-item" href="#">Todas las Transacciones</a>
                 </div>
               </div>
-              <a class="link-item sub2" v-on:click="cambio('.submenu_movil2')" href="#">Contabilidad</a>
+              <a class="link-item sub2" v-on:click="cambio('.submenu_movil2')" href="#"><font-awesome-icon class="iconos" icon="fa-solid fa-coins"/> Contabilidad</a>
               <div class="submenu_movil2 todo">
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'E')">Manejo de Cuentas</a>
+                  <a class="link-item" href="#" v-on:click="cerrar()">Manejo de Cuentas</a>
                 </div>
                 <div class="espa_submenu">
-                  <a class="link-item" href="#" v-on:click="$emit('submit-form', 'F')">Manejo Otros</a>
+                  <a class="link-item" href="#" v-on:click="cerrar()">Manejo Otros</a>
                 </div>
               </div>
-              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'G')">Perfil</a>
+              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'G'); cerrar()"><font-awesome-icon class="iconos" icon="fa-regular fa-circle-user"/> Perfil</a>
               <router-link class="link-item" to="/login">Cerrar sesion</router-link>
             </div>
           </nav>
@@ -104,15 +104,20 @@ export default {
         
         const submenu_movil = document.querySelector(".submenu_movil")
         const submenu_movil2 = document.querySelector(".submenu_movil2")
-        const submenu_movil3 = document.querySelector(".submenu_movil3")
         /*const todo = document.querySelector(".todo")
         todo.style.display = "none"*/
         submenu_movil.style.display = "none"
         submenu_movil2.style.display = "none"
-        submenu_movil3.style.display = "none"
         const divOCult2 = document.querySelector(divOCult)
         console.log(divOCult2)
         divOCult2.style.display = "block"
+      },
+      cerrar: function (divOCult){
+        const toggleButton = document.getElementById("button-menu");
+        const navWrapper = document.getElementById("nav");
+        navWrapper.classList.remove("show");
+        toggleButton.classList.remove("close");
+
       }
 
     },
@@ -321,6 +326,24 @@ export default {
     .img-menu{
         width: 80%;
         margin-top: 5%;
+    }
+    @media only screen and (max-width: 767px) {
+      .img-menu{
+        width: 60%;
+        margin-top: 5%;
+      }
+    }
+    @media only screen and (max-width: 520px) {
+      .img-menu{
+        width: 80%;
+        margin-top: 5%;
+      }
+    }
+    @media only screen and (max-width: 380px) {
+      .img-menu{
+        width: 100%;
+        margin-top: 5%;
+      }
     }
    
 </style>

@@ -9,66 +9,72 @@
                             <table class="table table-borderless">
                                 <tbody>
                                     <tr>
+                                        <th>USUARIO</th>
+                                        <th colspan="3">DOCUMENTOS</th>
+                                        <th>ENVIADA</th>
+                                        <th>ESTADO</th>
+                                    </tr>
+                                    <tr>
                                         <td scope="col">antonio caro<br/>antoniocg</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">Melanie Quitian<br/>MelanieQuitian</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">Dylan Andres Barrios Molina<br/>Dylanbarrios98</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">WSDRALIA VELASQUEZ<br/>WSDRI</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">Jorge Alexander Lugo<br/>jorgelugo</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">Alejandro Echandia<br/>adeox</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">Luis Horta<br/>luismanuel</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-danger">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col">Paula Restrepo<br/>Paula12A</td>
-                                        <td scope="col">Frente</td>
-                                        <td scope="col">Trasera</td>
-                                        <td scope="col">Selfie</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-danger">Aprobado</span></td>
                                     </tr>
@@ -98,6 +104,17 @@ export default {
 }
 </script>
 <style scoped>
+    .icono{
+        font-size: 13px;
+        display: inline-block;
+        text-align: center;
+        width: 25px;
+        line-height: 23px;
+        border-radius: 50%;
+        border: 1px solid #d2dde9;
+        color: #00d285;
+        border-color: #00d285;
+    }
     .final{
         margin-top: 3%;
     }

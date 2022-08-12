@@ -647,7 +647,9 @@ export default {
             margin-top: 5%;
         }
         .navbar-dark{
-            background-image: linear-gradient(to bottom,#0b0c22 0,#1b1e4b 100%);
+            border-bottom: 1px solid transparent;
+            background-color: transparent;
+
         }
         .navbar{
             padding-top: 0 !important;

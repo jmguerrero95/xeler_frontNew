@@ -6,76 +6,79 @@
                     <div class="row">
                         <div class="col-12">
                             <h4 class="tit_card">Lista Verificaciones</h4>
-                            <table class="table table-borderless">
+                            <br/>
+                            <table class="table table-striped table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th class="tit_tab">USUARIO</th>
+                                        <th colspan="3" class="tit_tab">DOCUMENTOS</th>
+                                        <th class="tit_tab">ENVIADA</th>
+                                        <th class="tit_tab">ESTADO</th>
+                                    </tr>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <th>USUARIO</th>
-                                        <th colspan="3">DOCUMENTOS</th>
-                                        <th>ENVIADA</th>
-                                        <th>ESTADO</th>
-                                    </tr>
-                                    <tr>
-                                        <td scope="col">antonio caro<br/>antoniocg</td>
+                                        <td scope="col"><span class="nombre">antonio caro</span><br/><span class="subNombre">antoniocg</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">Melanie Quitian<br/>MelanieQuitian</td>
+                                        <td scope="col"><span class="nombre">Melanie Quitian</span><br/><span class="subNombre">MelanieQuitian</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">Dylan Andres Barrios Molina<br/>Dylanbarrios98</td>
+                                        <td scope="col"><span class="nombre">Dylan Andres Barrios Molina</span><br/><span class="subNombre">Dylanbarrios98</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">WSDRALIA VELASQUEZ<br/>WSDRI</td>
+                                        <td scope="col"><span class="nombre">WSDRALIA VELASQUEZ</span><br/><span class="subNombre">WSDRI</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">Jorge Alexander Lugo<br/>jorgelugo</td>
+                                        <td scope="col"><span class="nombre">Jorge Alexander Lugo</span><br/><span class="subNombre">jorgelugo</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">Alejandro Echandia<br/>adeox</td>
+                                        <td scope="col"><span class="nombre">Alejandro Echandia</span><br/><span class="subNombre">adeox</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-success">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">Luis Horta<br/>luismanuel</td>
+                                        <td scope="col"><span class="nombre">Luis Horta</span><br/><span class="subNombre">luismanuel</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-danger">Aprobado</span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col">Paula Restrepo<br/>Paula12A</td>
+                                        <td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="subNombre">Paula12A</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
-                                        <td scope="col">28 Jan, 2022 07:42 PM</td>
+                                        <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="badge bg-danger">Aprobado</span></td>
                                     </tr>
                                 </tbody>
@@ -104,6 +107,51 @@ export default {
 }
 </script>
 <style scoped>
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+       background-color:rgba(118,104,254,0.1);
+    }
+    @media only screen and (max-width: 580px) {
+        .table{
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+    
+    .fecha{
+        padding-top: 1%;
+        font-size: 0.8em;
+        color: #495463;
+        letter-spacing: 0.02em;
+        font-weight: 400;
+        line-height: 1.3;
+    }
+    .subNombre{
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        padding-top: 7px;
+        line-height: 1.3;
+        font-weight: 400;
+
+    }
+    .nombre{
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        line-height: 1.2;
+        margin-top: 0;
+        color: #495463;
+
+    }
+    .tit_tab{
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #7668fe;
+        text-transform: uppercase;
+    }
     .icono{
         font-size: 13px;
         display: inline-block;

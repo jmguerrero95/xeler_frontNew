@@ -6,61 +6,88 @@
                     <div class="row">
                         <div class="col-12">
                             <h4 class="tit_card">Transacciones aprobadas</h4>
-                            <table class="table table-borderless">
+                            <br/>
+                            <table class="table ">
+                                <thead>
+                                    <th></th>
+                                    <th class="tit text">TRANX NO</th>
+                                    <th class="tit text">COP</th>
+                                    <th class="tit text">CRYPTO</th>
+                                    <th class="tit text">USD</th>
+                                    <th class="tit text">DIRECCIÓN</th>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/KYC.png"><img class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"><img class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-success d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"><img class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"><img class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"><img class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
-                                        <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
+                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi" src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png"><img class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td scope="col"><span class="text precio">TEST</span><br/><span class="text">TNX005094</span><br/><span class="text precio">22 May, 2022 10:04 AM</span></td>
+                                        <td scope="col" class="text"><span>350.000<br/><br/><span class="precio">COP</span></span></td>
+                                        <td scope="col" class="text"><span>0.00312<br/><br/><span class="precio">BTC</span></span></td>
+                                        <td scope="col" class="text"><span>93.00<br/><br/><span class="precio">USD</span></span></td>
+                                        <td scope="col" class="text"><span>2NFKs...7yhXT<br/><br/><span class="precio">Banco</span></span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -88,6 +115,20 @@ export default {
 }
 </script>
 <style scoped>
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+       background-color:rgba(118,104,254,0.1);
+    }
+    @media only screen and (max-width: 580px) {
+        .table{
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+    .verifi{
+        width: 32px;
+        margin-left: 1.5%;
+    }
     @media only screen and (max-width: 575px) {
         .container{
             padding-left: 5%;
@@ -97,15 +138,15 @@ export default {
     }
     .icono{
         font-size: 13px;
-        display: block;
+        display: inline-block;
         text-align: center;
         width: 32px;
         line-height: 30px;
         border-radius: 50%;
         border: 1px solid #d2dde9;
-        float: right;
         color: #00d285;
         border-color: #00d285;
+        margin-right: 1.5%;
     }
     .precio{
         font-size: 12px !important;

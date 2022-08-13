@@ -7,94 +7,101 @@
                         <div class="col-12">
                             <h4 class="tit_card">Lista de usuarios</h4>
                             <br/>
-                            <table class="table table-borderless">
+                            <table class="table table-striped table-borderless">
+                                <thead>
+                                    <td class="tit">USUARIO</td>
+                                    <td class="tit">EMAIL</td>
+                                    <td class="tit" colspan="4">ESTADO VERIFICACION</td>
+                                    <td class="tit">ACTIVO</td>
+                                    <td class="tit">FECHA DE REGISTRO</td>
+                                </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="col"><b>antonio caro</b><br/>antoniocg</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">antonio caro</span><br/><span class="min">antoniocg</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>Melanie Quitian</b><br/>MelanieQuitian</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">Melanie Quitian</span><br/><span class="min">MelanieQuitian</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>Dylan Andres Barrios Molina</b><br/>Dylanbarrios98</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">Dylan Andres Barrios Molina</span><br/><span class="min">Dylanbarrios98</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>WSDRALIA VELASQUEZ</b><br/>WSDRI</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">WSDRALIA VELASQUEZ</span><br/><span class="min">WSDRI</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>Jorge Alexander Lugo</b><br/>jorgelugo</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">Jorge Alexander Lugo</span><br/><span class="min">jorgelugo</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>Alejandro Echandia</b><br/>adeox</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">Alejandro Echandia</span><br/><span class="min">adeox</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>Luis Horta</b><br/>luismanuel</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">Luis Horta</span><br/><span class="min">luismanuel</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><b>Paula Restrepo</b><br/>Paula12A</td>
-                                        <td scope="col">correo@correo.com</td>
-                                        <td scope="col">Email</td>
-                                        <td scope="col">Celular</td>
-                                        <td scope="col">KYC</td>
-                                        <td scope="col">Notas</td>
-                                        <td scope="col">Activo</td>
-                                        <td scope="col">2022-06-07 21:30:00</td>
+                                        <td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="min">Paula12A</span></td>
+                                        <td scope="col" class="text">correo@correo.com</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Email</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Celular</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> KYC</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
+                                        <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
+                                        <td scope="col" class="text">2022-06-07 21:30:00</td>
                                         <td scope="col"><button>...</button></td>
                                     </tr>
                                 </tbody>
@@ -123,6 +130,61 @@ export default {
 }
 </script>
 <style scoped>
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+       background-color:rgba(118,104,254,0.1);
+    }
+    @media only screen and (max-width: 580px) {
+        .table{
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+    }
+    .icono{
+        font-size: 13px;
+        display: inline-block;
+        text-align: center;
+        width: 25px;
+        line-height: 23px;
+        border-radius: 50%;
+        border: 1px solid #d2dde9;
+        color: #00d285;
+        border-color: #00d285;
+    }
+    .text{
+        font-size: 13px;
+        color: #495463;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        line-height: 1;
+    }
+    .min{
+        font-size: 12px;
+        font-weight: 400;
+        color: #758698;
+        letter-spacing: 0.01em;
+        line-height: 1;
+        padding-top: 7px;
+    }
+    .nombre{
+        font-size: 14px;
+        font-weight: 600;
+        color: #495463;
+        letter-spacing: 0.01em;
+        line-height: 1;
+        margin-top: 0;
+        margin-right: 4px;
+    }
+    .tit{
+        padding: 0 10px 0 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #7668fe;
+        text-transform: uppercase;
+        border-bottom: none;
+    }
     .final{
         margin-top: 3%;
     }

@@ -35,14 +35,14 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'G')">Usuarios</a></li>
-                    <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'H')">Usuarios Referidos</a></li>
+                    <li><a class="dropdown-item" href="#">Usuarios Referidos</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Tienda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Configuración</a>
+                  <a class="nav-link" href="#" v-on:click="$emit('submit-form', 'I')">Configuración</a>
                 </li>
             </ul>
         </div>
@@ -81,7 +81,7 @@
                 </div> 
               </div>
               <a class="link-item" href="#">Tienda</a>
-              <a class="link-item" href="#">Configuración</a>
+              <a class="link-item" href="#" v-on:click="$emit('submit-form', 'I')">Configuración</a>
               <router-link class="link-item" to="/login">Cerrar sesion</router-link>
             </div>
           </nav>

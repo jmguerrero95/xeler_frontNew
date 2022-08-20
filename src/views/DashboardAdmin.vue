@@ -9,6 +9,7 @@
         <ManejoCuentas v-if="type === 'E'"></ManejoCuentas>
         <ManejoOtros v-if="type === 'F'"></ManejoOtros>
         <TodosUsuarios v-if="type === 'G'"></TodosUsuarios>
+        <Configuracion v-if="type === 'I'"></Configuracion>
         <div class="container">
             <div class="row">
                 <FooterDashboard></FooterDashboard>
@@ -26,6 +27,7 @@
     import ManejoCuentas from "@/components/ManejoCuentas.vue";
     import ManejoOtros from "@/components/ManejoOtros.vue";
     import TodosUsuarios from "@/components/TodosUsuarios.vue";
+    import Configuracion from "@/components/Configuracion.vue";
     import FooterDashboard from "@/components/FooterDashboard";
   /* eslint-disable */
 export default {
@@ -40,6 +42,7 @@ export default {
         ManejoCuentas,
         ManejoOtros,
         TodosUsuarios,
+        Configuracion,
         FooterDashboard
         //VueTyper,
         //Money,

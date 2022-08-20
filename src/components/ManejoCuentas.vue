@@ -7,7 +7,7 @@
                         <div class="col-12">
                             <h4 class="tit_card">Contabilidad</h4>
                             <div class="row">
-                                <div class="col-9">
+                                <div class="col-12 col-md-9">
                                     <br/>
                                     <p>Cuentas</p>
                                     <select class="form-select" aria-label="Default select example">
@@ -24,11 +24,11 @@
                                       <option value="10">Cuenta 10</option>
                                     </select>
                                     <div class="row fechas">
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-12">
                                             <p>Fecha desde</p>
                                             <InputGenerico type="text" placeholder="Fecha 1"></InputGenerico>
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-md-6 col-12">
                                             <p>Fecha hasta</p>
                                             <InputGenerico type="text" placeholder="Fecha 2"></InputGenerico>
                                         </div>

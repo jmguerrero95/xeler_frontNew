@@ -20,7 +20,7 @@
     "chart.js": "^3.8.0",
     "core-js": "^3.8.3",
     "gsap": "^3.10.4",
-    "particles.js": "^2.0.0",
+    "particles.vue3": "^2.2.3",
     "path-browserify": "^1.0.1",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^11.4.17",
@@ -30,7 +30,8 @@
     "vue-loading-overlay": "^5.0.3",
     "vue-router": "^4.0.13",
     "vue-typer": "^1.2.0",
-    "vue-writer": "^1.2.0"
+    "vue-writer": "^1.2.0",
+    "vue3-particles": "^2.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

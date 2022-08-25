@@ -12,18 +12,19 @@
                             <p>Seleccióna la Moneda y monto que deseas vender, luego de seleccionar podrás elegir el método de pago.</p>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto">Bitcoin</button>
+                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Bitcoin</span></div><div class="col-6">89.104.190 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto">Ethereum</button>
+                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-brands fa-ethereum"/><span class="pay-cur">Ethereum</span></div><div class="col-6">7.032.894 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto">Bitcoin Cash</button>
+                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-brands fa-bitcoin"/><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6">538.759 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto">Litecoin</button>
+                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
+                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                     <button class="cripto">Dash</button>
                                 </div>  
                             </div>
@@ -34,13 +35,13 @@
                             <p>Selecciona el método de venta y se mostrará el formulario para ingresár el monto a vender, cuando dés click en confirmar se mostrarán los datos donde debes envíar el pago.</p>
                             <div class="row">
                                 <div class="col-12 col-lg-4">
-                                    <button class="cripto">Efectivo</button>
+                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-coins"/><span class="pay-cur">Efectivo</span></button>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <button class="cripto">Banco</button>
+                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-building-columns"/><span class="pay-cur">Banco</span></button>
                                 </div>
                                 <div class="col-12 col-lg-4">
-                                    <button class="cripto">Otros</button>
+                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Otros</span></button>
                                 </div>
                             </div>
                         </div>
@@ -107,6 +108,18 @@ export default {
 }
 </script>
 <style scoped>
+    .pay-cur {
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .pay-icon {
+        font-size: 22px;
+        line-height: 30px;
+        width: 30px;
+        text-align: center;
+        margin-left: -40%;
+    }
     @media only screen and (max-width: 991px) {
         .primero {
             margin-top: 70px !important;

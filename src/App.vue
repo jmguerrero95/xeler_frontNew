@@ -31,16 +31,16 @@ export default {
   div{
     min-height: 100vh;
   }
-  .slide-enter-active,
+  /*.slide-enter-active,
   .slide-leave-active{
     transition: opacity 1s, transform 1s;
   }
 
   .slide-enter-from,
   .slide-leave-to{
-    opacity: 0.2;
+    opacity: 0.2;*/
     /*transform: translateX(-30%);*/
-  }
+  /*}*/
 
   @font-face {
     font-family: "Poppins";

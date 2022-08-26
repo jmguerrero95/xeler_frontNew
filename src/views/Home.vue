@@ -5,7 +5,7 @@
 <div v-if="!isLoading">
 
 
-        <Particles
+        <!--<Particles
                 id="tsparticles"
                 :particlesInit="particlesInit"
                 :particlesLoaded="particlesLoaded"
@@ -86,7 +86,7 @@
                     },
                     detectRetina: true
                 }"
-        />
+        />-->
 
 
 

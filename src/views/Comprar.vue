@@ -12,19 +12,19 @@
                             <p>Seleccióna la Moneda y monto que deseas Comprar, luego de seleccionar podrás elegir el método de pago.</p>
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Bitcoin</span></div><div class="col-6">89.104.190 COP</div></div></button>
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Bitcoin</span></div><div class="col-6">89.104.190 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-brands fa-ethereum"/><span class="pay-cur">Ethereum</span></div><div class="col-6">7.032.894 COP</div></div></button>
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-ethereum"/><span class="pay-cur">Ethereum</span></div><div class="col-6">7.032.894 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-brands fa-bitcoin"/><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6">538.759 COP</div></div></button>
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-bitcoin"/><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6">538.759 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                     <button class="cripto">Dash</button>
                                 </div>  
                             </div>
@@ -108,6 +108,9 @@ export default {
 }
 </script>
 <style scoped>
+    .flex{
+        display: flex;
+    }
     .pay-cur {
         font-size: 14px;
         line-height: 30px;
@@ -118,7 +121,6 @@ export default {
         line-height: 30px;
         width: 30px;
         text-align: center;
-        margin-left: -40%;
     }
     @media only screen and (max-width: 991px) {
         .primero {

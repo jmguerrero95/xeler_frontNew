@@ -13,7 +13,7 @@
                                 <p>Invita tus amigos y familiares y recibe bonificaciones. </p>
                                 
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-12">
                                     <p class="card-title3">11,171 pts</p>
                                     
                                 </div>
@@ -55,6 +55,14 @@
                             
                         </div>
                     </div>
+                <div class="col-12 col-lg-4 caja_espa">
+                    <div class="sup-b caja_blanca">
+                        <p class="tit_kyc">Verificación de Identidad - KYC</p>
+                        <p class="parra">Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                        <p class="parra">No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                        <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
+                    </div>
+                </div>
                     <FooterDashboard></FooterDashboard>
                 </div>
 
@@ -116,6 +124,19 @@ export default {
         border-radius: 5px;
         padding: 2%;
         /*margin-left: 5%;*/
+    }
+    .caja_blanca{
+        background: white;
+        border-radius: 5px;
+        padding: 2%;
+    }
+    .sup-b{
+        padding: 9%;
+    }
+    .tit_kyc{
+        color: #342d6e;
+        font-weight: 500;
+        margin: 0;
     }
     .tit_card{
         text-transform: uppercase;
@@ -223,5 +244,73 @@ export default {
         .primero{
             margin-top: 70px !important;
         }
+    }
+    @media only screen and (max-width: 991px) {
+        .tit_veri{
+            color: #342d6e;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+        .tit_kyc[data-v-22ba47ca] {
+            color: #342d6e;
+            font-weight: 500;
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        .caja-b{
+            padding: 3%;
+        }
+        .caja{
+            padding: 5%;
+        }
+        .espacio {
+            margin-top: 4%;
+        }
+        .movil{
+            border-radius: 5px;
+        }
+        .nav-link{
+            font-size: 12px;
+        }
+        
+        .parr_centrado {
+            font-size: 14px;
+        }
+        .let_movil{
+            font-size: 14px;
+            font-weight: 600;
+            color: #495463;
+            letter-spacing: 0.01em;
+            line-height: 1;
+            margin-top: 0;
+            margin-right: 4px;
+        }
+        .form-label{
+            font-size: 14px;
+            font-weight: 500;
+            color: #495463;
+            line-height: 1.1;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+        .caja_espa{
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .parra{
+        font-family: "Roboto",sans-serif !important;
+        font-weight: 400;
+        font-size: 15px
+
+    }
+    .boton{
+        padding-top: 2%;
+        padding-left: 0%;
+        padding-bottom: 2%;
+        padding-right: 0%;
+        width: 10%;
     }
 </style>

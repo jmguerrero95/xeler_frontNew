@@ -329,10 +329,10 @@
       "density": {
         "enable": true,
         "area": 800,
-        "factor": 1000
+        "factor": 820
       },
       "limit": 0,
-      "value": 80
+      "value": 100
     },
     "opacity": {
       "random": {
@@ -465,12 +465,12 @@
     "twinkle": {
       "lines": {
         "enable": false,
-        "frequency": 0.05,
+        "frequency": 0.5,
         "opacity": 0.3
       },
       "particles": {
         "enable": false,
-        "frequency": 0.05,
+        "frequency": 0.5,
         "opacity": 0.3
       }
     },

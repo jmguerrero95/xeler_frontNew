@@ -10,6 +10,7 @@
                             <h2 class="card-title card-title-lg">Sistema de Referidos</h2>
                             <div class="row">
                                 <div class="col-8">
+                                <br/>
                                 <p>Invita tus amigos y familiares y recibe bonificaciones. </p>
                                 
                                 </div>
@@ -19,6 +20,7 @@
                                 </div>
                                 <div class="col-12">
                                     <h4 class="card-title card-title-sm">URL de Referido</h4>
+                                    <br/>
                                     <input type="text" class="copy-address" value="http://104.248.246.251/ref=XEL26259" disabled="">
                                     <p class="card-title2">
                                         <br/>
@@ -174,7 +176,7 @@ export default {
     .card-title {
         color: #342d6e;
         font-size: 1.3em;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
     }
     .card-title3 {
@@ -184,7 +186,7 @@ export default {
         margin: 0;
     }
     .card-title-sm {
-        font-size: 1.15em;
+        font-size: 1.05em;
         padding-top: 2px;
     }
     .copy-address {
@@ -198,8 +200,8 @@ export default {
     }
     .card-title2 {
         color: #342d6e;
-        font-size: 1em;
-        font-weight: 400;
+        font-size: 0.95em;
+        font-weight: 500;
         margin: 0;
     }
     .sap {
@@ -294,7 +296,7 @@ export default {
             display: inline-block;
         }
         .caja_espa{
-            padding-top: 2%;
+            padding-top: 5%;
             padding-bottom: 2%;
             padding-left: 0;
             padding-right: 0;

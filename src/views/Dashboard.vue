@@ -353,38 +353,35 @@
                                     <label class="form-label">Primer Nombre</label>
                                     <InputGenerico value="Vivian" placeholder="Ingrese su primer nombre"></InputGenerico>
                                     <br/>
-                                    <label class="form-label">Primer Apellido</label>
-                                    <InputGenerico value="" placeholder="Ingrese su primer apellido"></InputGenerico>
-                                    <br/>
-                                    <label class="form-label">Email</label>
-                                    <InputGenerico placeholder="Ingrese email"></InputGenerico>
-                                    <br/>
-                                    <label class="form-label">Fecha de nacimiento</label>
-                                    <InputGenerico placeholder="Ingrese fecha de nacimiento"></InputGenerico>
-                                    <br/>
-                                    <label class="form-label">Departamento de residencia</label>
-                                    <InputGenerico placeholder="Ingrese departamento de residencia"></InputGenerico>
-                                    <br/>
-                                    <label class="form-label">Tipo de documento</label>
-                                    <InputGenerico placeholder="Ingrese tipo de documento"></InputGenerico>
-                                    <br/>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <br/>
                                     <label class="form-label">Segundo Nombre</label>
                                     <InputGenerico placeholder="Ingrese su segundo nombre"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Primer Apellido</label>
+                                    <InputGenerico value="" placeholder="Ingrese su primer apellido"></InputGenerico>
                                     <br/>
                                     <label class="form-label">Segundo Apellido</label>
                                     <InputGenerico placeholder="Ingrese su segundo apellido"></InputGenerico>
                                     <br/>
+                                    <label class="form-label">Email</label>
+                                    <InputGenerico placeholder="Ingrese email"></InputGenerico>
+                                    <br/>
                                     <label class="form-label">Nùmero Celular</label>
                                     <InputGenerico placeholder="Ingrese numero celular"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Fecha de nacimiento</label>
+                                    <InputGenerico placeholder="Ingrese fecha de nacimiento"></InputGenerico>
                                     <br/>
                                     <label class="form-label">País de residencia</label>
                                     <InputGenerico placeholder="Ingrese país de residencia"></InputGenerico>
                                     <br/>
+                                    <label class="form-label">Departamento de residencia</label>
+                                    <InputGenerico placeholder="Ingrese departamento de residencia"></InputGenerico>
+                                    <br/>
                                     <label class="form-label">Ciudad de residencia</label>
                                     <InputGenerico placeholder="Ingrese su ciudad de residencia"></InputGenerico>
+                                    <br/>
+                                    <label class="form-label">Tipo de documento</label>
+                                    <InputGenerico placeholder="Ingrese tipo de documento"></InputGenerico>
                                     <br/>
                                     <label class="form-label">Número documento</label>
                                     <InputGenerico placeholder="Ingrese su numero de documento"></InputGenerico>

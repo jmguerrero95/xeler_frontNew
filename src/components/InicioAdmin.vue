@@ -2,21 +2,21 @@
     <div class="fondo">
         <div class="container">
             <div class="row espacio">
-                <div class="col-md-4 col-12 car">
+                <div class="col-md-4 col-12 car cajas">
                     <h4 class="tit_card">Total Vendido</h4>
                     <p class="precio">4.161.382.199</p><span class="tile-data-status tile-data-active">COP</span>
                     <span class="cripto">53.21681 <small>BTC</small> 100.00734 <small>ETH</small> 0.08319 <small>BCH</small> 179.28601 <small>LTC</small> 12.00281 <small>DASH</small></span>
                 </div>
-                <div class="col-md-4 col-12 card_center">
+                <div class="col-md-4 col-12 card_center cajas">
                     <h4 class="tit_card">Total Comprado</h4>
                     <p class="precio">2.225.373.021</p><span class="tile-data-status tile-data-active">COP</span>
                     <span class="cripto">53.21681 <small>BTC</small> 100.00734 <small>ETH</small> 0.08319 <small>BCH</small> 179.28601 <small>LTC</small> 12.00281 <small>DASH</small></span>
                 </div>
-                <div class="col-md-4 col-12 card_right">
+                <div class="col-md-4 col-12 card_right cajas">
                     <h4 class="tit_card">Total Usuarios</h4>
                     <p class="precio">1236</p>
                 </div>
-                <div class="col-md-5 col-12 car_parte2 parte2_left">
+                <div class="col-md-5 col-12 car_parte2 parte2_left cajas">
                     <div class="row">
                         <div class="col-12">
                             <h4 class="tit_card">Transacciones recientes</h4>
@@ -60,7 +60,7 @@
                     
                 </div>
 
-                <div class="col-md-7 col-12 car_parte2 parte2_right">
+                <div class="col-md-7 col-12 car_parte2 parte2_right cajas">
                     <h4 class="tit_card">Gráfico Ventas</h4>
                     <Bar
                     :chart-options="chartOptions"
@@ -78,7 +78,7 @@
 
 
                 </div>
-                <div class="col-12 car_parte2 final">
+                <div class="col-12 car_parte2 final cajas">
                     <h4 class="tit_card">Gráfico Ventas</h4>
                     <Bar
                     :chart-options="chartOptions"
@@ -158,6 +158,9 @@ export default {
 }
 </script>
 <style scoped>
+    .cajas{
+        border-radius: 3px;
+    }
     .precio2{
         font-size: 12px !important;
         font-weight: 400 !important;

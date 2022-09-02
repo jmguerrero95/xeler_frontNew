@@ -7,7 +7,7 @@
                         <div class="col-12">
                             <h4 class="tit_card">Transacciones aprobadas</h4>
                             <br/>
-                            <table class="table ">
+                            <table class="table table-borderless">
                                 <thead>
                                     <th></th>
                                     <th class="tit text">TRANX NO</th>
@@ -231,6 +231,11 @@ export default {
         padding: 2%;
         margin-left: 3%;
         width: 30%;
+    }
+    table tr td {
+        width: 1%;
+        white-space: nowrap;
+        padding-right: 15px;
     }
 
 </style>

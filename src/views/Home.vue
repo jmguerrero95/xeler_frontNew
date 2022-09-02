@@ -608,7 +608,7 @@
             <div class="navbar navbar-expand-lg is-transparent fixed-top" id="mainnav">
 
 
-                <nav class="navbar navbar-expand-lg navbar-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark" id="cambio">
                   <div class="container">
                     <a class="navbar-brand" href="#"> <img src="@/assets/xelergo.png"> </a>
 
@@ -821,7 +821,31 @@ export default {
         LoadingScreen,
     },
     mounted() {
+      //this.$nextTick(())
+      this.$nextTick(() => {
+
+        if (document.body.scrollTop >= 200 ) {
+          console.log("test")
+          var myNav = this.$el.querySelectorAll('#mainnav');
+          console.log(myNav)
+          window.onscroll = function () { 
+              "use strict";
+              if (document.body.scrollTop >= 200 ) {
+                  //myNav.classList.add("nav-colored");
+                  myNav.classList.remove("is-transparent");
+              } 
+              else {
+                  myNav.classList.add("is-transparent");
+                  //myNav.classList.remove("nav-colored");
+              }
+          };
+
+        }
+
+
         
+
+      });        
 
         const particlesLoaded = async (container) => {
             console.log("Particles container loaded", container);
@@ -866,6 +890,9 @@ export default {
         });*/
 
 
+    },
+    computed(){
+      console.log("test")
     },
   data () {
     return {

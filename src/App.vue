@@ -28,6 +28,10 @@ export default {
 </script>
 
 <style scoped>
+  .form-check-input:checked {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+  }
   div{
     min-height: 100vh;
   }

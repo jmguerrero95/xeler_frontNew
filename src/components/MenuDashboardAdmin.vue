@@ -98,6 +98,30 @@
                 <a class="navbar-brand" href="#"> <img class="img-fluid img-menu" src="@/assets/xelergo.png"> </a>
             </div>
             <div class="col-4">
+
+
+
+
+
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a href="#" class="margen icono"><font-awesome-icon icon="fa-regular fa-user"/></a>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <div class="titulo">
+                              <p class="user-status-title">Bienvenid@</p>
+                              <p class="user-status-balance">Viviana Morales</p>
+                          </div>
+                          <li class="listadoA"><a href="#" class="item_menu">11 pts</a></li>
+                          <li class="listadoA"><a href="#" class="item_menu">Mi Perfil</a></li>
+                          <li class="listadoA"><a href="#" class="item_menu">Mi Actividad</a></li>
+                          <li class="listadoA"><a href="#" class="item_menu">Completa tu verificación</a></li>
+                          <li class="listadoB"><router-link to="/login" class="item_menu">Cerrar Sesión</router-link></li>
+                    </ul>
+                  </li>
+                </ul>
+
                 
             </div>
               
@@ -245,6 +269,7 @@ export default {
         background-color: white;
         padding: 0 0.4rem;
         background-color: #242650;
+        width: 100%;
     }
 
     .main-logo {
@@ -267,7 +292,6 @@ export default {
     .main-nav.show {
         margin-left: 0;
     }
-
     .nav-links {
         background-color: rgb(250, 250, 250);
         display: flex;
@@ -368,6 +392,114 @@ export default {
         width: 100%;
         margin-top: 5%;
       }
+    }
+    .listadoA{
+        background-color: white;
+        padding-left: 4%;
+        padding-top: 4%;
+    }
+    .listadoB{
+        padding: 5%;
+    }
+    .item_menu{
+      outline: 0;
+      transition: all 0.5s;
+      color: #5e55b8;
+      text-decoration: none;
+    }
+    .titulo{
+        background: #342d6e;
+        border-radius: 4px 4px 0 0;
+        padding-top: 6%;
+        padding-left: 6%;
+        padding-bottom: 4%;
+    }
+    @media only screen and (max-width: 320px) {
+      .dropdown-menu{
+        width: 310% !important;
+      }
+    }
+    @media only screen and (max-width: 250px) {
+      .dropdown-menu{
+        width: 350% !important;
+      }
+    }
+    @media only screen and (min-width: 400px) {
+      .dropdown-menu{
+        width: 200% !important;
+        margin-top: 15% !important;
+      }
+    }
+    @media only screen and (min-width: 530px) {
+      .dropdown-menu{
+        width: 180% !important;
+        margin-top: 13% !important;
+      }
+    }
+    .dropdown-menu{
+        width: 250%;
+        border: 0;
+        -webkit-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.32);
+        -moz-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.32);
+        box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.32);
+        margin-top: 39px !important;
+        padding-top: 0;
+        background: #f7fafd !important;
+    }
+  .bg-dark{
+        background-color: #242650 !important;
+    }
+    .navbar-brand img {
+        height: 40px;
+    }
+    .collapse{
+        justify-content: end;
+    }
+    .user-status-title {
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFE969;
+        margin-bottom: 0;
+    }
+    .user-status-balance {
+        font-size: 24px;
+        color: #fff;
+        white-space: nowrap;
+        line-height: 1;
+        padding-top: 4px;
+    }
+    .icono{
+      font-size: 13px;
+      display: block;
+      text-align: center;
+      width: 32px;
+      line-height: 30px;
+      border-radius: 50%;
+      border: 1px solid #d2dde9;
+      float: right;
+      color: #fff;
+      background-color: #7668fe;
+      border-color: #7668fe;
+    }
+    .dropdown-toggle::after {
+      content: none;
+    }
+    .icono{
+      font-size: 13px;
+      display: block;
+      text-align: center;
+      width: 32px;
+      line-height: 30px;
+      border-radius: 50%;
+      border: 1px solid #d2dde9;
+      float: right;
+      color: #fff;
+      background-color: #7668fe;
+      border-color: #7668fe;
+    }
+    .dropdown-toggle::after {
+      content: none;
     }
    
 </style>

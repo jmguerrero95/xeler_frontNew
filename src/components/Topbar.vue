@@ -16,7 +16,7 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Bienvenid@! Vivian Morales
+                <a href="#" class="margen icono"><font-awesome-icon icon="fa-regular fa-user"/></a><p class="aux">aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                     <div class="titulo">
@@ -103,4 +103,24 @@ export default {
         line-height: 1;
         padding-top: 4px;
     }
+    .icono{
+      font-size: 13px;
+      display: block;
+      text-align: center;
+      width: 32px;
+      line-height: 30px;
+      border-radius: 50%;
+      border: 1px solid #d2dde9;
+      float: right;
+      color: #fff;
+      background-color: #7668fe;
+      border-color: #7668fe;
+    }
+    .aux{
+        visibility: hidden;
+    }
+    .dropdown-toggle::after {
+      display: none;
+    }
+
 </style>

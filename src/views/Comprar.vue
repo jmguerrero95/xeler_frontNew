@@ -3,7 +3,7 @@
         <TopBar></TopBar>
         <MenuDashboard></MenuDashboard>
         <div class="dashboard container-fluid">
-            <div class="container">
+            <div class="container d-none d-lg-block">
                 <div class="row contenedor">
                     <div class="col-12 col-lg-8 caja primero">
                         <div class="pasos">
@@ -11,19 +11,19 @@
                             <h4 class="card-title">Compra Rápida</h4>
                             <p>Seleccióna la Moneda y monto que deseas Comprar, luego de seleccionar podrás elegir el método de pago.</p>
                             <div class="row">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-6 col-lg-6">
                                     <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Bitcoin</span></div><div class="col-6">89.104.190 COP</div></div></button>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-6 col-lg-6">
                                     <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-ethereum"/><span class="pay-cur">Ethereum</span></div><div class="col-6">7.032.894 COP</div></div></button>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-6 col-lg-6">
                                     <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-bitcoin"/><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6">538.759 COP</div></div></button>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-6 col-lg-6">
                                     <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-6 col-lg-6">
                                     <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                     <button class="cripto">Dash</button>
                                 </div>  
@@ -34,13 +34,13 @@
                             <h4 class="card-title">Método de compra</h4>
                             <p>Selecciona el método de compra y se mostrará el formulario para ingresár el monto a comprar, cuando dés click en confirmar se mostrarán los datos donde debes envíar el pago.</p>
                             <div class="row">
-                                <div class="col-12 col-lg-4">
+                                <div class="col-6 col-lg-4">
                                     <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-coins"/><span class="pay-cur">Efectivo</span></button>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div class="col-6 col-lg-4">
                                     <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-building-columns"/><span class="pay-cur">Banco</span></button>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div class="col-6 col-lg-4">
                                     <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Otros</span></button>
                                 </div>
                             </div>
@@ -78,7 +78,85 @@
                     <FooterDashboard></FooterDashboard>
                 </div>
             </div>
+            <div class="row contenedor d-lg-none sup">
+                    <div class="col-12 col-lg-8 caja primero">
+                        <div class="pasos">
+                            <span class="tit_card">PASO 1</span>
+                            <h4 class="card-title">Compra Rápida</h4>
+                            <p>Seleccióna la Moneda y monto que deseas Comprar, luego de seleccionar podrás elegir el método de pago.</p>
+                            <div class="row">
+                                <div class="col-6 col-lg-6">
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Bitcoin</span></div><div class="col-6 correc">89.104.190 COP</div></div></button>
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-ethereum"/><span class="pay-cur">Ethereum</span></div><div class="col-6 correc">7.032.894 COP</div></div></button>
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-bitcoin"/><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6 correc">538.759 COP</div></div></button>
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6 correc">235.514 COP</div></div></button>
+                                </div>
+                                <div class="col-6 col-lg-6">
+                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6 correc">235.514 COP</div></div></button>
+                                    <button class="cripto">Dash</button>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="pasos">
+                            <span class="tit_card">PASO 2</span>
+                            <h4 class="card-title">Método de compra</h4>
+                            <p>Selecciona el método de compra y se mostrará el formulario para ingresár el monto a comprar, cuando dés click en confirmar se mostrarán los datos donde debes envíar el pago.</p>
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-coins"/><span class="pay-cur">Efectivo</span></button>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-building-columns"/><span class="pay-cur">Banco</span></button>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Otros</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pasos">
+                            <span class="tit_card">PASO 3</span>
+                            <h4 class="card-title">Monto a comprar</h4>
+                            <p>Ingrese la cantidad a calcular. La calculadora ayuda a convertir la moneda requerida.</p>
+                            <div class="row">
+                                <div class="col-5">
+                                    <InputGenerico type="text" placeholder="COP"></InputGenerico>
+                                </div>
+                                <div class="col-5">
+                                    <InputGenerico type="text" placeholder="BTC"></InputGenerico>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-none d-lg-block">
+                        <div class="caja sup-b">
+                            <p class="tit_kyc">Verificación de Identidad - KYC</p>
+                            <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                            <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                            <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-lg-none caja kyc">
+                        <div class="sup-b">
+                            <p class="tit_kyc">Verificación de Identidad - KYC</p>
+                            <p>Para cumplir con la regulación, el usuario deberá pasar por la verificación de identidad.</p>
+                            <p>No ha enviado sus documentos para verificar su identidad. (KYC).</p>
+                            <BotonGenerico class="boton" texto="Click para Proceder"></BotonGenerico>
+                        </div>
+                    </div>
+                    <FooterDashboard></FooterDashboard>
+            </div>
         </div>
+
+
+
+
+
     </div>
 </template>
 <script>
@@ -125,6 +203,22 @@ export default {
     @media only screen and (max-width: 991px) {
         .primero {
             margin-top: 70px !important;
+        }
+    }
+    @media only screen and (max-width: 635px) {
+        .correc {
+            font-size: 12px;
+        }
+        .pay-cur {
+            font-size: 12px;
+            line-height: inherit;
+            font-weight: 700;
+        }
+        .pay-icon{
+            font-size: 19px;
+            line-height: 30px;
+            width: 30px;
+            text-align: center;
         }
     }
     .dashboard{

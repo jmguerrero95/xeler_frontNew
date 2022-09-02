@@ -7,7 +7,7 @@
                         <div class="col-12">
                             <h4 class="tit_card">Lista de usuarios</h4>
                             <br/>
-                            <table class="table table-striped table-borderless">
+                            <table class="table table-borderless">
                                 <thead>
                                     <td class="tit">USUARIO</td>
                                     <td class="tit">EMAIL</td>
@@ -25,7 +25,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Melanie Quitian</span><br/><span class="min">MelanieQuitian</span></td>
@@ -36,7 +36,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Dylan Andres Barrios Molina</span><br/><span class="min">Dylanbarrios98</span></td>
@@ -47,7 +47,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">WSDRALIA VELASQUEZ</span><br/><span class="min">WSDRI</span></td>
@@ -58,7 +58,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Jorge Alexander Lugo</span><br/><span class="min">jorgelugo</span></td>
@@ -69,7 +69,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Alejandro Echandia</span><br/><span class="min">adeox</span></td>
@@ -80,7 +80,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Luis Horta</span><br/><span class="min">luismanuel</span></td>
@@ -91,7 +91,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="min">Paula12A</span></td>
@@ -102,7 +102,7 @@
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Notas</td>
                                         <td scope="col" class="text"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Activo</td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><button>...</button></td>
+                                        <td scope="col"><a href="#" class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -248,6 +248,28 @@ export default {
         padding: 2%;
         margin-left: 3%;
         width: 30%;
+    }
+    table tr td {
+        width: 1%;
+        white-space: nowrap;
+        padding-right: 15px;
+    }
+    .btn-xs.btn-icon {
+        padding: 4px 8px 4px;
+    }
+    .toggle-tigger {
+        display: inline-block;
+    }
+    .btn-light-alt {
+        color: #495463;
+        background: #e6effb;
+        border-color: #e6effb;
+    }
+    .btn-xs {
+        font-size: 10px;
+        line-height: 19px;
+        text-transform: none;
+        letter-spacing: 0.025em;
     }
 
 </style>

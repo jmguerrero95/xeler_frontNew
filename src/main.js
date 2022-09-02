@@ -32,7 +32,8 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faTelegramPlane } from '@fortawesome/free-brands-svg-icons'
 import { faCircleUser } from '@fortawesome/free-regular-svg-icons'
+import { faUser } from '@fortawesome/free-regular-svg-icons'
 
 
-library.add(faFacebookF, faInstagram, faTwitter, faTelegramPlane, faCoins, faRightLeft, faCircleUser, faChartLine, faCircleCheck, faCircleXmark, faPlus, faCheck, faPenToSquare, faBitcoinSign, faEthereum, faBitcoin, faLitecoinSign, faBuildingColumns)
+library.add(faFacebookF, faInstagram, faTwitter, faTelegramPlane, faCoins, faRightLeft, faCircleUser, faChartLine, faCircleCheck, faCircleXmark, faPlus, faCheck, faPenToSquare, faBitcoinSign, faEthereum, faBitcoin, faLitecoinSign, faBuildingColumns, faUser)
 createApp(App).use(router).use(Particles).component('font-awesome-icon', FontAwesomeIcon, Particles).mount('#app')

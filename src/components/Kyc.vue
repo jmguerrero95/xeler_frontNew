@@ -7,7 +7,7 @@
                         <div class="col-12">
                             <h4 class="tit_card">Lista Verificaciones</h4>
                             <br/>
-                            <table class="table table-striped table-borderless">
+                            <table class="table table-borderless">
                                 <thead>
                                     <tr>
                                         <th class="tit_tab">USUARIO</th>
@@ -23,7 +23,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-success">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Melanie Quitian</span><br/><span class="subNombre">MelanieQuitian</span></td>
@@ -31,7 +31,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-success">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Dylan Andres Barrios Molina</span><br/><span class="subNombre">Dylanbarrios98</span></td>
@@ -39,7 +39,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-success">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">WSDRALIA VELASQUEZ</span><br/><span class="subNombre">WSDRI</span></td>
@@ -47,7 +47,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-success">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Jorge Alexander Lugo</span><br/><span class="subNombre">jorgelugo</span></td>
@@ -55,7 +55,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-success">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Alejandro Echandia</span><br/><span class="subNombre">adeox</span></td>
@@ -63,7 +63,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-success">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Luis Horta</span><br/><span class="subNombre">luismanuel</span></td>
@@ -71,7 +71,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-danger">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md">Pendiente</span></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="subNombre">Paula12A</span></td>
@@ -79,7 +79,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="badge bg-danger">Aprobado</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md">Pendiente</span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -226,6 +226,37 @@ export default {
         padding: 2%;
         margin-left: 3%;
         width: 30%;
+    }
+    .badge-outline {
+        background: none;
+        color: #495463;
+    }
+    .badge-md {
+        padding: 6px 12px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        min-width: 90px;
+    }
+    .badge {
+        text-align: center;
+        border-radius: 3px;
+        border: 1px solid;
+        vertical-align: middle;
+    }
+    .badge-info {
+        border-color: #1babfe;
+    }
+    .badge-success {
+        border-color: #00d285;
+    }
+    .badge-danger {
+        border-color: #ff6868;
+    }
+    table tr td {
+        width: 1%;
+        white-space: nowrap;
+        padding-right: 15px;
     }
 
 </style>

@@ -25,31 +25,31 @@
                                     <tr>
                                         <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
                                         <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-info badge-md">Venta</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
                                         <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-info badge-md">Venta</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
                                         <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-success d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Compra</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
                                         <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-info badge-md">Venta</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="tit text">TNX005094</span><br/><span class="text precio2">22 May, 2022 10:04 AM</span></td>
                                         <td scope="col" class="text"><span class="d-none d-sm-block">0.00312 BTC<br/><br/><span class="precio2">93.39 USD</span></span></td>
-                                        <td scope="col"><span class="badge bg-primary d-none d-sm-block">Venta</span></td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-info badge-md">Venta</span></td>
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a></td>
                                     </tr>
                                 </tbody>
@@ -331,6 +331,29 @@ export default {
             font-size: 1em;
         }
     }
-        
+    .badge-outline {
+        background: none;
+        color: #495463;
+    }
+    .badge-md {
+        padding: 6px 12px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        min-width: 90px;
+    }
+    .badge {
+        text-align: center;
+        border-radius: 3px;
+        border: 1px solid;
+        vertical-align: middle;
+    }
+    .badge-info {
+        border-color: #1babfe;
+    }
+    .badge-success {
+        border-color: #00d285;
+    }
+            
 
 </style>

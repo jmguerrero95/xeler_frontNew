@@ -23,17 +23,25 @@
                                       <option value="9">Cuenta 9</option>
                                       <option value="10">Cuenta 10</option>
                                     </select>
+                                    <span class="input-note">Seleccione una cuenta.</span>
                                     <div class="row fechas">
                                         <div class="col-md-6 col-12">
                                             <p>Fecha desde</p>
                                             <InputGenerico type="text" placeholder="Fecha 1"></InputGenerico>
+                                            <span class="input-note">Ingresa la fecha desde.</span>
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <p>Fecha hasta</p>
                                             <InputGenerico type="text" placeholder="Fecha 2"></InputGenerico>
+                                            <span class="input-note">Ingresa la fecha hasta.</span>
                                         </div>
                                         <div class="col-2 fechas">
                                             <BotonGenerico texto="Buscar" class="boton"></BotonGenerico>
+                                        </div>
+                                        <div class="col-10"></div>
+                                        <div class="col-4">
+                                            <br/>
+                                            <span class="dt-status-md badge badge-dim badge-danger badge-md d-sm-inline-block">No se encontraron compras en las fechas 2022-09-01 a 2022-09-01 </span>
                                         </div>
                                     </div>
                                 </div>
@@ -132,6 +140,35 @@ export default {
         padding: 2%;
         margin-left: 3%;
         width: 30%;
+    }
+    .badge-danger.badge-dim {
+        background: #ffe8e8;
+        border-color: #ffb5b5;
+    }
+    .badge.badge-dim {
+        color: #495463;
+    }
+    .badge-md {
+        padding: 6px 12px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        min-width: 90px;
+        text-align: left;
+    }
+    .input-note {
+        font-size: 12px;
+        line-height: 1.4em;
+        color: #758698;
+        font-weight: 400;
+        display: block;
+        padding: 8px 0 0;
+    }
+    @media only screen and (max-width: 575px){
+        .container {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
     }
 
 </style>

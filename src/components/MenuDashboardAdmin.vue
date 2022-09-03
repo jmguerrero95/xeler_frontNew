@@ -1,5 +1,50 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-light d-none d-md-block">
+
+    <div class="navbar d-none d-lg-block">
+      <div class="container">
+          <div class="navbar-innr">
+              <ul class="navbar-menu" id="main-nav">
+                  <li class=""><a href="#" v-on:click="$emit('submit-form', 'A')" aria-current="page"><font-awesome-icon class="iconos icon_espa" icon="fa-solid fa-chart-line"/> Dashboard</a></li>
+                  <li class="has-dropdown">
+                    <a class="drop-toggle" href="javascript:void(0)"><font-awesome-icon class="iconos icon_espa" icon="fa-solid fa-right-left"/> Transacciones</a>
+                    <ul class="navbar-dropdown">
+                        <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'B')">Transacciones Pendientes </a></li>
+                        <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'C')">Transacciones Aprobadas</a></li>
+                        <li><a href="#">Todas las Transacciones</a></li>
+                    </ul>
+                  </li>
+                  <li class=""><a class="nav-link" href="#" v-on:click="$emit('submit-form', 'D')"><font-awesome-icon class="iconos icon_espa" icon="fa-solid fa-right-left"/> KYC</a></li>
+
+                  <li class="has-dropdown">
+                    <a class="drop-toggle" href="javascript:void(0)"><font-awesome-icon class="iconos icon_espa" icon="fa-solid fa-coins"/> Contabilidad</a>
+                    <ul class="navbar-dropdown">
+                        <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'E')">Manejo de Cuentas</a></li>
+                        <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'F')">Manejo Otros</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="has-dropdown">
+                    <a class="drop-toggle" href="javascript:void(0)"><font-awesome-icon class="iconos icon_espa" icon="fa-regular fa-circle-user"/> Usuarios</a>
+                    <ul class="navbar-dropdown">
+                        <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'G')">Usuarios</a></li>
+                        <li><a href="#">Usuarios Referidos</a></li>
+                    </ul>
+                  </li>
+
+                  <li class=""><router-link to="/dashboard/referidos" class="nav-link"> Tienda</router-link></li>
+                  <li class="active"><a class="nav-link" href="#" v-on:click="$emit('submit-form', 'I')"><font-awesome-icon class="iconos icon_espa" icon="fa-regular fa-circle-user"/> Configuracion</a></li>
+              </ul>
+              
+              <ul class="navbar-btns">
+                  <li><a href="http://104.248.246.251/verificacion" class="btn btn-sm btn-outline btn-light"><em class="text-primary ti ti-files"></em><span>Completa tu verificación</span></a></li>
+              </ul>
+                                                      
+          </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg bg-light d-none">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -500,6 +545,105 @@ export default {
     }
     .dropdown-toggle::after {
       content: none;
+    }
+
+    .navbar {
+        box-shadow: 0 1px 3px rgb(24 30 43 / 7%);
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        min-height: auto;
+        width: 100%;
+        padding: 0;
+        transition: all 0s;
+        height: auto;
+        z-index: 2;
+        align-items: flex-start;
+        background: #fff;
+        justify-content: space-between;
+    }
+    .navbar-innr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .navbar-menu {
+        padding: 0;
+        display: flex;
+        margin: 0 -15px;
+        padding-top: 0;
+    }
+    .navbar-menu li {
+        position: relative;
+    }
+    .navbar-menu>li {
+        padding: 0 15px;
+    }
+    ul li, ol li {
+        list-style: none;
+    }
+    .navbar-menu>li>a {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 32px;
+        padding: 12px 0;
+        position: relative;
+        color: #7668fe;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+    }
+    .navbar-menu>li>a:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        opacity: 0;
+        width: 100%;
+        content: '';
+        background: #7668fe;
+        transition: all .3s;
+    }
+    .navbar-menu>li:hover a:before, .navbar-menu>li:focus a:before, .navbar-menu>li:active a:before {
+        opacity: 1;
+    }
+    .icon_espa {
+        margin-right: 10px;
+    }
+
+    .navbar-dropdown {
+      position: absolute;
+      left: 15px;
+      top: 100%;
+      background: #fff;
+      box-shadow: 0px 4px 35px 0px rgb(0 0 0 / 10%);
+      visibility: hidden;
+      opacity: 0;
+      transition: all .3s ease;
+      display: block !important;
+      z-index: 9;
+      min-width: 215px;
+      padding: 10px 0;
+    }
+    .navbar-dropdown li a {
+      font-size: 13px;
+      padding: 10px 25px;
+    }
+
+    .navbar-dropdown li a {
+      line-height: 20px;
+      display: block;
+      position: relative;
+      color: #5e55b8;
+    }
+
+    .has-dropdown:hover > .navbar-dropdown{
+      visibility: visible;
+      opacity: 1;
+
     }
    
 </style>

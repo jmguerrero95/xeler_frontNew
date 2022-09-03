@@ -605,7 +605,7 @@
 
 
             <!-- Navbar -->
-            <div class="navbar navbar-expand-lg is-transparent fixed-top" id="mainnav">
+            <div class="navbar navbar-expand-lg is-transparent fixed-top" :class="variable" id="mainnav">
 
 
                 <nav class="navbar navbar-expand-lg navbar-dark" id="cambio">
@@ -822,28 +822,18 @@ export default {
     },
     mounted() {
       //this.$nextTick(())
-      this.$nextTick(() => {
+      let self = this;
+      window.addEventListener('scroll', function (e) {
+        console.log(self.variable)
 
-        if (document.body.scrollTop >= 200 ) {
-          console.log("test")
-          var myNav = this.$el.querySelectorAll('#mainnav');
-          console.log(myNav)
-          window.onscroll = function () { 
-              "use strict";
-              if (document.body.scrollTop >= 200 ) {
-                  //myNav.classList.add("nav-colored");
-                  myNav.classList.remove("is-transparent");
-              } 
-              else {
-                  myNav.classList.add("is-transparent");
-                  //myNav.classList.remove("nav-colored");
-              }
-          };
-
-        }
-
-
-        
+        if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+          console.log(self.variable)
+          self.variable='background_nav'
+        } else {
+            //myNav.classList.add("is-transparent");
+            self.variable=''
+            //myNav.classList.remove("nav-colored");
+        }     
 
       });        
 
@@ -896,6 +886,7 @@ export default {
     },
   data () {
     return {
+      variable: null,
       msg: 'Welcome to Your Vue.js App',
       isLoading: true,
 
@@ -1794,7 +1785,19 @@ z-index: 2;
     color: white;
     border: 1px solid #7a0fff;
 }
+.background_nav{
+  background-color: #10122d;
+}
+.navbar-dark .navbar-toggler{
+  background: linear-gradient(to right,#2b56f5 0,#46bdf4 100%);
+  width: 2.5em;
+  height: 1.8em;
+}
 
+.navbar-toggler-icon {
+    width: 1.3em;
+    height: 1.3em;
+}
 
 
 </style>

@@ -22,7 +22,7 @@ function lazyLoad(view){
         },
         {
             path: "/test",
-            component: lazyLoad('Test')
+            component: lazyLoad('KycDetails')
         },
         {
             path: "/dashboard",

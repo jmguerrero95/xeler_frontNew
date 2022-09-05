@@ -24,6 +24,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
+                                        <td scope="col"><b-button id="popover-target-1" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Melanie Quitian</span><br/><span class="subNombre">MelanieQuitian</span></td>
@@ -32,6 +33,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
+                                        <td scope="col"><b-button id="popover-target-2" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Dylan Andres Barrios Molina</span><br/><span class="subNombre">Dylanbarrios98</span></td>
@@ -40,6 +42,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
+                                        <td scope="col"><b-button id="popover-target-3" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">WSDRALIA VELASQUEZ</span><br/><span class="subNombre">WSDRI</span></td>
@@ -48,6 +51,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
+                                        <td scope="col"><b-button id="popover-target-4" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Jorge Alexander Lugo</span><br/><span class="subNombre">jorgelugo</span></td>
@@ -56,6 +60,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
+                                        <td scope="col"><b-button id="popover-target-5" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Alejandro Echandia</span><br/><span class="subNombre">adeox</span></td>
@@ -64,6 +69,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
+                                        <td scope="col"><b-button id="popover-target-6" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Luis Horta</span><br/><span class="subNombre">luismanuel</span></td>
@@ -72,6 +78,7 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md">Pendiente</span></td>
+                                        <td scope="col"><b-button id="popover-target-7" class="mas">...</b-button></td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="subNombre">Paula12A</span></td>
@@ -80,15 +87,41 @@
                                         <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
                                         <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md">Pendiente</span></td>
+                                        <td scope="col"><b-button id="popover-target-8" class="mas">...</b-button></td>
                                     </tr>
                                 </tbody>
-                            </table>
+                            </table>  
                         </div>
                     </div> 
                 </div>
             </div>
         </div>
     </div>
+    <!--POPOVERS-->
+    <b-popover target="popover-target-1" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-2" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-3" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-4" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-5" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-6" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-7" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
+    <b-popover target="popover-target-8" triggers="click" placement="left">
+        <a class="mini_menu" href="http://104.248.246.251/admin/ver/1340/kyc_details"><em class="ti ti-eye"></em> Ver Detalles</a>
+    </b-popover>
 </template>
 <script>
   /* eslint-disable */
@@ -99,6 +132,16 @@ export default {
         //Money,
         //Loading
     },
+    mounted (){
+        $(function() {
+          $('[data-toggle="popover"]').popover({
+                html: true,
+            content: function() {
+              return $('#popover-content').html();
+            }
+          });
+        })
+    },
     data () {
         return {
           
@@ -107,6 +150,26 @@ export default {
 }
 </script>
 <style scoped>
+    .mas {
+        color: #495463;
+        background: #e6effb;
+        border-color: #e6effb;
+        font-size: 10px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .mini_menu {
+        text-align: left;
+        white-space: nowrap;
+        color: #495463;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+    }
     .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
        background-color:rgba(118,104,254,0.1);
     }

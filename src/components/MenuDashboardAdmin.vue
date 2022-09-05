@@ -355,7 +355,7 @@ export default {
         margin-top: 2rem;
         color: #7668fe !important;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
         position: relative;
     }
 

@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import BootstrapVue3 from 'bootstrap-vue-3'
 import "bootstrap/dist/css/bootstrap.min.css"
+import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import "bootstrap"
 import axios from 'axios'
 import router from "./router";
@@ -36,4 +38,4 @@ import { faUser } from '@fortawesome/free-regular-svg-icons'
 
 
 library.add(faFacebookF, faInstagram, faTwitter, faTelegramPlane, faCoins, faRightLeft, faCircleUser, faChartLine, faCircleCheck, faCircleXmark, faPlus, faCheck, faPenToSquare, faBitcoinSign, faEthereum, faBitcoin, faLitecoinSign, faBuildingColumns, faUser)
-createApp(App).use(router).use(Particles).component('font-awesome-icon', FontAwesomeIcon, Particles).mount('#app')
+createApp(App).use(router).use(Particles).use(BootstrapVue3).component('font-awesome-icon', FontAwesomeIcon, Particles).mount('#app')

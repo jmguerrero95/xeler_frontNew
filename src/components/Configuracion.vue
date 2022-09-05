@@ -17,12 +17,6 @@
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">OTROS</button>
                       </li>
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#config-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONFIGURACION</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contra-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">CONFIGURACIÓN TICKET</button>
-                      </li>
-                      <li class="nav-item" role="presentation">
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#wallet-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">SOCIAL LINKS</button>
                       </li>
                     </ul>
@@ -48,11 +42,12 @@
                                     <br/>
 
 
-                                    <table class="table table-striped table-borderless">
+                                    <table class="table table-borderless">
                                         <thead>
                                             <tr>
                                                 <th class="tit_tab">NOMBRE MONEDA</th>
                                                 <th class="tit_tab">ESTADO</th>
+                                                <th class="tit_tab"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -118,7 +113,7 @@
                             <div class="col-1"></div>
                             <div class="col-10">
                                 <h4 class="titulo espa">Configuración SEO</h4>
-                                <table class="table table-striped table-borderless">
+                                <table class="table">
                                         <thead>
                                             <tr>
                                                 <th class="tit_tab">NOMBRE</th>
@@ -183,69 +178,6 @@
                         </div>
 
 
-                      </div>
-                      <div class="tab-pane fade" id="config-tab-pane" role="tabpanel" aria-labelledby="config-tab" tabindex="0">
-                          <div class="row">  
-                            <div class="col-1"></div>
-                            <div class="col-10">
-                                <h4 class="titulo espa">Configuración FAQ</h4>
-                                <table class="table table-striped table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th class="tit_tab">NOMBRE</th>
-                                                <th class="tit_tab">valor</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td scope="col"><span class="nombre">¿Preguntas? | Contacto</span></td>
-                                                <td scope="col"><p class="">Visita nuestro →<a href="https://help.xeler.io/" target="_blank"> centro de respuestas a preguntas frecuentes.</a></p></td>
-                                                <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-pen-to-square"/></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div class="col-1"></div>
-                        </div>
-                      </div>
-                      <div class="tab-pane fade" id="contra-tab-pane" role="tabpanel" aria-labelledby="contra-tab" tabindex="0">
-                          <div class="row">  
-                            <div class="col-1"></div>
-                            <div class="col-10">
-                                <h4 class="titulo espa">Configuración Categorias Ticket</h4>
-                                <table class="table table-striped table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th class="tit_tab">NOMBRE CATEGORÍA</th>
-                                                <th class="tit_tab"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td scope="col"><span class="nombre">Correcciones en Perfil</span></td>
-                                                <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-pen-to-square"/></a></td>
-                                            </tr>
-                                             <tr>
-                                                <td scope="col"><span class="nombre">Problema con una Transaccion</span></td>
-                                                <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-pen-to-square"/></a></td>
-                                            </tr>
-                                             <tr>
-                                                <td scope="col"><span class="nombre">Error de Funcionamiento</span></td>
-                                                <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-pen-to-square"/></a></td>
-                                            </tr>
-                                             <tr>
-                                                <td scope="col"><span class="nombre">Otros</span></td>
-                                                <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-pen-to-square"/></a></td>
-                                            </tr>
-                                             <tr>
-                                                <td scope="col"><span class="nombre">Sugerencias y recomendaciones.</span></td>
-                                                <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-pen-to-square"/></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div class="col-1"></div>
-                        </div>
                       </div>
                       <div class="tab-pane fade" id="wallet-tab-pane" role="tabpanel" aria-labelledby="wallet-tab" tabindex="0">
                           <div class="row">
@@ -790,7 +722,6 @@ export default {
     }
     @media only screen and (max-width: 580px) {
         .table{
-            display: block;
             width: 100%;
             overflow-x: auto;
         }

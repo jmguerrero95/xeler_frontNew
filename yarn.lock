@@ -941,8 +941,10 @@
   "resolved" "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.21.tgz"
   "version" "1.0.0-next.21"
 
-"@popperjs/core@^2.10.2", "@popperjs/core@^2.11.5":
-  "version" "2.11.5"
+"@popperjs/core@^2.11.5", "@popperjs/core@^2.11.6":
+  "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
+  "version" "2.11.6"
 
 "@sideway/address@^4.1.3":
   "integrity" "sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw=="
@@ -1931,6 +1933,11 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
+"bootstrap-vue-3@^0.3.0":
+  "integrity" "sha512-PvBLc5jTcBTGdsTFxykg9bWXfR+dUyi3gT7oRk0myHaLldVBV50Z/NWnqto3d5wYl+gSNTh3aJSlQ/Cxd9F48g=="
+  "resolved" "https://registry.npmjs.org/bootstrap-vue-3/-/bootstrap-vue-3-0.3.0.tgz"
+  "version" "0.3.0"
+
 "bootstrap-vue@^2.22.0":
   "integrity" "sha512-denjR/ae0K7Jrcqud3TrZWw0p/crtyigeGUNunWQ4t+KFi+7rzJ6j6lx1W5/gpUtSSUgNbWrXcHH4lIWXzXOOQ=="
   "resolved" "https://registry.npmjs.org/bootstrap-vue/-/bootstrap-vue-2.22.0.tgz"
@@ -1945,8 +1952,10 @@
 "bootstrap@^4.6.1":
   "version" "4.6.1"
 
-"bootstrap@^5.1.3":
-  "version" "5.1.3"
+"bootstrap@^5.1.3", "bootstrap@^5.2.0":
+  "integrity" "sha512-qlnS9GL6YZE6Wnef46GxGv1UpGGzAwO0aPL1yOjzDIJpeApeMvqV24iL+pjr2kU4dduoBA9fINKWKgMToobx9A=="
+  "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-5.2.0.tgz"
+  "version" "5.2.0"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
@@ -6111,7 +6120,7 @@
   "resolved" "https://registry.npmjs.org/vue-writer/-/vue-writer-1.2.0.tgz"
   "version" "1.2.0"
 
-"vue@^2 || ^3.2.13", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.5", "vue@^3.2.0", "vue@^3.2.13", "vue@^3.2.36", "vue@>= 3.0.0 < 4", "vue@3.2.37":
+"vue@^2 || ^3.2.13", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.0.5", "vue@^3.2.0", "vue@^3.2.13", "vue@^3.2.36", "vue@^3.2.37", "vue@>= 3.0.0 < 4", "vue@3.2.37":
   "integrity" "sha512-bOKEZxrm8Eh+fveCqS1/NkG/n6aMidsI6hahas7pa0w/l7jkbssJVsRhVDs07IdDq7h9KHswZOgItnwJAgtVtQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.2.37.tgz"
   "version" "3.2.37"

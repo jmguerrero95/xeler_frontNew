@@ -732,6 +732,10 @@ export default {
 }
 </script>
 <style scoped>
+    .form-check-input:checked {
+        background-color: #7668fe;
+        border-color: #7668fe;
+    }
    
     .primero{
         margin-top: 70px !important;

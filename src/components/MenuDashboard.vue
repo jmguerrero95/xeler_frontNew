@@ -217,7 +217,7 @@ export default {
         margin-top: 2rem;
         color: #444444;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
         position: relative;
     }
 

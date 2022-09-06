@@ -1,5 +1,6 @@
 <template>
     <TopBar></TopBar>
+    <MenuDashboardAdmin v-on:submit-form="changeFormState"></MenuDashboardAdmin>
     <div class="fondo">
         <div class="container">
             <div class="row espacio">
@@ -18,6 +19,7 @@
 </template>
 <script>
     import TopBar from "@/components/Topbar.vue";
+    import MenuDashboardAdmin from "@/components/MenuDashboardAdmin.vue";
   /* eslint-disable */
 export default {
     name: 'KycDetails',

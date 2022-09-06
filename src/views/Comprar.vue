@@ -12,20 +12,22 @@
                             <p>Seleccióna la Moneda y monto que deseas Comprar, luego de seleccionar podrás elegir el método de pago.</p>
                             <div class="row">
                                 <div class="col-6 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Bitcoin</span></div><div class="col-6">89.104.190 COP</div></div></button>
+                                    <button class="bitcoin cripto"><div class="row"><div class="col-6 flex"><img width="30px" height="30px" src="@/assets/bitcoin.png"><span class="pay-cur">Bitcoin</span></div><div class="col-6">89.104.190 COP</div></div></button>
                                 </div>
                                 <div class="col-6 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-ethereum"/><span class="pay-cur">Ethereum</span></div><div class="col-6">7.032.894 COP</div></div></button>
+                                    <button class="cripto ethereum"><div class="row"><div class="col-6 flex"><img width="30px" height="30px" src="@/assets/ethereum.png"><span class="pay-cur">Ethereum</span></div><div class="col-6">7.032.894 COP</div></div></button>
                                 </div>
                                 <div class="col-6 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-brands fa-bitcoin"/><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6">538.759 COP</div></div></button>
+                                    <button class="cripto bit_cash"><div class="row"><div class="col-6 flex"><img width="30px" height="30px" src="@/assets/bch.png"><span class="pay-cur">Bitcoin Cash</span></div><div class="col-6">538.759 COP</div></div></button>
                                 </div>
                                 <div class="col-6 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
+                                    <button class="cripto litecoin"><div class="row"><div class="col-6 flex"><img width="30px" height="30px" src="@/assets/litecoin.png"><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
                                 </div>
                                 <div class="col-6 col-lg-6">
-                                    <button class="cripto"><div class="row"><div class="col-6 flex"><font-awesome-icon class="pay-icon" icon="fa-solid fa-litecoin-sign"/><span class="pay-cur">Litecoin</span></div><div class="col-6">235.514 COP</div></div></button>
-                                    <button class="cripto">Dash</button>
+                                    <button class="cripto tether"><div class="row"><div class="col-6 flex"><img width="30px" height="30px" src="@/assets/tether.png"><span class="pay-cur">Tether</span></div><div class="col-6">4390 COP</div></div></button>
+                                </div>  
+                                <div class="col-6 col-lg-6">
+                                    <button class="cripto dash"><div class="row"><div class="col-6 flex"><img width="30px" height="30px" src="@/assets/dash.png"><span class="pay-cur">Dash</span></div><div class="col-6">235.514 COP</div></div></button>
                                 </div>  
                             </div>
                         </div>
@@ -34,14 +36,17 @@
                             <h4 class="card-title">Método de compra</h4>
                             <p>Selecciona el método de compra y se mostrará el formulario para ingresár el monto a comprar, cuando dés click en confirmar se mostrarán los datos donde debes envíar el pago.</p>
                             <div class="row">
-                                <div class="col-6 col-lg-4">
-                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-coins"/><span class="pay-cur">Efectivo</span></button>
+                                <div class="col-6 col-lg-3">
+                                    <button class="pagos"><span class="pay-cur-pagos">EFECTIVO</span></button>
                                 </div>
-                                <div class="col-6 col-lg-4">
-                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-building-columns"/><span class="pay-cur">Banco</span></button>
+                                <div class="col-6 col-lg-3">
+                                    <button class="pagos"><span class="pay-cur-pagos">BANCO</span></button>
                                 </div>
-                                <div class="col-6 col-lg-4">
-                                    <button class="cripto"><font-awesome-icon class="pay-icon" icon="fa-solid fa-bitcoin-sign"/><span class="pay-cur">Otros</span></button>
+                                <div class="col-6 col-lg-3">
+                                    <button class="pagos"><span class="pay-cur-pagos">OTRO</span></button>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                    <button class="pagos"><span class="pay-cur-pagos">PSE</span></button>
                                 </div>
                             </div>
                         </div>
@@ -186,10 +191,78 @@ export default {
 }
 </script>
 <style scoped>
+    .pagos {
+        width: 100%;
+        background: white;
+        border: 1px solid #5043E9;
+        border-radius: 8px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all .4s ease;
+        text-align: center;
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
+    .pay-cur-pagos {
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .bitcoin{
+        border-radius: 8px !important;
+        border: 1px solid #DA9021 !important;
+        background-color: white !important;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
+    .ethereum{
+        border-radius: 8px !important;
+        border: 1px solid #809FB8 !important;
+        background-color: white !important;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
+    .bit_cash{
+        border-radius: 8px !important;
+        border: 1px solid #619F51 !important;
+        background-color: white !important;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
+    .litecoin{
+        border-radius: 8px !important;
+        border: 1px solid #4481B2 !important;
+        background-color: white !important;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
+    .dash{
+        border-radius: 8px !important;
+        border: 1px solid #0090FF !important;
+        background-color: white !important;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
+    .tether{
+        border-radius: 8px !important;
+        border: 1px solid #26A07B !important;
+        background-color: white !important;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+        box-shadow: 0px 5px 5px 0px rgba(230,230,230,1);
+    }
     .flex{
         display: flex;
     }
     .pay-cur {
+        margin-left: 15%;
         font-size: 14px;
         line-height: 30px;
         font-weight: 700;

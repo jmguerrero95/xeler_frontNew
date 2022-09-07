@@ -7,87 +7,90 @@
                         <div class="col-12">
                             <h4 class="tit_card">Lista Verificaciones</h4>
                             <br/>
-                            <table class="table table-borderless">
+                            <table class="table">
                                 <thead>
                                     <tr>
-                                        <th class="tit_tab">USUARIO</th>
-                                        <th colspan="3" class="tit_tab">DOCUMENTOS</th>
-                                        <th class="tit_tab">ENVIADA</th>
-                                        <th class="tit_tab">ESTADO</th>
+                                        <th class="tit_tab">Usuario</th>
+                                        <th class="tit_tab">Fecha de envio</th>
+                                        <th colspan="3" class="tit_tab tit_center">Documentos</th>
+                                        <th class="tit_tab">Estado</th>
+                                        <th class="tit_tab"></th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="col"><span class="nombre">antonio caro</span><br/><span class="subNombre">antoniocg</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">antoniocg</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
-                                        <td scope="col"><b-button id="popover-target-1" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Aprobado</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
+                                        <!--<td scope="col"><b-button id="popover-target-1" class="mas">...</b-button></td>-->
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">Melanie Quitian</span><br/><span class="subNombre">MelanieQuitian</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">MelanieQuitian</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
-                                        <td scope="col"><b-button id="popover-target-2" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Aprobado</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">Dylan Andres Barrios Molina</span><br/><span class="subNombre">Dylanbarrios98</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">Dylanbarrios98</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
-                                        <td scope="col"><b-button id="popover-target-3" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Aprobado</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">WSDRALIA VELASQUEZ</span><br/><span class="subNombre">WSDRI</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">WSDRI</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
-                                        <td scope="col"><b-button id="popover-target-4" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Aprobado</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">Jorge Alexander Lugo</span><br/><span class="subNombre">jorgelugo</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">jorgelugo</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
-                                        <td scope="col"><b-button id="popover-target-5" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Aprobado</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">Alejandro Echandia</span><br/><span class="subNombre">adeox</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">adeox</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md">Aprobado</span></td>
-                                        <td scope="col"><b-button id="popover-target-6" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Aprobado</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">Luis Horta</span><br/><span class="subNombre">luismanuel</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <td scope="col"><span class="nombre">luismanuel</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md">Pendiente</span></td>
-                                        <td scope="col"><b-button id="popover-target-7" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md bot_pendi">Pendiente</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                     <tr>
-                                        <td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="subNombre">Paula12A</span></td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Frente</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Trasera</td>
-                                        <td scope="col"><a href="#" class="margen icono"><font-awesome-icon icon="fa-solid fa-check"/></a> Selfie</td>
+                                        <!--<td scope="col"><span class="nombre">Paula Restrepo</span><br/><span class="subNombre">Paula12A</span></td>-->
+                                        <td scope="col"><span class="nombre">Paula12A</span><br/></td>
                                         <td scope="col" class="fecha">28 Jan, 2022 07:42 PM</td>
-                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md">Pendiente</span></td>
-                                        <td scope="col"><b-button id="popover-target-8" class="mas">...</b-button></td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/></a> ID frente</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-check" class="positivo"/></a> ID atras</td>
+                                        <td scope="col"><a href="#" class="margen "><font-awesome-icon icon="fa-solid fa-circle-xmark" class="negativo"/></a> Selfie</td>
+                                        <td scope="col"><span class="dt-type-md badge badge-outline badge-danger badge-md bot_pendi">Pendiente</span></td>
+                                        <td scope="col"><button class="mas">Detalles</button></td>
                                     </tr>
                                 </tbody>
                             </table>  
@@ -150,12 +153,43 @@ export default {
 }
 </script>
 <style scoped>
-    .mas {
+    .bot_apro{
+        background-color: #1ad59863 !important;
+        padding: 5px 3px !important;
+        border-radius: 6px !important;
+        border: 0 !important;
+        color: #1AD598 !important;
+    }
+    .bot_pendi{
+        background-color: #D9E1E7 !important;
+        padding: 5px 3px !important;
+        border-radius: 6px !important;
+        border: 0 !important;
+        color: #99B2C6 !important;
+    }
+    .negativo{
+        color:  #ff6868;
+    }
+    .positivo{
+        color: #00d285;
+    }
+    .mas{
+        background-color: white;
+        box-shadow: none;
+        border-style: solid;
+        border-color: #844DDD;
+        border-width: 1px;
+        border-radius: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+    }
+    /*.mas {
         color: #495463;
         background: #e6effb;
         border-color: #e6effb;
         font-size: 10px;
-    }
+    }*/
     a{
         text-decoration: none;
     }
@@ -173,11 +207,15 @@ export default {
     .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
        background-color:rgba(118,104,254,0.1);
     }
-    @media only screen and (max-width: 580px) {
-        .table{
-            display: block;
-            width: 100%;
-            overflow-x: auto;
+    .table{
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+    @media only screen and (max-width: 575px){
+        .container {
+            padding-left: 5%;
+            padding-right: 5%;
         }
     }
     
@@ -206,6 +244,9 @@ export default {
         color: #495463;
 
     }
+    .tit_center{
+        text-align: center;
+    }
     .tit_tab{
         padding: 0 10px 0 0;
         font-size: 12px;
@@ -213,7 +254,6 @@ export default {
         font-weight: 700;
         letter-spacing: 0.1em;
         color: #7668fe;
-        text-transform: uppercase;
     }
     .icono{
         font-size: 13px;

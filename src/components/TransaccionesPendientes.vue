@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row espacio">
                 <div class="col-12 car_parte2 parte2_left">
-                    <div class="row">
+                    <div class="row" v-if="type === 'A'">
                         <div class="col-12">
                             <h4 class="tit_card">Transacciones pendientes</h4>
                             <br />
@@ -31,6 +31,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-1" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -45,6 +48,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-2" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -61,6 +67,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-3" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -77,6 +86,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-4" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -93,6 +105,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-5" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -108,6 +123,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-6" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -124,6 +142,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-7" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -140,6 +161,9 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-8" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col" class="right"><a href="#" class="margen icono">
@@ -156,33 +180,429 @@
                                         <td scope="col" class="text"><span>0.00312<br /></span></td>
                                         <td scope="col" class="text"><span>93.00<br /></span></td>
                                         <td scope="col" class="text"><span>2NFKs...7yhXT<br /></span></td>
+                                        <td scope="col" class="text">
+                                            <b-button id="popover-target-9" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <div class="row espacio-b" v-if="type === 'B'">
+                        <div class="col-12">
+                            <h4 class="tit_info">Detalles transaccion: TXN3449</h4>
+                        </div>
+
+                        <div class="col-lg-12 dat_kyc">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Fecha:</b> <span>29-08-2022 22:01</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Estado:</b> <span>EN PROCESO</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Tomada por:</b> <span>WSDRALIA</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Usuario:</b> <span>Capihrina22</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Nombre titular:</b> <span>Xgo 11</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Numero de cuenta:</b> <span>2562 2261 2152</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Banco:</b> <span>Bancolombia</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Cantidad comprada:</b> <span>$255,000</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Nombre Cliente:</b> <span>Bernardo Amaya Lopez</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12 qr">
+                            <img src="@/assets/qr.png" alt="">
+                            <br />
+                            <small>Click en el qr para abrir en tu wallet</small>
+
+                        </div>
+
+
+
+                        <!--<div class="col-lg-5 col-12 dat_kyc">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="sin_margen">Fecha: <span>29-08-2022 22:01</span></p>
+                                    <p class="sin_margen">Estado: <span>EN PROCESO</span></p>
+                                    <p class="sin_margen">Tomada por: <span>WSDRALIA</span></p>
+                                    <p class="sin_margen">Usuario: <span>Capihrina22</span></p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="sin_margen">Nombre titular: <span>Xgo 11</span></p>
+                                    <p class="sin_margen">Numero de cuenta: <span>2562 2261 2152</span></p>
+                                    <p class="sin_margen">Banco: <span>Bancolombia</span></p>
+                                    <p class="sin_margen">Cantidad comprada: <span>$255,000</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-5 col-12 dat_kyc">
+                            <div class="row">
+                                <div class="col-6">
+                                    <table>
+                                        <tr>
+                                            <td>Tipo de transacción:</td>
+                                            <td>Compra</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Metodo de pago:</td>
+                                            <td>Banco</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tipo de pago:</td>
+                                            <td>Transferencia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Moneda:</td>
+                                            <td>BTC</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dirección de envio:</td>
+                                            <td>bc135sRt32621s2e32rltsd5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cantidad</td>
+                                            <td>0.225</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Comisión seleccionada:</td>
+                                            <td>0.000021</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total a enviar:</td>
+                                            <td>0.2248</td>
+                                        </tr>
+                                    </table>
+
+                                </div>
+                                <div class="col-6">
+
+                                </div>
+
+                            </div>
+                        </div>-->
+                        <div class="col-12 centrar">
+                            <BotonGenerico class="ajuste espa_movil" texto="Atras" v-on:click="type='A'">
+                            </BotonGenerico>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
     </div>
+    <!--POPOVERS-->
+    <b-popover target="popover-target-1" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-2" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-3" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-4" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-5" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-6" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-7" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-8" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
+    <b-popover target="popover-target-9" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Rechazar</a></li>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Desembolso externo</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
+                    Detalles</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
+                        class="ti ti-eye"></em>
+                    Resumen</a></li>
+        </ul>
+    </b-popover>
 </template>
 <script>
+import BotonGenerico from "@/components/Boton-generico";
 /* eslint-disable */
 export default {
     name: 'TransaccionesPendientesAdmin',
     components: {
+        BotonGenerico
         //VueTyper,
         //Money,
         //Loading
     },
     data() {
         return {
-
+            type: 'A'
         }
     },
 }
 </script>
 <style scoped>
+table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.popover-body {
+    padding-bottom: 0 !important;
+}
+
+.ul_correct {
+    margin: 0;
+    padding: 0;
+}
+
+.mini_menu {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #8B2CF5;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline;
+    cursor: pointer;
+
+}
+
+.quit_esti {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.mas {
+    background-color: white;
+    box-shadow: none;
+    border-style: solid;
+    border-color: #844DDD;
+    border-width: 1px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    color: black;
+}
+
+.qr {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.espacio-b {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+    .espa_movil {
+        margin-top: 20px;
+    }
+}
+
+.ajuste {
+    margin-top: 5%;
+    width: auto !important;
+    min-width: auto !important;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.dat_kyc {
+    background: white;
+    padding: 2%;
+    border: 1px;
+    border-style: solid;
+    border-color: #5043E9;
+    border-radius: 15px;
+}
+
+.tit_info {
+    margin-bottom: 20px !important;
+    color: #342d6e;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.sin_margen {
+    margin: 0;
+}
+
 .right {
     text-align: end;
 }

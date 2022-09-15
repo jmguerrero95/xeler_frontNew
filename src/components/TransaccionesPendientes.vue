@@ -325,8 +325,8 @@
             <li class="quit_esti"><img src="@/assets/rechazo.svg" alt=""><a class="mini_menu" href="#"><em
                         class="ti ti-eye"></em>
                     Rechazar</a></li>
-            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" href="#"><em
-                        class="ti ti-eye"></em>
+            <li class="quit_esti"><img src="@/assets/desembolso.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" href="#"><em class="ti ti-eye"></em>
                     Desembolso externo</a></li>
             <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
                     class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
@@ -334,8 +334,8 @@
                 <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Ver
                     Detalles</p>
             </li>
-            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" href="#"><em
-                        class="ti ti-eye"></em>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2" href="#"><em class="ti ti-eye"></em>
                     Resumen</a></li>
         </ul>
     </b-popover>
@@ -491,14 +491,97 @@
                     Resumen</a></li>
         </ul>
     </b-popover>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
+                    <h4 class="centrar">Transaccion : TXN 3449</h4>
+                    <div class="row">
+                        <div class="col-12 flex">
+                            <p class="tx">Ingresa el tx id</p>
+                            <InputGenerico class="fixed" value="" placeholder=""></InputGenerico>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
+                    <h4 class="centrar">Resumen Transaccion : TXN 3449</h4>
+                    <div class="row">
+                        <div class="col-12 flex">
+                            <table class="table table-stripped">
+                                <tr>
+                                    <td>Tipo de transacción: </td>
+                                    <td>Compra</td>
+                                </tr>
+                                <tr>
+                                    <td>Metodo de compra: </td>
+                                    <td>Banco</td>
+                                </tr>
+                                <tr>
+                                    <td>Tipo de pago: </td>
+                                    <td>Transferencia</td>
+                                </tr>
+                                <tr>
+                                    <td>Moneda: </td>
+                                    <td>BTC</td>
+                                </tr>
+                                <tr>
+                                    <td>Dirección de envio: </td>
+                                    <td>BC135s</td>
+                                </tr>
+                                <tr>
+                                    <td>Cantidad: </td>
+                                    <td>0.225</td>
+                                </tr>
+                                <tr>
+                                    <td>Comisión seleccionada: </td>
+                                    <td>0.000021</td>
+                                </tr>
+                                <tr>
+                                    <td>Total a enviar: </td>
+                                    <td>0.2248</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-6">
+                            <img src="@/assets/qr.png" alt="" class="img-fluid">
+                            <br />
+                            <small>Click en el qr para abrir en tu wallet</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <b-modal id="modal-center" hide-header hide-footer centered>
+        <a cancel><img src="@/assets/cerrar.svg" alt="cerrar"></a>
+        <h3 class="my-4">Transaccion : TXN 3449</h3>
+    </b-modal>
 </template>
 <script>
 import BotonGenerico from "@/components/Boton-generico";
+import InputGenerico from "@/components/Input-generico.vue";
 /* eslint-disable */
 export default {
     name: 'TransaccionesPendientesAdmin',
     components: {
-        BotonGenerico
+        BotonGenerico,
+        InputGenerico,
         //VueTyper,
         //Money,
         //Loading
@@ -508,13 +591,48 @@ export default {
             type: 'A'
         }
     },
+    methods: {
+
+    },
 }
 </script>
 <style scoped>
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: var(--bs-modal-width);
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+}
+
+
+.tx {
+    width: 156px;
+}
+
+.fixed {
+    height: 29px;
+}
+
+.flex {
+    display: flex;
+}
+
+.centrar {
+    text-align: center;
+}
+
 table {
     display: block;
     width: 100%;
     overflow-x: auto;
+}
+
+.img_cerrar {
+    width: 50px;
+    position: absolute;
+    right: -25px;
+    top: -20px;
 }
 
 .popover-body {

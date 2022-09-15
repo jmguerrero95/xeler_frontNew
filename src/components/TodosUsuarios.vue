@@ -38,8 +38,9 @@
                                                 class="dt-type-md badge badge-outline badge-success badge-md bot_apro">Activo</span>
                                         </td>
                                         <td scope="col" class="text">2022-06-07 21:30:00</td>
-                                        <td scope="col"><a href="#"
-                                                class="btn btn-light-alt btn-xs btn-icon toggle-tigger">...</a></td>
+                                        <td scope="col">
+                                            <b-button id="popover-target-1" class="mas">Detalles</b-button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td scope="col"><span class="nombre">MelanieQuitian</span></td>
@@ -217,12 +218,74 @@
             </div>
         </div>
     </div>
+    <!--POPOVERS-->
+    <b-popover target="popover-target-1" triggers="focus" placement="bottom">
+        <ul class="ul_correct">
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" href="#"><em class="ti ti-eye"></em>
+                    Ver Detalles</a></li>
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" href="#"><em class="ti ti-eye"></em>
+                    Modificar Usuario</a></li>
+            <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
+                    class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
+                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Actividad</p>
+            </li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2" href="#"><em class="ti ti-eye"></em>
+                    Enviar Email</a></li>
+            <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2" href="#"><em class="ti ti-eye"></em>
+                    Reenviar Verificación</a></li>
+        </ul>
+    </b-popover>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
+                    <h4 class="centrar">Modificar usuario</h4>
+                    <div class="row">
+                        <div class="col-12 flex">
+                            <p class="tx">Primer nombre</p>
+                            <InputGenerico class="fixed" value="" placeholder="nombre"></InputGenerico>
+                        </div>
+                        <div class="col-12 flex">
+                            <p class="tx">Segundo nombre</p>
+                            <InputGenerico class="fixed" value="" placeholder="segundo nombre"></InputGenerico>
+                        </div>
+                        <div class="col-12 flex">
+                            <p class="tx">Primer apellido</p>
+                            <InputGenerico class="fixed" value="" placeholder="primer apellido"></InputGenerico>
+                        </div>
+                        <div class="col-12 flex">
+                            <p class="tx">Segundo apellido</p>
+                            <InputGenerico class="fixed" value="" placeholder="segundo apellido"></InputGenerico>
+                        </div>
+                        <div class="col-12 flex">
+                            <p class="tx">Email</p>
+                            <InputGenerico class="fixed" value="" placeholder="email@email.com"></InputGenerico>
+                        </div>
+                        <div class="col-12 flex">
+                            <p class="tx">Numero celular</p>
+                            <InputGenerico class="fixed" value="" placeholder="123 123 423"></InputGenerico>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <script>
+import BotonGenerico from "@/components/Boton-generico";
+import InputGenerico from "@/components/Input-generico.vue";
 /* eslint-disable */
 export default {
     name: 'Kyc',
     components: {
+        BotonGenerico,
+        InputGenerico,
         //VueTyper,
         //Money,
         //Loading
@@ -235,6 +298,63 @@ export default {
 }
 </script>
 <style scoped>
+.tx {
+    width: 200px;
+}
+
+.fixed {
+    height: 29px;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.img_cerrar {
+    width: 50px;
+    position: absolute;
+    right: -25px;
+    top: -20px;
+}
+
+.mini_menu {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #8B2CF5;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline;
+    cursor: pointer;
+
+}
+
+.quit_esti {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.ul_correct {
+    margin: 0;
+    padding: 0;
+}
+
+.mas {
+    background-color: white;
+    box-shadow: none;
+    border-style: solid;
+    border-color: #844DDD;
+    border-width: 1px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    color: black;
+}
+
 .center {
     text-align: center;
 }

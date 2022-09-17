@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row espacio">
                 <div class="col-12 car_parte2 parte2_left">
-                    <div class="row">
+                    <div class="row" v-if="type === 'A'">
                         <div class="col-12">
                             <h4 class="tit_card">Lista de usuarios</h4>
                             <br />
@@ -214,6 +214,140 @@
                             </table>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row espacio-b" v-if="type === 'B'">
+                        <div class="col-12">
+                            <h4 class="tit_info">Detalles de usuario</h4>
+                        </div>
+
+                        <div class="col-lg-12 dat_kyc">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Nombre Completo</b> <span>sTmWcysy sTmWcysy</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Código Celular</b> <span>813529</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Referido Por </b> <span>Registrado sin ser
+                                                referido!</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Notificaciones </b>
+                                            <BotonGenerico texto="Configurar" class="boton mas peque" />
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Puntos referido</b> <span>0</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Método de Registro </b> <span>Email</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Segunda clave</b> <span>
+                                                <BotonGenerico texto="Configurar" class="boton mas peque" />
+                                            </span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Fecha de Nacimiento </b> <span>No agregado aún!</span>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>2FA Habilitado </b> <span>No</span>
+                                        </p>
+                                    </td>
+                                </tr>
+
+
+
+
+
+
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Tipo de usuario</b> <span>Cliente</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Transacciones </b> <span>
+                                                <BotonGenerico texto="Ver" class="boton mas peque" />
+                                            </span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Telegram ID </b> <span>No agregado</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>email</b> <span>testing@example.com</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Nacionalidad </b> <span>No agregado aún!</span></p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="sin_margen"><b>Número Celular</b> <span>555-666-0606</span></p>
+                                    </td>
+                                    <td>
+                                        <p class="sin_margen"><b>Fecha de Registro </b> <span>15 Sep, 2022 04:48
+                                                AM</span></p>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-12">
+                            <br />
+                            <h4 class="tit_info2">Notas</h4>
+                            <textarea name="notas" id="notas" cols="50" rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <br />
+                            <BotonGenerico class="ajuste espa_movil boton" texto="Guardar cambios"
+                                v-on:click="type='A'">
+                            </BotonGenerico>
+                        </div>
+                        <hr class="linea" />
+                        <div class="col-12">
+                            <br />
+                            <h4 class="tit_info2">Cuentas registradas</h4>
+                        </div>
+                        <div class="col-12 centrar">
+                            <BotonGenerico class="ajuste espa_movil" texto="Atras" v-on:click="type='A'">
+                            </BotonGenerico>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -221,8 +355,8 @@
     <!--POPOVERS-->
     <b-popover target="popover-target-1" triggers="focus" placement="bottom">
         <ul class="ul_correct">
-            <li class="quit_esti"><img src="@/assets/vista.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" href="#"><em class="ti ti-eye"></em>
+            <li class="quit_esti"><img src="@/assets/vista.svg" alt=""><a class="mini_menu" v-on:click="type='B'"
+                    href="#"><em class="ti ti-eye"></em>
                     Ver Detalles</a></li>
             <li class="quit_esti"><img src="@/assets/vista.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
                     data-bs-target="#exampleModal" href="#"><em class="ti ti-eye"></em>
@@ -230,10 +364,11 @@
             <!--<li class="quit_esti"><img src="@/assets/vista.svg" alt=""><em class="ti ti-eye"></em><button
                     class="mini_menu" v-on:click="type='B'">Ver Detalles</button></li>-->
             <li class="quit_esti"><img src="@/assets/vista.svg" alt="">
-                <p v-on:click="type='B'" class="mini_menu"><em class="ti ti-eye"></em> Actividad</p>
+                <a class="mini_menu" data-bs-toggle="modal" data-bs-target="#actividad_usuario" href="#"><em
+                        class="ti ti-eye"></em> Actividad</a>
             </li>
             <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2" href="#"><em class="ti ti-eye"></em>
+                    data-bs-target="#email" href="#"><em class="ti ti-eye"></em>
                     Enviar Email</a></li>
             <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
                     data-bs-target="#exampleModal2" href="#"><em class="ti ti-eye"></em>
@@ -246,6 +381,7 @@
                 <div class="modal-body">
                     <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
                     <h4 class="centrar">Modificar usuario</h4>
+                    <br />
                     <div class="row">
                         <div class="col-12 flex">
                             <p class="tx">Primer nombre</p>
@@ -271,11 +407,58 @@
                             <p class="tx">Numero celular</p>
                             <InputGenerico class="fixed" value="" placeholder="123 123 423"></InputGenerico>
                         </div>
+                        <div class="centrar">
+                            <br />
+                            <BotonGenerico texto="Actualizar Usuario" class="boton" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="modal fade" id="actividad_usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
+                    <h4 class="centrar">Actividad de usuario</h4>
+                    <br />
+                    <div class="row">
+                        <p>Inicio de sesión 1</p>
+                        <p>Inicio de sesión 2</p>
+                        <p>Inicio de sesión 3</p>
+                        <p>Inicio de sesión 4</p>
+                        <p>Esto se organiza mejor cuando se integre la api</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
+                    <h4 class="centrar">Enviar Email</h4>
+                    <br />
+                    <div class="row">
+                        <p>Asunto</p>
+                        <InputGenerico />
+                        <br />
+                        <p>Mensaje</p>
+                        <textarea name="notas" id="notas" cols="50" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </template>
 <script>
 import BotonGenerico from "@/components/Boton-generico";
@@ -286,18 +469,76 @@ export default {
     components: {
         BotonGenerico,
         InputGenerico,
-        //VueTyper,
-        //Money,
-        //Loading
     },
     data() {
         return {
-
+            type: 'A'
         }
     },
 }
 </script>
 <style scoped>
+table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.peque {
+    width: auto;
+    min-width: 100px;
+    padding: 0;
+}
+
+.linea {
+    margin-top: 20px;
+}
+
+#notas {
+    width: 100%;
+    border-radius: 18px;
+    border-color: #5043E9;
+}
+
+.sin_margen {
+    margin: 0;
+}
+
+.dat_kyc {
+    background: white;
+    padding: 2%;
+    border: 1px;
+    border-style: solid;
+    border-color: #5043E9;
+    border-radius: 15px;
+}
+
+.tit_info {
+    margin-bottom: 20px !important;
+    color: #342d6e;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+.tit_info2 {
+    margin-bottom: 20px !important;
+    color: #342d6e;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.espacio-b {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.boton {
+    width: auto;
+}
+
 .tx {
     width: 200px;
 }

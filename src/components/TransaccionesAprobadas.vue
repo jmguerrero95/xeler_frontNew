@@ -10,6 +10,7 @@
                             <table class="table">
                                 <thead>
                                     <th></th>
+                                    <th></th>
                                     <th class="tit text">Tranx nº</th>
                                     <th class="tit text">Usuario</th>
                                     <th class="tit text">Cop</th>
@@ -23,8 +24,8 @@
                                                 <font-awesome-icon icon="fa-solid fa-check" />
                                             </a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi"
                                                 src="@/assets/banco.png"><img class="verifi" src="@/assets/KYC.png"><img
-                                                class="verifi" src="@/assets/orden_tomada.png"><span
-                                                class="text precio"> 2022-08-21 | 13:56:42</span></td>
+                                                class="verifi" src="@/assets/orden_tomada.png"></td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -40,8 +41,8 @@
                                                 <font-awesome-icon icon="fa-solid fa-check" />
                                             </a><img class="verifi" src="@/assets/compra.png"><img class="verifi"
                                                 src="@/assets/KYC.png"><img class="verifi"
-                                                src="@/assets/orden_tomada.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span></td>
+                                                src="@/assets/orden_tomada.png"></td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -59,8 +60,8 @@
                                                 src="@/assets/banco.png"><img class="verifi"
                                                 src="@/assets/compra.png"><img class="verifi"
                                                 src="@/assets/KYC.png"><img class="verifi"
-                                                src="@/assets/orden_tomada.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span></td>
+                                                src="@/assets/orden_tomada.png"></td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -76,10 +77,9 @@
                                                 <font-awesome-icon icon="fa-solid fa-check" />
                                             </a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi"
                                                 src="@/assets/banco.png"><img class="verifi"
-                                                src="@/assets/compra.png"><img class="verifi"
-                                                src="@/assets/KYC.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span>
+                                                src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png">
                                         </td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -96,9 +96,8 @@
                                             </a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi"
                                                 src="@/assets/compra.png"><img class="verifi"
                                                 src="@/assets/KYC.png"><img class="verifi"
-                                                src="@/assets/orden_tomada.png"><span class="text precio">
-                                                2022-08-21 |
-                                                13:56:42</span></td>
+                                                src="@/assets/orden_tomada.png"></td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -113,10 +112,9 @@
                                         <td scope="col" class="right"><a href="#" class="margen icono">
                                                 <font-awesome-icon icon="fa-solid fa-check" />
                                             </a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi"
-                                                src="@/assets/banco.png"><img class="verifi"
-                                                src="@/assets/compra.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span>
+                                                src="@/assets/banco.png"><img class="verifi" src="@/assets/compra.png">
                                         </td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -132,10 +130,9 @@
                                                 <font-awesome-icon icon="fa-solid fa-check" />
                                             </a><img class="verifi" src="@/assets/recibo_ok.png"><img class="verifi"
                                                 src="@/assets/banco.png"><img class="verifi"
-                                                src="@/assets/compra.png"><img class="verifi"
-                                                src="@/assets/KYC.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span>
+                                                src="@/assets/compra.png"><img class="verifi" src="@/assets/KYC.png">
                                         </td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -153,8 +150,8 @@
                                                 src="@/assets/banco.png"><img class="verifi"
                                                 src="@/assets/compra.png"><img class="verifi"
                                                 src="@/assets/KYC.png"><img class="verifi"
-                                                src="@/assets/orden_tomada.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span></td>
+                                                src="@/assets/orden_tomada.png"></td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -172,8 +169,8 @@
                                                 src="@/assets/banco.png"><img class="verifi"
                                                 src="@/assets/compra.png"><img class="verifi"
                                                 src="@/assets/KYC.png"><img class="verifi"
-                                                src="@/assets/orden_tomada.png"><span class="text precio"> 2022-08-21 |
-                                                13:56:42</span></td>
+                                                src="@/assets/orden_tomada.png"></td>
+                                        <td><span class="text precio"> 2022-08-21 | 13:56:42</span></td>
                                         <td scope="col"><span class="text">TNX005094</span></td>
                                         <td scope="col"><span class="text precio">TEST</span></td>
                                         <td scope="col" class="text"><span>350.000<br /></span></td>
@@ -667,9 +664,6 @@ table {
     margin: 0;
 }
 
-.right {
-    text-align: end;
-}
 
 .table-striped>tbody>tr:nth-child(2n+1)>td,
 .table-striped>tbody>tr:nth-child(2n+1)>th {

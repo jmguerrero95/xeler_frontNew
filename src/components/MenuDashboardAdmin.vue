@@ -42,13 +42,22 @@
               <li><a href="#">Usuarios Referidos</a></li>
             </ul>
           </li>
-
           <li class="">
             <router-link to="/dashboard/referidos" class="nav-link"> Tienda</router-link>
           </li>
-          <li class="active"><a class="nav-link" href="#" v-on:click="$emit('submit-form', 'I')">
+          <li class="has-dropdown">
+            <a class="drop-toggle" href="javascript:void(0)">
               <font-awesome-icon class="iconos icon_espa" icon="fa-regular fa-circle-user" /> Configuracion
-            </a></li>
+            </a>
+            <ul class="navbar-dropdown">
+              <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'I')">Configurar sitio</a></li>
+              <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'J')">Listado Bancos</a></li>
+              <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'K')">Listado Otros</a></li>
+              <li><a class="dropdown-item" href="#">Metodos de pago</a></li>
+              <li><a class="dropdown-item" href="#">Acelerar transacción</a></li>
+              <li><a class="dropdown-item" href="#">Revivir Transacción</a></li>
+            </ul>
+          </li>
         </ul>
 
         <ul class="navbar-btns">
@@ -116,8 +125,20 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Tienda</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" v-on:click="$emit('submit-form', 'I')">Configuración</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <font-awesome-icon class="iconos" icon="fa-regular fa-circle-user" />
+              Configuración
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'I')">Configurar sitio</a></li>
+              <li><a class="dropdown-item" href="#">Listado Bancos</a></li>
+              <li><a class="dropdown-item" href="#">Listado Otros</a></li>
+              <li><a class="dropdown-item" href="#">Metodos de pago</a></li>
+              <li><a class="dropdown-item" href="#">Acelerar transacción</a></li>
+              <li><a class="dropdown-item" href="#">Revivir Transacción</a></li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -164,7 +185,33 @@
           </div>
         </div>
         <a class="link-item" href="#">Tienda</a>
-        <a class="link-item" href="#" v-on:click="$emit('submit-form', 'I')">Configuración</a>
+        <a class="link-item" href="#" v-on:click="$emit('submit-form', 'I'); cerrar()">Configuración</a>
+
+
+
+        <!--<a class="link-item sub4" v-on:click="cambio('.submenu_movil4')" href="#">
+          <font-awesome-icon class="iconos" icon="fa-regular fa-circle-user" /> Configuración
+        </a>
+        <div class="submenu_movil4 todo">
+          <div class="espa_submenu">
+            <a class="link-item" href="#" v-on:click="$emit('submit-form', 'I'); cerrar()">Configurar sitio</a>
+          </div>
+          <div class="espa_submenu">
+            <a class="link-item" href="#" v-on:click="$emit('submit-form', 'J'); cerrar()">Listado Bancos</a>
+          </div>
+          <div class="espa_submenu">
+            <a class="link-item" href="#" v-on:click="$emit('submit-form', 'K'); cerrar()">Listado Otros</a>
+          </div>
+          <div class="espa_submenu">
+            <a class="link-item" href="#" v-on:click="$emit('submit-form', 'L'); cerrar()">Metodos de pago</a>
+          </div>
+          <div class="espa_submenu">
+            <a class="link-item" href="#" v-on:click="$emit('submit-form', 'M'); cerrar()">Acelerar transacción</a>
+          </div>
+          <div class="espa_submenu">
+            <a class="link-item" href="#" v-on:click="$emit('submit-form', 'N'); cerrar()">Revivir Transacción</a>
+          </div>
+        </div>-->
         <router-link class="link-item" to="/login">Cerrar sesion</router-link>
       </div>
     </nav>
@@ -232,11 +279,13 @@ export default {
       const submenu_movil = document.querySelector(".submenu_movil")
       const submenu_movil2 = document.querySelector(".submenu_movil2")
       const submenu_movil3 = document.querySelector(".submenu_movil3")
+      const submenu_movil4 = document.querySelector(".submenu_movil4")
       /*const todo = document.querySelector(".todo")
       todo.style.display = "none"*/
       submenu_movil.style.display = "none"
       submenu_movil2.style.display = "none"
       submenu_movil3.style.display = "none"
+      submenu_movil4.style.display = "none"
       const divOCult2 = document.querySelector(divOCult)
       console.log(divOCult2)
       divOCult2.style.display = "block"

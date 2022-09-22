@@ -371,7 +371,7 @@
                     data-bs-target="#email" href="#"><em class="ti ti-eye"></em>
                     Enviar Email</a></li>
             <li class="quit_esti"><img src="@/assets/resumen.svg" alt=""><a class="mini_menu" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal2" href="#"><em class="ti ti-eye"></em>
+                    data-bs-target="#verificacion" href="#"><em class="ti ti-eye"></em>
                     Reenviar Verificación</a></li>
         </ul>
     </b-popover>
@@ -458,6 +458,25 @@
         </div>
     </div>
 
+    <div class="modal fade" id="verificacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a data-bs-dismiss="modal"><img src="@/assets/cerrar.svg" class="img_cerrar" alt="cerrar"></a>
+                    <h4 class="centrar">Enviar Correo de Verificación</h4>
+                    <br />
+                    <div class="row">
+                        <p>Realmente quieres enviar correo de verificación?</p>
+                        <div class="centrar">
+                            <br />
+                            <BotonGenerico texto="Actualizar Usuario" class="boton" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </template>
 <script>
@@ -478,6 +497,14 @@ export default {
 }
 </script>
 <style scoped>
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: var(--bs-modal-width);
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+}
+
 table {
     display: block;
     width: 100%;

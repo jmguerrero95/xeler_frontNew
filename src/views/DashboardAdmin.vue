@@ -12,6 +12,7 @@
         <Configuracion v-if="type === 'I'"></Configuracion>
         <ListBancos v-if="type === 'J'"></ListBancos>
         <ListOtros v-if="type === 'K'"></ListOtros>
+        <MetPag v-if="type === 'L'"></MetPag>
         <div class="container">
             <div class="row">
                 <FooterDashboard></FooterDashboard>
@@ -32,6 +33,7 @@ import TodosUsuarios from "@/components/TodosUsuarios.vue";
 import Configuracion from "@/components/Configuracion.vue";
 import ListBancos from "@/components/ListBancos.vue";
 import ListOtros from "@/components/ListOtros.vue";
+import MetPag from "@/components/MetPag.vue";
 import FooterDashboard from "@/components/FooterDashboard";
 /* eslint-disable */
 export default {
@@ -49,7 +51,8 @@ export default {
         Configuracion,
         ListBancos,
         ListOtros,
-        FooterDashboard
+        FooterDashboard,
+        MetPag
         //VueTyper,
         //Money,
         //Loading

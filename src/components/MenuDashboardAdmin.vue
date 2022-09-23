@@ -53,7 +53,7 @@
               <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'I')">Configurar sitio</a></li>
               <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'J')">Listado Bancos</a></li>
               <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'K')">Listado Otros</a></li>
-              <li><a class="dropdown-item" href="#">Metodos de pago</a></li>
+              <li><a class="dropdown-item" href="#" v-on:click="$emit('submit-form', 'L')">Metodos de pago</a></li>
               <li><a class="dropdown-item" href="#">Acelerar transacción</a></li>
               <li><a class="dropdown-item" href="#">Revivir Transacción</a></li>
             </ul>

@@ -298,6 +298,11 @@ export default {
     box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
 }
 
+.pagos:hover {
+    background-color: #8c6fff;
+    color: white;
+}
+
 .pay-cur-pagos {
     font-size: 14px;
     line-height: 30px;
@@ -322,6 +327,10 @@ export default {
     box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
 }
 
+.ethereum:hover {
+    background-color: #008cf8 !important;
+}
+
 .bit_cash {
     border-radius: 8px !important;
     border: 1px solid #619F51 !important;
@@ -329,6 +338,10 @@ export default {
     -webkit-box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
     box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
+}
+
+.bit_cash:hover {
+    background-color: #8df772 !important;
 }
 
 .litecoin {
@@ -340,6 +353,10 @@ export default {
     box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
 }
 
+.litecoin:hover {
+    background-color: #88caff !important;
+}
+
 .dash {
     border-radius: 8px !important;
     border: 1px solid #0090FF !important;
@@ -349,6 +366,10 @@ export default {
     box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
 }
 
+.dash:hover {
+    background-color: #c9d7ff !important;
+}
+
 .tether {
     border-radius: 8px !important;
     border: 1px solid #26A07B !important;
@@ -356,6 +377,11 @@ export default {
     -webkit-box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
     box-shadow: 0px 5px 5px 0px rgba(230, 230, 230, 1);
+}
+
+.tether:hover {
+    background-color: #00f0a8 !important;
+
 }
 
 .flex {
@@ -446,6 +472,10 @@ export default {
     transition: all .4s ease;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.bitcoin:hover {
+    background-color: #ffc876 !important;
 }
 
 .pasos {
